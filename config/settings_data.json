@@ -1032,6 +1032,11 @@
           "js_code": "",
           "liquid_code": ""
         }
+      },
+      "4015264832934714879": {
+        "type": "shopify://apps/ecomsend-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
