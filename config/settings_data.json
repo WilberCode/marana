@@ -271,6 +271,8 @@
           "logo_width": "300",
           "enable_logo_shrink": true,
           "alt_logo": "shopify://shop_images/Logo_Blanco_Fondo_Transparente_1.png",
+          "menu_main_desktop_left": "men-principal-izquierdo",
+          "menu_main_desktop_right": "men-principal-derecho",
           "menu_linklist": "main-menu",
           "menu_under_text": "",
           "search_menu_title": "",
