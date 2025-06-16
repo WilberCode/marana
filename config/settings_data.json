@@ -1028,15 +1028,10 @@
         "disabled": false,
         "settings": {
           "html_code": "",
-          "css_code": ".ecomsend__Modal__CustomPic._customPic_rds7d_79{\n    width: 100% !important; \n    height: 223px  !important;\n}",
+          "css_code": ".ecomsend__Modal__CustomPic._customPic_rds7d_79{\n    width: 100% !important; \n    height: 223px  !important;\n}\n\n.ecomsend__Modal__Content{ \n    flex-direction: column;\n\n}",
           "js_code": "",
           "liquid_code": ""
         }
-      },
-      "4015264832934714879": {
-        "type": "shopify://apps/ecomsend-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
-        "disabled": false,
-        "settings": {}
       }
     }
   },
