@@ -186,11 +186,19 @@
           <span class="main-menu-toggle__text">{{ 'layout.header.menu' | t }}</span>
         </a>
 
-          <ul class="main-menu-desktop">
+          
+        <ul class="main-menu-desktop">
           {%- for link in linklists[section.settings.menu_main_desktop_left].links -%}
             <li class="main-menu-desktop-item{% if link.links != blank %} has-children{% endif %}">
               <a href="{{ link.url }}" class="main-menu-desktop-link">
                 {{ link.title }}
+                {%- if link.links != blank -%}
+                  <span class="submenu-icon">
+                    <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                {%- endif -%}
               </a>
 
               {%- if link.links != blank -%}
@@ -219,6 +227,7 @@
             </li>
           {%- endfor -%}
         </ul>
+
       </div>
     
 
@@ -244,11 +253,19 @@
       </div>
 
       <div class="header-items">
-           <ul class="main-menu-desktop">
+
+        <ul class="main-menu-desktop">
           {%- for link in linklists[section.settings.menu_main_desktop_right].links -%}
             <li class="main-menu-desktop-item{% if link.links != blank %} has-children{% endif %}">
               <a href="{{ link.url }}" class="main-menu-desktop-link">
                 {{ link.title }}
+                {%- if link.links != blank -%}
+                  <span class="submenu-icon">
+                    <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                {%- endif -%}
               </a>
 
               {%- if link.links != blank -%}
@@ -277,16 +294,27 @@
             </li>
           {%- endfor -%}
         </ul>
-        <span class="header-items__item header-items__cart-link">
+          
+        <span class=" header-items__item header-items__login">
+           <a class="header-items__login-link"
+            href="{{ routes.account_login_url }}"
+            title="{{ 'customer.account.title' | t }}">
+            <svg width="22" height="22" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 14V12.5556C12 11.7894 11.7103 11.0546 11.1945 10.5128C10.6788 9.97103 9.97935 9.66667 9.25 9.66667H3.75C3.02065 9.66667 2.32118 9.97103 1.80546 10.5128C1.28973 11.0546 1 11.7894 1 12.5556V14M9.25 3.88889C9.25 5.48438 8.01878 6.77778 6.5 6.77778C4.98122 6.77778 3.75 5.48438 3.75 3.88889C3.75 2.2934 4.98122 1 6.5 1C8.01878 1 9.25 2.2934 9.25 3.88889Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </a>
+        </span>
+         <span class="header-items__item header-items__search-link">
+          <a href="{{ routes.search_url }}" class="header-search-toggle" aria-label="{{ 'layout.header.search' | t | json }}">{% include 'svg-search' %}</a>
+        </span>
+        <span class="header-items__item header-items__cart-link"> 
           <a href="{{ routes.cart_url }}">
             <span class="cart-link--text">{{ 'layout.header.cart' | t }}</span>
             <span class="cart-link--icon">{% include 'svg-cart' %}</span>
             {% if cart.item_count > 0 %}<span class="cart__count">({{ cart.item_count }})</span>{% endif %}
-          </a>
+          </a>  
         </span>
-        <span class="header-items__item header-items__search-link">
-          <a href="{{ routes.search_url }}" class="header-search-toggle" aria-label="{{ 'layout.header.search' | t | json }}">{% include 'svg-search' %}</a>
-        </span>
+       
       </div>
     </header>
   </div> 

@@ -3359,7 +3359,8 @@ hr {
   top: 0;
   left: 0;
   width: 100%;
-  padding: $site-header-vertical-padding $site-container-side-padding;
+ /*  padding: $site-header-vertical-padding $site-container-side-padding; */
+ padding: 10px 20px;
   z-index: 5;
   background-color: $header-bg;
   border-bottom: 1px solid transparent;
@@ -3380,8 +3381,8 @@ hr {
   }
 
   .scrolled-down & {
-    padding-top: $site-header-vertical-padding / 2;
-    padding-bottom: $site-header-vertical-padding / 2;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 }
 
@@ -3389,12 +3390,12 @@ body:not(.template-product):not(.has-banner):not(.scrolled-down) .pageheader__co
   background-color: $page-heading-background;
 }
 
-.has-banner .pageheader__contents--overlap {
+/* .has-banner .pageheader__contents--overlap {
   position: absolute;
-}
+} */
 
 .header-overlapping:not(.scrolled-down) .pageheader__contents--overlap {
-  background: transparent;
+  background: #000000;
   color: $header-overlap-text-col;
 
   .logo .has-contrast-image {
@@ -3466,7 +3467,7 @@ body:not(.template-product):not(.has-banner):not(.scrolled-down) .pageheader__co
 
 .header-items__item {
   @include small-font();
-  margin-left: 30px;
+  margin-left: 10px;
   text-transform: uppercase;
 
   &:first-child {
@@ -3474,14 +3475,17 @@ body:not(.template-product):not(.has-banner):not(.scrolled-down) .pageheader__co
   }
 }
 
+.header-items__login{
+  padding-left: 10px;
+}
 .header-items__cart-link {
   white-space: nowrap;
   position: relative;
 }
 
-.cart-link--icon {
+/* .cart-link--icon {
   display: none;
-}
+} */
 
 .pageheader .mobile-nav-toggle * {
   vertical-align: middle;
@@ -3756,11 +3760,11 @@ body:not(.template-product):not(.has-banner):not(.scrolled-down) .pageheader__co
   }
 }
 
-@media (min-width: $breakpoint-small-screen) {
+/* @media (min-width: $breakpoint-small-screen) {
   .has-banner .section--banner .fixed-height .overlay {
     padding-top: $general-space + $site-header-vertical-padding * 2;
   }
-}
+} */
 
 .section--banner .slick-dots {
   bottom: $content-header-overlap;
@@ -5048,11 +5052,11 @@ $mobile-nav-width:	260px;
   }
 
   .header-items {
-    padding-left: 20px;
+    padding-left: 10px;
   }
 
   .header-items__item {
-    margin-left: 20px;
+    margin-left: 5px;
   }
 
   .cart-link--text {
@@ -5992,22 +5996,104 @@ $flexible-layout-gutter: 0px;
 }
 
 
-
-@media (min-width:767px) {
-  .main-menu-toggle{
-
-    display: none !important;
+  .cart-link--text {
+    display: none;
   }
-}
+
+
 .main-menu-desktop{
   display: flex;
   list-style: none;
+  padding-left: 0;
   li{
+      list-style: none;
     a{ 
-      padding: 10px 20px;
+      padding: 16px 20px;
     }
   }
    &  ul{
     display: none;
    }
  }
+
+ .header-items__login{
+   svg{
+    
+   }
+ }
+
+/* body:not(.template-index) .pageheader__contents{
+  position: absolute;
+} */
+ .has-banner .banner-image-container .feature-page-title{
+  margin-top: 0 !important;
+ }
+
+ @media (min-width:1000px) {
+  .main-menu-toggle{
+
+    display: none !important;
+  }
+}
+@media (max-width:999px) {
+  .main-menu-desktop{
+    display: none;
+  }
+}
+
+
+/* Submenús ocultos inicialmente */
+.main-menu-desktop-submenu,
+.main-menu-desktop-grandchild-list {
+  display: none;
+  position: absolute;
+  background: white;
+  color: black;
+  width:250px;
+  z-index: 10;
+  padding: 12px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Posicionamiento relativo para ítems con submenús */
+.main-menu-desktop-item {
+  position: relative;
+}
+.main-menu-desktop-item:hover{
+  text-decoration: underline;
+}
+
+/* Mostrar submenú al hacer hover */
+.main-menu-desktop-item:hover > .main-menu-desktop-submenu {
+  display: block;
+  top:30px;
+}
+
+/* Animación del ícono al hover */
+.submenu-icon {
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.main-menu-desktop-item.has-children:hover .submenu-icon .arrow-icon {
+  transform: rotate(180deg); 
+}
+.main-menu-desktop-item.has-children .submenu-icon .arrow-icon { 
+  vertical-align: middle;
+}
+
+/* Opcional: indicar cursor en items con submenús */
+.main-menu-desktop-item.has-children > a {
+  cursor: pointer;
+   text-wrap: nowrap; 
+}
+
+.main-menu-desktop-item.has-children ul li > a  {
+  display: block;
+  padding: 6px 20px;
+}
+.main-menu-desktop-item.has-children ul li > a:hover {
+  text-decoration: underline;
+}
