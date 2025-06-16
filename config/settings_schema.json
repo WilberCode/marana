@@ -1,0 +1,505 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Alchemy",
+    "theme_author": "Clean Canvas",
+    "theme_version": "3.1.1",
+    "theme_documentation_url": "http:\/\/cleancanvas.co.uk\/support\/alchemy\/",
+    "theme_support_url": "http:\/\/cleancanvas.co.uk\/support\/alchemy\/"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "col_text",
+        "label": "Text",
+        "default": "#706f6f"
+      },
+      {
+        "type": "color",
+        "id": "col_headings",
+        "label": "Headings",
+        "default": "#333333"
+      },
+      {
+        "type": "color",
+        "id": "col_links",
+        "label": "Links",
+        "default": "#f04c40"
+      },
+      {
+        "type": "color",
+        "id": "col_page_bg",
+        "label": "Page background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "col_stars",
+        "label": "Testimonial and review stars",
+        "default": "#f7c346"
+      },
+      {
+        "type": "header",
+        "content": "Header"
+      },
+      {
+        "type": "color",
+        "id": "col_header_text",
+        "label": "Text and icons",
+        "default": "#665f5b"
+      },
+      {
+        "type": "color",
+        "id": "col_header_bg",
+        "label": "Background",
+        "default": "#FFF8F4"
+      },
+      {
+        "type": "color",
+        "id": "col_header_text_overlap",
+        "label": "Text and icons - when on top of images",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Page header"
+      },
+      {
+        "type": "color",
+        "id": "col_page_heading_bg",
+        "label": "Background",
+        "default": "#fff8f4"
+      },
+      {
+        "type": "color",
+        "id": "col_page_heading_text",
+        "label": "Text",
+        "default": "#1c1d1d"
+      },
+      {
+        "type": "color",
+        "id": "col_page_heading_text_over_image",
+        "label": "Overlay text",
+        "info": "When shown over an image",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Navigation drawer"
+      },
+      {
+        "type": "color",
+        "id": "col_nav_links",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "col_nav_bg",
+        "label": "Background",
+        "default": "#132625"
+      },
+      {
+        "type": "header",
+        "content": "Search drawer"
+      },
+      {
+        "type": "color",
+        "id": "col_search_bg",
+        "label": "Background",
+        "default": "#ffe2d1"
+      },
+      {
+        "type": "color",
+        "id": "col_search_text",
+        "label": "Text",
+        "default": "#454f5b"
+      },
+      {
+        "type": "color",
+        "id": "col_search_headings",
+        "label": "Headings",
+        "default": "#212b36"
+      },
+      {
+        "type": "header",
+        "content": "Grid item coloring"
+      },
+      {
+        "type": "paragraph",
+        "content": "Used for both products and collections when shown in grids"
+      },
+      {
+        "type": "color",
+        "id": "col_alt_text",
+        "label": "Text",
+        "default": "#ad9c9c"
+      },
+      {
+        "type": "color",
+        "id": "col_alt_text_bg",
+        "label": "Background",
+        "default": "#775f5f"
+      },
+      {
+        "type": "color",
+        "id": "col_prod_sale",
+        "label": "On-sale background",
+        "default": "#8a5252",
+        "info": "Any product with a higher 'compare at price' will use this"
+      },
+      {
+        "type": "header",
+        "content": "Buttons"
+      },
+      {
+        "type": "paragraph",
+        "content": "These are used for the primary button style. For example: Checkout"
+      },
+      {
+        "type": "color",
+        "id": "col_btn",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "col_btn_bg",
+        "label": "Background",
+        "default": "#8a7676"
+      },
+      {
+        "type": "paragraph",
+        "content": "The secondary button style reverses these colors. Buttons in overlays use the overlay text color."
+      },
+      {
+        "type": "header",
+        "content": "Labels"
+      },
+      {
+        "type": "paragraph",
+        "content": "Set the background to transparent to hide the label."
+      },
+      {
+        "type": "color",
+        "id": "col_label_sold_out",
+        "label": "Sold out background",
+        "default": "#565656"
+      },
+      {
+        "type": "color",
+        "id": "col_label_sale",
+        "label": "Sale background",
+        "default": "#d52f5a"
+      },
+      {
+        "type": "color",
+        "id": "col_label_low_stock",
+        "label": "Low stock background",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "col_label_custom",
+        "label": "Custom label background",
+        "default": "#0b3d65"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Font families"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_base_font",
+        "label": "Base",
+        "default": "karla_n4"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_heading_font",
+        "label": "Headings",
+        "default": "karla_n4"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_nav_font",
+        "label": "Navigation",
+        "default": "karla_n4"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_logo_font",
+        "label": "Store name",
+        "default": "karla_n4",
+        "info": "If not using a logo image"
+      },
+      {
+        "type": "header",
+        "content": "Font size"
+      },
+      {
+        "type": "range",
+        "id": "font_size_base_int",
+        "min": 13,
+        "max": 18,
+        "step": 1,
+        "unit": "px",
+        "label": "Base font size",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "font_size_nav_int",
+        "min": 16,
+        "max": 50,
+        "step": 2,
+        "unit": "px",
+        "label": "Navigation font size",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "logo_size_int",
+        "min": 18,
+        "max": 34,
+        "step": 2,
+        "unit": "px",
+        "label": "Store name",
+        "default": 26
+      }
+    ]
+  },
+  {
+    "name": "Layout",
+    "settings": [
+      {
+        "type": "range",
+        "id": "content_header_overlap",
+        "min": 0,
+        "max": 75,
+        "step": 5,
+        "label": "Content header overlap",
+        "default": 75,
+        "unit": "px"
+      },
+			{
+        "type": "checkbox",
+        "id": "enable_transition_in",
+        "label": "Reveal elements on scroll",
+        "info": "This effect is applied to products, articles, and certain home page sections",
+        "default": true
+      },
+			{
+        "type": "checkbox",
+        "id": "enable_overlay_transition",
+        "label": "Reveal overlay text gradually",
+        "info": "This effect is applied to slideshows",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Product grid",
+    "settings": [
+			{
+        "type": "checkbox",
+        "id": "product_image_align",
+        "label": "Enable product title alignment",
+        "default": true
+      },
+			{
+        "type": "checkbox",
+        "id": "product_hover_image",
+        "label": "Show second image on hover",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Product labels"
+      },
+			{
+        "type": "checkbox",
+        "id": "label_sale_show",
+        "label": "Show sale label",
+        "info": "On products for which the compare-at price is set",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "label_soldout_show",
+        "label": "Show sold out label",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "label_remain_show",
+        "label": "Enable low inventory",
+        "info": "For single variant products only",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "prod_stock_warn_limit_int",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "label": "Low inventory limit",
+        "default": 5,
+        "info": "When inventory drops below this value, the label will show"
+      },
+      {
+        "type": "select",
+        "id": "product_label_position",
+        "label": "Label position",
+        "options": [
+        	{
+        		"value": "tl",
+        		"label": "Top left"
+        	},
+        	{
+        		"value": "tr",
+        		"label": "Top right"
+        	},
+        	{
+        		"value": "bl",
+        		"label": "Bottom left"
+        	},
+        	{
+        		"value": "br",
+        		"label": "Bottom right"
+        	}
+        ],
+        "default": "tl"
+      }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Social sharing image"
+      },
+      {
+        "type": "image_picker",
+        "id": "share_image",
+        "label": "Image",
+        "info": "Shown when sharing a link on social media. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) about image thumbnails."
+      },
+      {
+        "type": "header",
+        "content": "Accounts"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter_url",
+        "label": "Twitter",
+        "info": "https:\/\/twitter.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_url",
+        "label": "Facebook",
+        "info": "https:\/\/facebook.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_url",
+        "label": "Instagram",
+        "info": "https:\/\/instagram.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest_url",
+        "label": "Pinterest",
+        "info": "https:\/\/pinterest.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube_url",
+        "label": "Youtube",
+        "info": "https:\/\/youtube.com\/user\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_vimeo_url",
+        "label": "Vimeo",
+        "info": "https:\/\/vimeo.com\/shopify"
+      },
+      {
+        "type": "header",
+        "content": "Custom link",
+        "info": "Upload a custom icon for your favorite social network"
+      },
+      {
+        "type": "image_picker",
+        "id": "social_custom_icon_alt",
+        "label": "Icon in navigation"
+      },
+      {
+        "type": "image_picker",
+        "id": "social_custom_icon",
+        "label": "Icon in footer"
+      },
+      {
+        "type": "text",
+        "id": "social_custom_url",
+        "label": "Link",
+        "info": "https:\/\/socialnetwork.com\/shopify"
+      }
+    ]
+  },
+  {
+    "name": "Search",
+    "settings": [
+      {
+        "type": "select",
+        "id": "search_type",
+        "label": "Search only...",
+        "default": "product",
+        "options": [
+          {
+            "value": "product",
+            "label": "Products"
+          },
+          {
+            "value": "product,page",
+            "label": "Products and pages"
+          },
+          {
+            "value": "product,article",
+            "label": "Products and articles"
+          },
+          {
+            "value": "product,article,page",
+            "label": "Products, articles and pages"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "live_search_show_vendor",
+        "label": "Show product vendor",
+        "default": false
+      }
+    ]
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Image",
+        "info": "32 x 32px .png recommended"
+      }
+    ]
+  }
+]

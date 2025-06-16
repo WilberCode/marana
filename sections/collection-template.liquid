@@ -1,0 +1,198 @@
+<div data-section-type="collection-template">
+  {% capture header_content %}
+    <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+      <a class="breadcrumbs__crumb" href="{{ routes.root_url }}">{{ 'general.breadcrumbs.home' | t }}</a>
+      <span class="breadcrumbs__divider" aria-hidden="true">{% include 'svg-chevron-right' %}</span>
+      <span class="breadcrumbs__crumb">{{ collection.title }}</span>
+    </nav>
+
+    <h1>{{ collection.title }}</h1>
+
+    {% if collection.description != blank %}
+      <div class="rte reading-width align-center large-text">{{ collection.description }}</div>
+    {% endif %}
+  {% endcapture %}
+
+  {% if section.settings.header_image != blank or section.settings.head_img_coll_handled %}
+    <div class="banner-image-container banner-under-header">
+      {% if section.settings.head_img_coll_handled %}
+        {% capture bg_url %}collection-header-{{ collection.handle }}.jpg{% endcapture %}
+        <div class="banner-image fixed-height rimage__image lazyload fade-in"
+            data-bgset="{{ bg_url | file_img_url: '540x' }} 540w,
+                        {{ bg_url | file_img_url: '720x' }} 720w,
+                        {{ bg_url | file_img_url: '900x' }} 900w,
+                        {{ bg_url | file_img_url: '2048x' }} 1000w"
+            data-sizes="auto"
+            data-parent-fit="cover">
+        </div>
+        <noscript>
+          <div class="banner-image fixed-height" style="background-image: url({{ bg_url | file_img_url: '2048x' }});"></div>
+        </noscript>
+      {% else %}
+        <div class="banner-image fixed-height rimage__image lazyload fade-in"
+            data-bgset="{% include 'bgset', image: section.settings.header_image %}"
+            data-sizes="auto"
+            data-parent-fit="cover">
+        </div>
+        <noscript>
+          <div class="banner-image fixed-height" style="background-image: url({{ section.settings.header_image | img_url: '2048x'}})"></div>
+        </noscript>
+      {% endif %}
+
+      <div class="banner-image-text feature-page-title">
+        {{ header_content }}
+      </div>
+    </div>
+  {% else %}
+    <div class="feature-page-title">
+      {{ header_content }}
+    </div>
+  {% endif %}
+
+  <div class="container">
+    <div id="main" class="content-main" role="main">
+      {% assign num_per_page = section.settings.products_per_row_int | times: 4 %}
+      {% paginate collection.products by num_per_page %}
+
+      {% if section.settings.show_tags or section.settings.coll_show_sort %}
+        <div class="mobile-filter-reveal align-center">
+          <div class="mobile-filter-reveal__inner">
+            <a href="#" class="feature-link filter-toggle-button">{{ 'collections.filtering.mobile_reveal' | t }}</a>
+          </div>
+        </div>
+
+        <div class="filters">
+          <div class="filters__inner">
+            {% if section.settings.show_tags %}
+              {%- if collection.url.size == 0 -%}
+                {%- assign collection_url = routes.all_products_collection_url -%}
+              {%- else -%}
+                {%- assign collection_url = collection.url -%}
+              {%- endif -%}
+
+              {%- assign show_tag_filter = false -%}
+              {%- capture tag_filter_html -%}
+                <span class="filter">
+                  <label for="filter-tag">{{ 'collections.filtering.filter_by' | t }}</label>
+                  <select id="filter-tag">
+                    <option value="{{ collection_url }}">{{ 'collections.filtering.all' | t }}</option>
+                    {%- for tag in collection.all_tags -%}
+                      {%- unless tag contains 'meta-' -%}
+                        {%- assign new_url = tag | link_to_tag: tag | split: 'href="' | last | split: '"' | first -%}
+                        <option value="{{ new_url }}"{% if current_tags contains tag %} selected="selected"{% endif %}>{{ tag }}</option>
+                        {%- assign show_tag_filter = true -%}
+                      {%- endunless -%}
+                    {%- endfor -%}
+                  </select>
+                </span>
+              {%- endcapture -%}
+              {%- if show_tag_filter -%}{{ tag_filter_html }}{%- endif -%}
+            {% endif %}
+
+            {% if section.settings.coll_show_sort %}
+              <span class="filter">
+                <label for="sort-by">{{ 'collections.sorting.title' | t }}</label>
+                {%- assign current_sort_by = collection.sort_by | default: collection.default_sort_by -%}
+                <select id="sort-by" data-initval="{{ current_sort_by }}">
+                  {% if section.settings.coll_show_feat or current_sort_by == 'manual' %}<option value="manual">{{ 'collections.sorting.featured' | t }}</option>{% endif %}
+                  <option value="price-ascending">{{ 'collections.sorting.price_ascending' | t }}</option>
+                  <option value="price-descending">{{ 'collections.sorting.price_descending' | t }}</option>
+                  <option value="title-ascending">{{ 'collections.sorting.az' | t }}</option>
+                  <option value="title-descending">{{ 'collections.sorting.za' | t }}</option>
+                  <option value="created-descending">{{ 'collections.sorting.date_descending' | t }}</option>
+                  <option value="created-ascending">{{ 'collections.sorting.date_ascending' | t }}</option>
+                  <option value="best-selling">{{ 'collections.sorting.best_selling' | t }}</option>
+                </select>
+              </span>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+
+      <div class="grid grid--row-gutters product-list">
+        {% for product in collection.products %}
+          {% include 'product-grid-item' %}
+        {% else %}
+          <p class="product-list__no-results"><em>{{ 'collections.general.no_matches' | t }}</em></p>
+        {% endfor %}
+      </div>
+
+      {% include 'pagination' %}
+
+      {% endpaginate %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Collection page",
+    "settings": [
+      {
+        "type": "range",
+        "id": "products_per_row_int",
+        "min": 2,
+        "max": 5,
+        "step": 1,
+        "label": "Number of products per row",
+        "default": 4
+      },
+      {
+        "type": "checkbox",
+        "id": "show_tags",
+        "label": "Show tags",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "coll_show_sort",
+        "label": "Show sorting dropdown",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "coll_show_feat",
+        "label": "Show 'Featured' option in sorting dropdown",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "grid_show_vendor",
+        "label": "Show product vendor",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Header image"
+      },
+      {
+        "type": "paragraph",
+        "content": "Shown on all collection pages"
+      },
+      {
+        "type": "image_picker",
+        "id": "header_image",
+        "label": "Image"
+      },
+      {
+        "type": "header",
+        "content": "Collection-specific header images"
+      },
+      {
+        "type": "checkbox",
+        "id": "head_img_coll_handled",
+        "label": "Enable",
+        "default": false
+      },
+      {
+        "type": "paragraph",
+        "content": "You will need to [upload an image file](\/admin\/settings\/files) with the filename 'collection-header-handle.jpg', where 'handle' is the [handle](http:\/\/docs.shopify.com\/themes\/liquid-variables\/handle) of the collection."
+      },
+      {
+        "type": "paragraph",
+        "content": "If you do this, you will need to upload an image for every collection on your store, or it will encounter missing-file errors."
+      }
+    ]
+  }
+{% endschema %}

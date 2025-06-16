@@ -1,0 +1,103 @@
+<div class="{% unless section.settings.skip_container %}container homepage-spaced-row{% endunless %}" data-section-type="video">
+  {% if section.settings.title != blank and section.settings.cover_image == blank %}
+    <div class="section-title-container align-center {% if section.settings.skip_container %}container{% endif %}">
+      <h2>{{ section.settings.title }}</h2>
+    </div>
+  {% endif %}
+
+  {% if section.settings.video_url != blank %}
+    <div class="video-container" data-video-id="{{ section.settings.video_url.id }}" data-video-url="{{ section.settings.video_url }}" data-video-type="{{ section.settings.video_url.type }}" data-video-autoplay="{% if section.settings.cover_image == blank %}{{ section.settings.autoplay }}{% else %}false{% endif %}">
+      {% if section.settings.cover_image != blank %}
+        <div class="video-container__cover">
+          <div class="rimage-outer-wrapper lazyload fade-in"
+              data-bgset="{% include 'bgset', image: section.settings.cover_image %}"
+              data-sizes="auto"
+              data-parent-fit="cover">
+            <noscript>
+              <div class="rimage-wrapper" style="padding-top:{{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%">
+                <img src="{{ section.settings.cover_image | img_url: '1024x1024' }}" alt="{{ section.settings.cover_image.alt | escape }}" class="rimage__image">
+              </div>
+            </noscript>
+          </div>
+
+          {%- unless block.settings.tint_color contains ',0' -%}
+            <div class="image-tint" style="background-color: {{ section.settings.tint_color }};opacity: {{ section.settings.tint_opacity | divided_by: 100.00 }};"></div>
+          {%- endunless -%}
+
+          <div class="video-container__overlay">
+            <a href="#" class="video-container__play" aria-label="{{ 'general.accessibility_labels.video_play' | t | escape }}">{% include 'svg-play' %}</a>
+            {% if section.settings.title != blank %}
+              <a class="feature-link video-container__overlay-text reading-width align-center" href="#">{{ section.settings.title }}</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+
+
+{% schema %}
+  {
+    "name": "Video",
+    "class": "section--video section--no-spacing",
+    "settings": [
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Heading"
+      },
+      {
+        "id": "video_url",
+        "type": "video_url",
+        "label": "Link",
+        "accept": ["youtube", "vimeo"],
+        "info": "Supports Youtube and Vimeo",
+        "default": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      },
+      {
+        "id": "autoplay",
+        "type": "checkbox",
+        "label": "Autoplay",
+        "info": "Video will be muted",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "skip_container",
+        "label": "Full page width",
+        "default": false
+      },
+      {
+        "id": "cover_image",
+        "type": "image_picker",
+        "label": "Cover image"
+      },
+      {
+        "type": "color",
+        "id": "tint_color",
+        "label": "Tint",
+        "default": "#000000"
+      },
+      {
+        "type": "range",
+        "id": "tint_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Tint strength",
+        "default": 25
+      }
+    ],
+    "presets": [
+      {
+        "name": "Video",
+        "category": "Video",
+        "settings": {
+          "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+        }
+      }
+    ]
+  }
+{% endschema %}

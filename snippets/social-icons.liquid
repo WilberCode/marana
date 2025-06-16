@@ -1,0 +1,33 @@
+<ul class="social-links social-icons">
+  {% if settings.social_twitter_url != blank %}
+  <li><a title="Twitter" class="twitter" target="_blank" href="{{ settings.social_twitter_url }}">{% include 'svg-twitter' %}</a></li>
+  {% endif %}
+  {% if settings.social_facebook_url != blank %}
+  <li><a title="Facebook" class="facebook" target="_blank" href="{{ settings.social_facebook_url }}">{% include 'svg-facebook' %}</a></li>
+  {% endif %}
+  {% if settings.social_instagram_url != blank %}
+  <li><a title="Instagram" class="instagram" target="_blank" href="{{ settings.social_instagram_url }}">{% include 'svg-instagram' %}</a></li>
+  {% endif %}
+  {% if settings.social_pinterest_url != blank %}
+  <li><a title="Pinterest" class="pinterest" target="_blank" href="{{ settings.social_pinterest_url }}">{% include 'svg-pinterest' %}</a></li>
+  {% endif %}
+  {% if settings.social_youtube_url != blank %}
+  <li><a title="Youtube" class="youtube" target="_blank" href="{{ settings.social_youtube_url }}">{% include 'svg-youtube' %}</a></li>
+  {% endif %}
+  {% if settings.social_vimeo_url != blank %}
+  <li><a title="Vimeo" class="vimeo" target="_blank" href="{{ settings.social_vimeo_url }}">{% include 'svg-vimeo' %}</a></li>
+  {% endif %}
+  {% if settings.social_custom_url != blank %}
+  <li class="social-custom">
+    {% if use_alt_custom_icon %}
+      <a title="{{ settings.social_custom_icon_alt.alt }}" class="social-custom" target="_blank" href="{{ settings.social_custom_url }}">
+        {{ settings.social_custom_icon_alt | img_url: "x32" | img_tag: settings.social_custom_icon_alt.alt }}
+      </a>
+    {% else %}
+      <a title="{{ settings.social_custom_icon.alt }}" class="social-custom" target="_blank" href="{{ settings.social_custom_url }}">
+        {{ settings.social_custom_icon | img_url: "x44" | img_tag: settings.social_custom_icon.alt }}
+      </a>
+    {% endif %}
+  </li>
+  {% endif %}
+</ul>

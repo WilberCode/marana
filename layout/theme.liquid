@@ -1,0 +1,252 @@
+<!doctype html>
+<html class="no-js" lang="{{ shop.locale }}">
+<head>
+  <!-- Alchemy v3.1.1 -->
+  <meta charset="utf-8" />
+
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
+
+  <title>
+    {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+  </title>
+
+  {% if page_description %}
+  <meta name="description" content="{{ page_description | escape }}" />
+  {% endif %}
+  
+  <meta name="keywords" content="chocolate maraná, chocolate peruano, cacao peruano, chocolate bean to bar, chocotejas maraná, comprar chocolate peruano, chocolate artesanal perú, cacao fino de aroma, chocolate de origen perú, maraná tienda online, tabletas de chocolate maraná, maraná perú, chocolate orgánico perú, cacao piura, cacao cusco, chocolate oscuro peruano, regalos de chocolate perú, chocotejas artesanales, delivery de chocolates lima, chocolate single origin, maraná bites, dónde comprar chocolate artesanal, beneficios del cacao peruano, chocolate gourmet perú, chocolates finos de aroma, chocolate de alta calidad, catálogo maraná chocolates, comprar chocolate orgánico online, chocotejas para regalo, experiencia bean to bar">
+
+  <link rel="canonical" href="{{ canonical_url }}" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="{{ settings.col_btn_bg }}">
+
+  {% if settings.favicon != blank and settings.favicon contains '.png' %}
+  <link rel="shortcut icon" href="{{ settings.favicon | img_url: 'master' }}" type="image/png" />
+  {% elsif settings.favicon != blank and settings.favicon contains '.ico' %}
+  <link rel="shortcut icon" href="{{ settings.favicon | img_url: 'master' }}" type="image/x-icon" />
+  {% endif %}
+
+  {% include 'social-meta-tags' %}
+
+  {{ content_for_header }}
+
+  {{ 'styles.scss.css' | asset_url | stylesheet_tag }}
+
+  {{ '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' | script_tag }}
+  {{ 'api.jquery.js' | shopify_asset_url | script_tag }}
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', '');
+    window.theme = window.theme || {};
+    theme.jQuery = jQuery;
+    theme.money_format = {{ shop.money_format | json }};
+    theme.money_container = '.theme-money';
+    theme.strings = {
+      previous: {{ 'general.accessibility_labels.previous' | t | json }},
+      next: {{ 'general.accessibility_labels.next' | t | json }},
+      close: {{ 'general.accessibility_labels.close' | t | json }},
+      addressError: {{ 'map.errors.address_error' | t | json }},
+      addressNoResults: {{ 'map.errors.address_no_results' | t | json }},
+      addressQueryLimit: {{ 'map.errors.address_query_limit_html' | t | json }},
+      authError: {{ 'map.errors.auth_error_html' | t | json }},
+      priceNonExistent: {{ 'products.variant.non_existent' | t | json }},
+      buttonDefault: {{ 'products.product.add_to_cart' | t | json }},
+      buttonNoStock: {{ 'products.variant.out_of_stock' | t | json }},
+      buttonNoVariant: {{ 'products.variant.non_existent' | t | json }},
+      productsListingFrom: {{ 'products.listing.from' | t | json }},
+      searchSeeAll: {{ 'layout.search.see_all' | t | json }},
+      cartTermsConfirmation: {{ 'cart.terms.confirmation' | t | json }},
+      addingToCart: {{ 'products.product.adding_to_cart' | t | json }},
+      addedToCart: {{ 'products.product.added_to_cart' | t | json }}
+    };
+    theme.routes = {
+      search_url: '{{ routes.search_url }}',
+      cart_add_url: '{{ routes.cart_add_url }}'
+    };
+    theme.checkForBannerBehindHeader = function(){
+      $(window).off('.bannerBehindHeader');
+      var $banner = $('.banner-under-header');
+      if($banner.length) {
+        $('body').addClass('has-banner');
+        $(window).on('load.bannerBehindHeader scroll.bannerBehindHeader bannerBehindHeader.bannerBehindHeader', function(){
+          $('body').toggleClass('header-overlapping', $(window).scrollTop() < $banner.outerHeight());
+        }).trigger('bannerBehindHeader');
+      } else {
+        $('body').removeClass('has-banner header-overlapping');
+      }
+    }
+    {% if settings.enable_transition_in %}
+    // Reveal elements when in, or above, the viewport
+    theme.checkForRevealElementsVerticalOffset = 50;
+    theme.checkForRevealElementsStepDelay = 100;
+    theme.checkForRevealElements = function(instant){
+      var revealClass = instant === true ? 'reveal-candidate--reveal reveal-candidate--reveal-instant' : 'reveal-candidate--reveal';
+      var $nowOnScreen = $('.reveal-candidate:not(.reveal-candidate--reveal)').filter(function(){
+        var elTop = $(this).offset().top; // magic offset
+        var windowScrollTop = $(window).scrollTop();
+        if(elTop < windowScrollTop + $(window).height() - theme.checkForRevealElementsVerticalOffset) {
+          // if off top of screen, reveal immediately
+          if(elTop + $(this).outerWidth() < windowScrollTop) {
+            $(this).addClass(revealClass);
+          } else {
+            // otherwise return true to reveal in step
+            return true;
+          }
+        }
+        return false;
+      });
+      $nowOnScreen.each(function(index){
+        if(index > 0 && instant !== true) {
+          $(this).addClass(revealClass + ' reveal-candidate--reveal-delay');
+          setTimeout((function(){
+            $(this).removeClass('reveal-candidate--reveal-delay');
+          }).bind(this), theme.checkForRevealElementsStepDelay * index);
+        } else {
+          $(this).addClass(revealClass);
+        }
+      });
+    }
+    {% else %}
+    theme.checkForRevealElements = function(){}
+    {% endif %}
+  </script>
+
+
+
+  {{ 'translation-lab-language-switcher-floating.css' | asset_url | stylesheet_tag }}
+</head>
+
+<body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if template contains 'customers' %} template-customer-area{% endif %}" >
+  <a class="skip-link visually-hidden" href="#main">{{ 'general.accessibility_labels.skip_to_content' | t }}</a>
+
+  {% section 'announcement' %}
+
+  {% section 'header' %}
+
+  {% assign templates_with_layout = 'index,collection,product,cart,search,blog,article,page,page.contact,list-collections,page.list-collections' | split: ',' %}
+
+  {% unless templates_with_layout contains template or template contains 'customers' %}
+  <div class="container">
+    <div id="main" class="content-main" role="main">
+      {% endunless %}
+
+      {{ content_for_layout }}
+
+      {% unless templates_with_layout contains template or template contains 'customers' %}
+    </div>
+  </div>
+  {% endunless %}
+
+  <script>
+    theme.checkForBannerBehindHeader();
+    theme.checkForRevealElements(true);
+  </script>
+
+  {% section 'footer' %}
+
+  {{ 'vendor.js'  | asset_url | script_tag }}
+  {{ 'theme.js'  | asset_url | script_tag }}
+
+  <div class="hidden">
+    {% form 'customer' %}
+    {% if form.posted_successfully? %}
+    <div class="newsletter-response success">
+      <div class="h3 no-margin">{{ 'layout.signup.post_success' | t }}</div>
+    </div>
+    {% elsif form.errors %}
+    <div class="newsletter-response">
+      {% for field in form.errors %}
+      <p class="error">{{ field | capitalize }} - {{ form.errors.messages[field] }}</p>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% endform %}
+  </div>
+<!-- Begin ReCharge code -->
+{% include 'subscription-theme-footer' %}
+<!-- End ReCharge code -->
+
+ 
+
+
+
+  {% render 'translation-lab-language-switcher-floating' %}
+
+<!-- **BEGIN** Hextom TMS Translator // Main Include - DO NOT MODIFY -->
+    <script src="{{ 'tms-translator.js' | asset_url }}" defer="defer"></script>
+    <!-- **END** Hextom TMS Translator // Main Include - DO NOT MODIFY -->
+
+
+  
+ <script>
+  // La función principal de traducción para textos que fueron traducidos a español
+  function replaceButtonText() {
+    // Verificar si el idioma actual de la página es español
+    const htmlLang = document.documentElement.lang;
+
+    if (htmlLang && htmlLang.startsWith('es')) {
+      const textMap = {
+        "Add to cart": "Añadir al carrito",
+        "Add to case": "Añadir al pedido",
+        "Next": "Siguiente",
+        "Previous": "Anterior"
+      };
+
+      // Seleccionar todos los elementos button en la página
+      const buttons = document.querySelectorAll('button');
+
+      buttons.forEach(button => {
+        // Asegúrate de que no se traduzcan botones que ya han sido traducidos
+        if (!button.dataset.translated) { // Usamos un atributo de datos para marcar
+          for (const englishText in textMap) {
+            if (textMap.hasOwnProperty(englishText)) {
+              if (button.textContent.trim() === englishText) {
+                button.textContent = textMap[englishText];
+                button.dataset.translated = 'true'; // Marca el botón como traducido
+                break;
+              }
+            }
+          }
+        }
+      });
+    }
+  }
+
+  // Configuración del MutationObserver
+  const observerConfig = {
+    childList: true, // Observar adiciones/eliminaciones de nodos hijos
+    subtree: true    // Observar en todo el subárbol del elemento objetivo
+  };
+
+  // Función de callback que se ejecuta cuando se detectan mutaciones
+  const callback = (mutationsList, observer) => {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+        // Si se han añadido nuevos nodos, intentamos traducir de nuevo
+        // No necesitamos un delay aquí porque se ejecuta justo después del cambio del DOM
+        replaceButtonText();
+        break; // Una vez que se han traducido, no es necesario procesar más mutaciones en este ciclo
+      }
+    }
+  };
+
+  // Crear una instancia de MutationObserver
+  const observer = new MutationObserver(callback);
+
+  // Iniciar la observación del cuerpo del documento para cambios
+  // Asegúrate de que el body exista antes de observarlo
+  const targetNode = document.body;
+  if (targetNode) {
+    observer.observe(targetNode, observerConfig);
+  }
+
+  // Ejecutar la traducción inicial al cargar la página
+  document.addEventListener('DOMContentLoaded', () => {
+    // Puedes mantener el delay inicial si lo deseas, o quitarlo si no es necesario
+    // setTimeout(replaceButtonText, 1000); // Con 1 segundo de delay
+    replaceButtonText(); // Sin delay inicial
+  });
+
+</script>
+</body>
+</html>

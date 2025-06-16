@@ -1,0 +1,170 @@
+<div data-section-type="blog-template">
+  {% capture header_content %}
+    <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+      <a class="breadcrumbs__crumb" href="{{ routes.root_url }}">{{ 'general.breadcrumbs.home' | t }}</a>
+      <span class="breadcrumbs__divider" aria-hidden="true">{% include 'svg-chevron-right' %}</span>
+      <span class="breadcrumbs__crumb">{{ blog.title }}</span>
+      <a class="breadcrumbs__icon breadcrumbs__icon--with-gap" href="{{ blog.url }}.atom" title="RSS" arial-label="RSS">{% include 'svg-rss' %}</a>
+    </nav>
+
+    {% if current_tags %}
+      <h1><a href="{{ blog.url }}">{{ blog.title | link_to: blog.url }}</a> {% for tag in current_tags %} / {{ tag }}{% endfor %}</h1>
+    {% else %}
+      <h1>{{ blog.title }}</h1>
+    {% endif %}
+  {% endcapture %}
+
+  {% if section.settings.header_image != blank %}
+    <div class="banner-image-container banner-under-header">
+      {% include 'responsive-background', image: section.settings.header_image, class: 'banner-image fixed-height' %}
+
+      <div class="banner-image-text feature-page-title">
+        {{ header_content }}
+      </div>
+    </div>
+  {% else %}
+    <div class="feature-page-title">
+      {{ header_content }}
+    </div>
+  {% endif %}
+
+  <div class="container">
+    <div id="main" class="content-main" role="main">
+      {% if section.settings.show_tags and blog.all_tags.size > 0 %}
+        <div class="mobile-filter-reveal align-center">
+          <div class="mobile-filter-reveal__inner">
+            <a href="#" class="feature-link filter-toggle-button">{{ 'blogs.tags.mobile_reveal' | t }}</a>
+          </div>
+        </div>
+
+        <div class="filters">
+          <div class="filters__inner">
+            <span class="filter">
+              <label for="filter-tag">{{ 'blogs.tags.label' | t }}</label>
+              <select id="filter-tag">
+                <option value="{{ blog.url }}">{{ 'blogs.tags.all' | t }}</option>
+                {%- for tag in blog.all_tags -%}
+                  <option value="{{ blog.url }}/tagged/{{ tag | handle }}" {% if current_tags contains tag %}selected{% endif %}>{{ tag }}</option>
+                {%- endfor -%}
+              </select>
+            </span>
+          </div>
+        </div>
+      {% endif %}
+
+      {% paginate blog.articles by 6 %}
+        <div class="articles">
+
+          {% for article in blog.articles %}
+          <div class="article spaced-row {% if article.image != blank %}grid{% endif %} reveal-candidate">
+
+            {% if article.image != blank %}
+              <div class="column half">
+                <div class="article-image img-block">
+                  <a href="{{ article.url }}">
+                    {%- include 'responsive-image', image: article.image -%}
+                  </a>
+                </div>
+              </div>
+            {% endif %}
+
+            <div class="align-center {% if article.image != blank %}column half{% endif %}">
+              <div class="article-summary">
+                <h2>
+                  <a href="{{ article.url }}">{{ article.title }}</a>
+                </h2>
+
+                <div class="meta lightly-spaced-row">
+                  {% if section.settings.show_author %}
+                    <span class="author meta__item">{{ 'blogs.article.posted_by_compact_html' | t: author: article.author  }}</span>
+                  {% endif %}
+
+                  {% if section.settings.show_date %}
+                    <span class="published meta__item">
+                      <time pubdate datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_date_year' }}</time>
+                    </span>
+                  {% endif %}
+
+                  {% if blog.comments_enabled? and article.comments_count > 0 %}
+                    <span class="comment-count meta__item">
+                      <a href="{{ article.url }}#comments">{{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}</a>
+                    </span>
+                  {% endif %}
+                </div>
+
+                <div class="rte reading-width align-center light-spaced-row">
+                  {% if article.excerpt.size > 0 %}
+                  {{ article.excerpt }}
+                  {% else %}
+                  <p>{{ article.content | strip_html | truncatewords: 100 }}</p>
+                  {% endif %}
+                </div>
+                <a class="button button--alt" href="{{ article.url }}">{{ 'blogs.article.read_more_html' | t }}</a>
+              </div>
+            </div>
+          </div>
+
+          {% else %}
+
+          <p><em>{{ 'blogs.article.no_matches' | t }}</em></p>
+          {% endfor %}
+
+        </div>
+
+        {% if paginate.pages > 1 %}
+          <div class="pagination">
+            {% comment %}
+            When paginating blog articles, a previous article is actually a newer article, not an older one,
+            because blog articles are shown and paginated in a reversed chronological order.
+            The word 'previous' can be confusing, hence we'll change it.
+            {% endcomment %}
+            {%- assign older_articles = 'blogs.pagination.older_articles' | t -%}
+            {%- assign newer_articles = 'blogs.pagination.newer_articles' | t -%}
+            {% include 'pagination', previous_text: newer_articles, next_text: older_articles %}
+          </div>
+        {% endif %}
+      {% endpaginate %}
+
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Blog page",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_tags",
+        "label": "Show tags",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_author",
+        "label": "Show author",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_date",
+        "label": "Show published date",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Header image"
+      },
+      {
+        "type": "paragraph",
+        "content": "Shown on all blogs"
+      },
+      {
+        "type": "image_picker",
+        "id": "header_image",
+        "label": "Image"
+      }
+    ]
+  }
+{% endschema %}

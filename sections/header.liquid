@@ -1,0 +1,476 @@
+{%- capture logo_size -%}{{ section.settings.logo_width | default: 250 | times: 2 }}x{%- endcapture -%}
+
+{% style %}
+{%- if section.settings.logo != blank -%}
+  {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
+  {%- assign logo_width = section.settings.logo_width | plus: 0 -%}
+  .pageheader .logo { max-width: {{ section.settings.logo_width }}px }
+
+  {%- if section.settings.enable_sticky -%}
+    {%- if section.settings.enable_logo_shrink -%}
+      {%- assign smaller_logo_width = section.settings.logo_width | times: 0.75 | round -%}
+      .scrolled-down .pageheader .logo { max-width: {{ smaller_logo_width }}px }
+    {%- endif -%}
+    {%- if logo_height > 40 -%}
+      @media (max-width: 767px) {
+        .scrolled-down .pageheader .logo { max-width: {{ section.settings.logo_width | times: 0.65 | round }}px }
+      }
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if section.settings.enabled_header_overlap -%}
+    .has-banner .banner-image-container .feature-page-title { margin-top: {{ logo_height | round }}px }
+    .banner-under-header .banner-image.flexible-height .overlay .innest { padding-top: {{ logo_height | round }}px }
+    @media (min-width: 768px) {
+      .banner-under-header .banner-image.fixed-height .overlay .innest { padding-top: {{ logo_height | round }}px }
+    }
+  {%- endif -%}
+{%- endif -%}
+{%- if section.settings.enable_sticky -%}
+  .shopify-section--header {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+{%- endif -%}
+{%- unless section.settings.enabled_header_overlap -%}
+  .banner-image-container .feature-page-title .breadcrumbs {
+    top: 0;
+  }
+  .has-banner .banner-image-container .feature-page-title {
+    margin-top: 0!important;
+    padding-top: 80px;
+  }
+  @media (max-width: 767px) {
+    .has-banner .banner-image-container .feature-page-title {
+      padding-top: 40px;
+    }
+  }
+{%- endunless -%}
+{% endstyle %}
+
+{%- if template == 'password' or template == 'gift_card' -%}
+
+{% comment %} Password/gift card template logo {% endcomment %}
+<div id="pageheader" class="pageheader">
+  <header class="pageheader__contents">
+    <div class="logo logo--{% if section.settings.logo == blank %}text{% else %}image{% endif %}{% if logo_height > 60 %} logo--shrinks-on-scroll{% endif %}">
+      {% if section.settings.logo != blank %}
+      <span class="image">
+        <img src="{{ section.settings.logo | img_url: logo_size }}" alt="{{ section.settings.logo.alt | escape }}" />
+      </span>
+      {% else %}
+      <h1 class="text">{{ shop.name }}</h1>
+      {% endif %}
+    </div>
+  </header>
+</div>
+
+{%- else -%}
+
+<div data-section-type="header">
+  <div id="main-menu">
+    <div class="main-menu-inner">
+      <div class="main-menu-upper">
+        <a class="main-menu-toggle" href="#" aria-controls="main-menu">{% include "svg-close" %}</a>
+      </div>
+      <div class="main-menu-panel-wrapper">
+        <div class="main-menu-panel" id="main-menu-panel">
+          <ul class="main-menu-links" role="navigation" aria-label="{{ 'layout.header.menu_aria_label' | t | escape }}">
+            {%- for link in linklists[section.settings.menu_linklist].links -%}
+              <li class="main-menu-list-item{% if link.links != blank %} has-children{% endif %}{% if link.active %} active{% endif %}">
+                <a class="main-menu-link" href="{{ link.url }}" {% if link.links != blank %}aria-haspopup="true" aria-controls="main-menu-panel-{{ forloop.index }}"{% endif %}>
+                  {{- link.title -}}
+                </a>
+
+                {%- if link.links != blank -%}
+                  <div class="child-indicator">
+                    <div class="child-indicator__primary">{% include 'svg-menu-children' %}</div>
+                    <div class="child-indicator__secondary">{% include 'svg-arrow-right' %}</div>
+                  </div>
+                {%- endif -%}
+              </li>
+            {%- endfor -%}
+
+            {% if shop.customer_accounts_enabled %}
+              {% if customer %}
+                <li class="main-menu-account-link main-menu-list-item"><a class="main-menu-link" href="{{ routes.account_url }}">{{ 'layout.customer.account' | t }}</a></li>
+                <li class="main-menu-account-link main-menu-list-item"><a class="main-menu-link" href="{{ routes.account_logout_url }}">{{ 'layout.customer.log_out' | t }}</a></li>
+              {% else %}
+                <li class="main-menu-account-link main-menu-list-item"><a class="main-menu-link" href="{{ routes.account_login_url }}">{{ 'layout.customer.log_in' | t }}</a></li>
+              {% endif %}
+            {% endif %}
+          </ul>
+
+          {% if section.settings.show_locale_selector or section.settings.show_currency_selector %}
+            <div class="main-menu-section store-localization">
+              {% include 'localization', input_prefix: 'header' %}
+            </div>
+          {% endif %}
+
+          {% if section.settings.menu_under_text != blank %}
+            <div class="main-menu-section main-menu-section--footer">
+              <div class="rte">{{ section.settings.menu_under_text }}</div>
+            </div>
+          {% endif %}
+
+          <div class="main-menu-section main-menu-section--socials">
+            {% include 'social-icons', use_alt_custom_icon: true %}
+          </div>
+        </div>
+
+        {%- for link in linklists[section.settings.menu_linklist].links -%}
+          {%- if link.links != blank -%}
+            <div class="main-menu-panel main-menu-panel--child main-menu-panel--inactive-right" id="main-menu-panel-{{ forloop.index }}">
+              <div class="main-menu-breadcrumbs">
+                <span class="main-menu-breadcrumbs__item"><a class="main-menu-breadcrumbs__link" href="#main-menu-panel">{{ 'layout.header.menu_breadcrumb_home' | t }}</a></span>
+                <span class="main-menu-breadcrumbs__divider">{% include 'svg-arrow-right' %}</span>
+                <span class="main-menu-breadcrumbs__item">{{ link.title }}</span>
+              </div>
+              <ul class="main-menu-links">
+                {%- assign outer_forloop_index = forloop.index -%}
+                {%- for child_link in link.links -%}
+                  <li class="main-menu-list-item{% if child_link.links != blank %} has-children{% endif %}{% if child_link.active %} active{% endif %}">
+                    <a class="main-menu-link" href="{{ child_link.url }}" {% if child_link.links != blank %}aria-haspopup="true" aria-controls="main-menu-panel-{{ outer_forloop_index }}-{{ forloop.index }}"{% endif %}>
+                      {{- child_link.title -}}
+                    </a>
+
+                    {%- if child_link.links != blank -%}
+                      <div class="child-indicator">
+                        <div class="child-indicator__primary">{% include 'svg-menu-children' %}</div>
+                        <div class="child-indicator__secondary">{% include 'svg-arrow-right' %}</div>
+                      </div>
+                    {%- endif -%}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+
+            {%- assign outer_forloop_index = forloop.index -%}
+            {%- for child_link in link.links -%}
+              {%- if child_link.links != blank -%}
+                <div class="main-menu-panel main-menu-panel--child main-menu-panel--inactive-right" id="main-menu-panel-{{ outer_forloop_index }}-{{ forloop.index }}">
+                  <div class="main-menu-breadcrumbs">
+                    <span class="main-menu-breadcrumbs__item"><a class="main-menu-breadcrumbs__link" href="#main-menu-panel">{{ 'layout.header.menu_breadcrumb_home' | t }}</a></span>
+                    <span class="main-menu-breadcrumbs__divider">{% include 'svg-arrow-right' %}</span>
+                    <span class="main-menu-breadcrumbs__item"><a class="main-menu-breadcrumbs__link" href="#main-menu-panel-{{ outer_forloop_index }}">{{ link.title }}</a></span>
+                    <span class="main-menu-breadcrumbs__divider">{% include 'svg-arrow-right' %}</span>
+                    <span class="main-menu-breadcrumbs__item">{{ child_link.title }}</span>
+                  </div>
+                  <ul class="main-menu-links">
+                    {%- for grandchild_link in child_link.links -%}
+                      <li {% if grandchild_link.active %}class="active"{% endif %}>
+                        <a class="main-menu-link" href="{{ grandchild_link.url }}">
+                          {{- grandchild_link.title -}}
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+
+  <div id="pageheader" class="pageheader">
+    {%- if section.settings.logo != blank and logo_height > 100 and section.settings.enable_sticky == false -%}
+      {%- assign header_alignment_class = ' pageheader__contents--top' -%}
+    {%- endif -%}
+
+    <header class="pageheader__contents{% if section.settings.enable_sticky %} pageheader__contents--sticky{% endif %}{% if section.settings.enabled_header_overlap %} pageheader__contents--overlap{% endif %}{{ header_alignment_class }}">
+      <div class="header-left">
+        <a href="#" class="main-menu-toggle" aria-controls="main-menu">
+          <span class="main-menu-icon"><span></span></span>
+          <span class="main-menu-toggle__text">{{ 'layout.header.menu' | t }}</span>
+        </a>
+
+          <ul class="main-menu-desktop">
+          {%- for link in linklists[section.settings.menu_main_desktop_left].links -%}
+            <li class="main-menu-desktop-item{% if link.links != blank %} has-children{% endif %}">
+              <a href="{{ link.url }}" class="main-menu-desktop-link">
+                {{ link.title }}
+              </a>
+
+              {%- if link.links != blank -%}
+                <ul class="main-menu-desktop-submenu">
+                  {%- for child_link in link.links -%}
+                    <li class="main-menu-desktop-submenu-item{% if child_link.links != blank %} has-grandchildren{% endif %}">
+                      <a href="{{ child_link.url }}" class="main-menu-desktop-submenu-link">
+                        {{ child_link.title }}
+                      </a>
+
+                      {%- if child_link.links != blank -%}
+                        <ul class="main-menu-desktop-grandchild-list">
+                          {%- for grandchild_link in child_link.links -%}
+                            <li class="main-menu-desktop-grandchild-item">
+                              <a href="{{ grandchild_link.url }}" class="main-menu-desktop-grandchild-link">
+                                {{ grandchild_link.title }}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    
+
+
+
+      <div class="logo logo--{% if section.settings.logo == blank %}text{% else %}image{% endif %}{% if logo_height > 60 %} logo--shrinks-on-scroll{% endif %}">
+        {%- if section.settings.logo != blank -%}
+        <a href="{{ routes.root_url }}" class="logo__image {% if section.settings.alt_logo %}has-contrast-image{% endif %}">
+          <img src="{{ section.settings.logo | img_url: logo_size }}" alt="{{ section.settings.logo.alt | escape }}" />
+          {%- if section.settings.alt_logo -%}
+          <img class="logo__contrast-image" src="{{ section.settings.alt_logo | img_url: logo_size }}" alt="{{ section.settings.alt_logo.alt | escape }}" />
+          {%- endif -%}
+        </a>
+        {%- endif -%}
+
+        {%- if template == 'index' -%}
+        <h1 class="logo__text{% if section.settings.logo != blank %} hidden{% endif %}">
+          <a href="{{ routes.root_url }}">{{ shop.name }}</a>
+        </h1>
+        {%- else -%}
+        <a class="logo__text{% if section.settings.logo != blank %} hidden{% endif %}" href="{{ routes.root_url }}">{{ shop.name }}</a>
+        {%- endif -%}
+      </div>
+
+      <div class="header-items">
+           <ul class="main-menu-desktop">
+          {%- for link in linklists[section.settings.menu_main_desktop_right].links -%}
+            <li class="main-menu-desktop-item{% if link.links != blank %} has-children{% endif %}">
+              <a href="{{ link.url }}" class="main-menu-desktop-link">
+                {{ link.title }}
+              </a>
+
+              {%- if link.links != blank -%}
+                <ul class="main-menu-desktop-submenu">
+                  {%- for child_link in link.links -%}
+                    <li class="main-menu-desktop-submenu-item{% if child_link.links != blank %} has-grandchildren{% endif %}">
+                      <a href="{{ child_link.url }}" class="main-menu-desktop-submenu-link">
+                        {{ child_link.title }}
+                      </a>
+
+                      {%- if child_link.links != blank -%}
+                        <ul class="main-menu-desktop-grandchild-list">
+                          {%- for grandchild_link in child_link.links -%}
+                            <li class="main-menu-desktop-grandchild-item">
+                              <a href="{{ grandchild_link.url }}" class="main-menu-desktop-grandchild-link">
+                                {{ grandchild_link.title }}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+        <span class="header-items__item header-items__cart-link">
+          <a href="{{ routes.cart_url }}">
+            <span class="cart-link--text">{{ 'layout.header.cart' | t }}</span>
+            <span class="cart-link--icon">{% include 'svg-cart' %}</span>
+            {% if cart.item_count > 0 %}<span class="cart__count">({{ cart.item_count }})</span>{% endif %}
+          </a>
+        </span>
+        <span class="header-items__item header-items__search-link">
+          <a href="{{ routes.search_url }}" class="header-search-toggle" aria-label="{{ 'layout.header.search' | t | json }}">{% include 'svg-search' %}</a>
+        </span>
+      </div>
+    </header>
+  </div> 
+  <div class="header-search"> 
+    <a href="#" class="header-search-toggle" aria-label="{{ 'general.accessibility_labels.close' | t | json }}">{% include 'svg-arrow-left' %}</a>
+
+    <div class="header-search__content">
+      <h2 class="">{{ 'layout.search.title' | t }}</h2>
+      <form method="get" action="{{ routes.search_url }}" autocomplete="off">
+        <input type="hidden" name="type" value="{{ settings.search_type }}" />
+        <input type="hidden" name="options[prefix]" value="last" />
+        <div class="input-and-button-row">
+          <div class="input-and-button-row__input-wrapper input-with-clear">
+            <input class="input-and-button-row__input" type="text" name="q" placeholder="{{ 'layout.search.placeholder' | t | escape }}" aria-label="{{ 'layout.search.placeholder' | t | escape }}"  autocomplete="off" data-previous-value="">
+            <a class="input-with-clear__clear" href="#">{% include 'svg-close' %}</a>
+          </div>
+          <button class="button input-and-button-row__button" type="submit">{{ 'layout.search.submit' | t }}</button>
+        </div>
+      </form>
+      <div class="header-search__results-wrapper" data-live-search-vendor="{{ settings.live_search_show_vendor }}">
+        <div class="header-search__placeholder">
+          {%- for i in (1..5) -%}
+            <div class="search-result search-result--placeholder">
+              <div class="search-result__link">
+                <div class="search-result__image"></div>
+                <div class="search-result__detail">
+                  {%- if settings.live_search_show_vendor -%}
+                    <div class="search-result__vendor"></div>
+                  {%- endif -%}
+                  <div class="search-result__title"></div>
+                  <div class="search-result__price"></div>
+                </div>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+        <div class="header-search__results"></div>
+      </div>
+
+      {% if section.settings.search_menu_linklist != blank and linklists[section.settings.search_menu_linklist].links.size > 0 %}
+        <div class="nav header-search__nav">
+          {%- if section.settings.search_menu_title != blank -%}
+            <h6 class="header-search__small-heading meta">{{ section.settings.search_menu_title }}</h6>
+          {%- endif -%}
+
+          <ul class="header-search__links">
+            {% for link in linklists[section.settings.search_menu_linklist].links %}
+            <li class="header-search__links__item"><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<a href="#" class="focus-tint" aria-hidden="true" aria-label="{{ 'general.accessibility_labels.close' | t | json }}"></a>
+
+{%- endif -%}
+
+
+{% schema %}
+  {
+    "name": "Header",
+    "class": "shopify-section--header",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_sticky",
+        "label": "Enable sticky header",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enabled_header_overlap",
+        "label": "Show header on top of banner images",
+        "default": true
+      },
+			{
+        "type": "header",
+        "content": "Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Image",
+        "info": "300 x 100px recommended"
+      },
+      {
+        "type": "text",
+        "id": "logo_width",
+        "label": "Logo width (px)",
+        "default": "100"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_logo_shrink",
+        "label": "Shrink logo on scroll down",
+        "default": true
+      },
+			{
+        "type": "header",
+        "content": "Contrast logo"
+      },
+			{
+        "type": "paragraph",
+        "content": "Optional logo used when over the header slideshow and images"
+      },
+			{
+        "type": "image_picker",
+        "id": "alt_logo",
+        "label": "Image"
+      },
+      {
+        "type": "header",
+        "content": "Menú de navegación Desktop Izquierdo"
+      },
+      {
+        "type": "link_list",
+        "id": "menu_main_desktop_left",
+        "label": "Menú principal (solo escritorio)",
+        "default": "main-menu"
+      },
+      {
+        "type": "header",
+        "content": "Menú de navegación Desktop derecho"
+      },
+      {
+        "type": "link_list",
+        "id": "menu_main_desktop_right",
+        "label": "Menú principal (solo escritorio)",
+        "default": "main-menu"
+      },
+      {
+        "type": "header",
+        "content": "Navigation"
+      },
+      {
+				"type": "link_list",
+				"id": "menu_linklist",
+				"label": "Menu",
+				"default": "main-menu"
+      },
+      {
+				"type": "richtext",
+				"id": "menu_under_text",
+				"label": "Menu footer text"
+      },
+      {
+        "type": "header",
+        "content": "Search"
+      },
+      {
+				"type": "text",
+				"id": "search_menu_title",
+				"label": "Quick links heading"
+      },
+      {
+				"type": "link_list",
+				"id": "search_menu_linklist",
+				"label": "Quick links menu"
+      },
+      {
+        "type": "header",
+        "content": "Language Selector",
+        "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_locale_selector",
+        "label": "Show language selector",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Currency Selector",
+        "info": "To add a currency, go to your [payment settings.](/admin/settings/payments)"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_currency_selector",
+        "label": "Show currency selector",
+        "default": true
+      }
+		]
+  }
+{% endschema %}

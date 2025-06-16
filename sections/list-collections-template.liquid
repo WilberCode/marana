@@ -1,0 +1,101 @@
+<div data-section-type="list-collections-template">
+  {% capture header_content %}
+    <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+      <a class="breadcrumbs__crumb" href="{{ routes.root_url }}">{{ 'general.breadcrumbs.home' | t }}</a>
+      <span class="breadcrumbs__divider" aria-hidden="true">{% include 'svg-chevron-right' %}</span>
+      <span class="breadcrumbs__crumb">{{ 'collections.collection_list.title' | t }}</span>
+    </nav>
+
+    <h1>{{ 'collections.collection_list.title' | t }}</h1>
+  {% endcapture %}
+
+  {% if section.settings.header_image != blank %}
+    <div class="banner-image-container banner-under-header">
+      {% include 'responsive-background', image: section.settings.header_image, class: 'banner-image fixed-height' %}
+
+      <div class="banner-image-text feature-page-title">
+        {{ header_content }}
+      </div>
+    </div>
+  {% else %}
+    <div class="feature-page-title">
+      {{ header_content }}
+    </div>
+  {% endif %}
+
+  <div class="container">
+    <div id="main" class="content-main" role="main">
+
+      {% if section.settings.show_all_collections %}
+
+        {% paginate collections by 12 %}
+          <div class="grid grid--row-gutters product-list">
+            {% for collection in collections %}
+              {% include 'collection-grid-item', num_per_row: 4 %}
+            {% endfor %}
+          </div>
+          {% include 'pagination' %}
+        {% endpaginate %}
+
+      {% else %}
+
+        <div class="grid grid--row-gutters product-list">
+          {% for block in section.blocks %}
+            {% assign collection = collections[block.settings.collection] %}
+
+            {% if block.settings.collection != empty %}
+              {% include 'collection-grid-item', num_per_row: 4 %}
+            {% else %}
+              {% include 'onboarding-collection-grid-item', num_per_row: 4 %}
+            {% endif %}
+
+          {% endfor %}
+        </div>
+
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Collection list",
+    "max_blocks": 48,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Header image"
+      },
+      {
+        "type": "image_picker",
+        "id": "header_image",
+        "label": "Image"
+      },
+      {
+        "type": "header",
+        "content": "Collections"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_all_collections",
+        "label": "Show all collections",
+        "info": "Instead of the custom list below",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

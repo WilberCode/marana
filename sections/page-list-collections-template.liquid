@@ -1,0 +1,60 @@
+<div data-section-type="page-list-collections-template">
+  {% capture header_content %}
+    <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+      <a class="breadcrumbs__crumb" href="{{ routes.root_url }}">{{ 'general.breadcrumbs.home' | t }}</a>
+      <span class="breadcrumbs__divider" aria-hidden="true">{% include 'svg-chevron-right' %}</span>
+      <span class="breadcrumbs__crumb">{{ page.title }}</span>
+    </nav>
+
+    <h1>{{ page.title }}</h1>
+
+    {% if page.content != blank %}
+      <div class="rte reading-width align-center large-text">{{ page.content }}</div>
+    {% endif %}
+  {% endcapture %}
+
+  {% if section.settings.header_image != blank %}
+    <div class="banner-image-container banner-under-header">
+      {% include 'responsive-background', image: section.settings.header_image, class: 'banner-image fixed-height' %}
+
+      <div class="banner-image-text feature-page-title">
+        {{ header_content }}
+      </div>
+    </div>
+  {% else %}
+    <div class="feature-page-title">
+      {{ header_content }}
+    </div>
+  {% endif %}
+
+  <div class="container">
+    <div id="main" class="content-main" role="main">
+      <div class="grid grid--row-gutters product-list">
+        {% for link in linklists[page.handle].links %}
+          {% if link.type == 'collection_link' %}
+            {% assign collection = link.object %}
+            {% include 'collection-grid-item', num_per_row: 4 %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Collection list",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Header image"
+      },
+      {
+        "type": "image_picker",
+        "id": "header_image",
+        "label": "Image"
+      }
+    ]
+  }
+{% endschema %}

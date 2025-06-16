@@ -1,0 +1,1657 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "col_text": "#000000",
+    "col_headings": "#333029",
+    "col_links": "#000000",
+    "col_page_bg": "#ffffff",
+    "col_stars": "#f7c346",
+    "col_header_text": "#ffffff",
+    "col_header_bg": "#000000",
+    "col_header_text_overlap": "#ffffff",
+    "col_page_heading_bg": "#000000",
+    "col_page_heading_text": "#ffffff",
+    "col_page_heading_text_over_image": "#ffffff",
+    "col_nav_links": "#ffffff",
+    "col_nav_bg": "#000000",
+    "col_search_bg": "#ffffff",
+    "col_search_text": "#000000",
+    "col_search_headings": "#000000",
+    "col_alt_text": "#333029",
+    "col_alt_text_bg": "rgba(0,0,0,0)",
+    "col_prod_sale": "rgba(0,0,0,0)",
+    "col_btn": "#ffffff",
+    "col_btn_bg": "#000000",
+    "col_label_sold_out": "#565656",
+    "col_label_sale": "#ffffff",
+    "col_label_low_stock": "#000000",
+    "col_label_custom": "#0b3d65",
+    "type_base_font": "montserrat_n5",
+    "type_heading_font": "gill_sans_nova_n4",
+    "type_nav_font": "montserrat_n3",
+    "type_logo_font": "montserrat_n5",
+    "font_size_base_int": 14,
+    "font_size_nav_int": 16,
+    "logo_size_int": 18,
+    "content_header_overlap": 0,
+    "enable_transition_in": true,
+    "enable_overlay_transition": true,
+    "product_image_align": true,
+    "product_hover_image": true,
+    "label_sale_show": true,
+    "label_soldout_show": true,
+    "label_remain_show": false,
+    "prod_stock_warn_limit_int": 3,
+    "product_label_position": "br",
+    "share_image": "",
+    "social_twitter_url": "",
+    "social_facebook_url": "https://www.facebook.com/www.marana.com.pe/?__tn__=%2Cd%2CP-R&eid=ARBMBY5vYh_gODq77OHorKGoZLIvNgMeMV4364pZyxXkScx_GCz1jnvluTnwyKE5RKtodlnSlOJ3rzst",
+    "social_instagram_url": "https://www.instagram.com/marana_chocolate/",
+    "social_pinterest_url": "",
+    "social_youtube_url": "https://www.youtube.com/channel/UCZLO8BT-52NOOVT4K3XAiww",
+    "social_vimeo_url": "",
+    "social_custom_icon_alt": "",
+    "social_custom_icon": "",
+    "social_custom_url": "",
+    "search_type": "product",
+    "live_search_show_vendor": false,
+    "favicon": "shopify://shop_images/MARANA_M_06.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify://shop_images/Imagen_1.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#000000",
+    "checkout_button_color": "#000000",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "menu_linklist": "footer",
+          "menu_linklist_2": "",
+          "menu_linklist_3": "",
+          "show_menu_headings": false,
+          "show_social": false,
+          "show_text_area": false,
+          "text_area_heading": "",
+          "text_area_text": "",
+          "show_payment_icons": true,
+          "show_locale_selector": false,
+          "show_currency_selector": true,
+          "show_newsletter": false,
+          "newsletter_heading": "Subscribe to our newsletter",
+          "newsletter_text": "",
+          "newsletter_button_text": "Subscribe"
+        }
+      },
+      "banner-index": {
+        "type": "banner-index",
+        "blocks": {
+          "34de4838-f73d-4fda-b7b5-9b7088ef108b": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/Montaje_Navideno.png",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 21,
+              "color": "#ffffff",
+              "heading": "Regala Maraná esta Navidad",
+              "subheading": "Tenemos Chocolates Exclusivos Para Estas Fiestas",
+              "button_1_text": "Comprar Aquí",
+              "button_1_url": "shopify://collections/regalos-navidenos",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
+          "78c4c3eb-4276-428d-afc8-1242767178d3": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Marana-productos_53.jpg",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 25,
+              "color": "#ffffff",
+              "heading": "Nuestras Chocotejas",
+              "subheading": "Una Nueva Forma de Vivir Nuestra Tradición",
+              "button_1_text": "Tienda",
+              "button_1_url": "shopify://collections/chocotejas",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
+          "73dfe80c-ff67-4845-8159-14326fef1142": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Caratula_tabletas_y_chocotejas_y_linea_repostera_y_caja_de_cata.png",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 30,
+              "color": "#ffffff",
+              "heading": "¡Tu Pedido lo Entregamos en 2 hora!",
+              "subheading": "DE LUNES A VIERNES DE 9AM A 5PM.",
+              "button_1_text": "Comprar aquí",
+              "button_1_url": "shopify://collections/all",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
+          "1587094863606": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Marana_011.jpg",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 43,
+              "color": "#ffffff",
+              "heading": "Delivery Gratis a partir de S/.100 soles.",
+              "subheading": "DE LUNES A VIERNES DE 9AM A 5PM.",
+              "button_1_text": "Compra Aquí",
+              "button_1_url": "shopify://collections",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
+          "1587130903983": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Foto_Marana.jpg",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 22,
+              "color": "#ffffff",
+              "heading": "Bean to Bar",
+              "subheading": "CHOCOLATE ARTESANAL PERUANO",
+              "button_1_text": "Compra Aquí",
+              "button_1_url": "",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
+          "1587094335575": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/IMG_20190404_093017.jpg",
+              "image_url": "shopify://collections/all",
+              "tint_color": "#000000",
+              "tint_opacity": 26,
+              "color": "#ffffff",
+              "heading": "Cacao de Origen",
+              "subheading": "CHOCOLATE ARTESANAL PERUANO",
+              "button_1_text": "Compra Aquí",
+              "button_1_url": "shopify://collections/all",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
+          "1587180843246": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Marana_010C.jpg",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 48,
+              "color": "#ffffff",
+              "heading": "Deja que se derrita en tu boca",
+              "subheading": "CHOCOLATE ARTESANAL PERUANO",
+              "button_1_text": "Compra Aquí",
+              "button_1_url": "",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
+          "1483959039059": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/Explosion_de_Tabletas_3.png",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 0,
+              "color": "#ffffff",
+              "heading": "Siempre es buen momento para un chocolate",
+              "subheading": "CHOCOLATE ARTESANAL PERUANO",
+              "button_1_text": "Compra Aquí",
+              "button_1_url": "shopify://collections/all",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "34de4838-f73d-4fda-b7b5-9b7088ef108b",
+          "78c4c3eb-4276-428d-afc8-1242767178d3",
+          "73dfe80c-ff67-4845-8159-14326fef1142",
+          "1587094863606",
+          "1587130903983",
+          "1587094335575",
+          "1587180843246",
+          "1483959039059"
+        ],
+        "settings": {
+          "enable_carousel": false,
+          "slide_mode": "fade",
+          "slide_show_mobile_arrows": false,
+          "head_img_height_fixed": true,
+          "head_img_height_int": 650
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "show_announcement": false,
+          "announcement_home_only": true,
+          "announcement_bar_text": "Delivery: Lo Entregamos en 2 Horas de Lunes a Viernes de 9am a 5:00pm",
+          "announcement_bar_link": "shopify://collections/all",
+          "announcement_bar_bg_color": "#000000",
+          "announcement_bar_bg_text": "#ffffff"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "enable_sticky": true,
+          "enabled_header_overlap": true,
+          "logo": "shopify://shop_images/Logo_Blanco_Fondo_Transparente_1.png",
+          "logo_width": "300",
+          "enable_logo_shrink": true,
+          "alt_logo": "shopify://shop_images/Logo_Blanco_Fondo_Transparente_1.png",
+          "menu_linklist": "main-menu",
+          "menu_under_text": "",
+          "search_menu_title": "",
+          "search_menu_linklist": "",
+          "show_locale_selector": false,
+          "show_currency_selector": false
+        }
+      },
+      "page-template": {
+        "type": "page-template",
+        "settings": {
+          "header_image": "shopify://shop_images/IMG_5872.JPG"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "products_per_row_int": 4,
+          "show_tags": true,
+          "coll_show_sort": true,
+          "coll_show_feat": false,
+          "grid_show_vendor": false,
+          "header_image": "shopify://shop_images/Caratula_tabletas_y_chocotejas_y_linea_repostera_y_caja_de_cata.png",
+          "head_img_coll_handled": false
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "description_position": "up",
+          "show_tax_and_shipping": true,
+          "prod_show_brand": false,
+          "prod_show_sku": true,
+          "prod_show_sharing": true,
+          "enable_ajax_form": "true",
+          "enable_payment_button": true,
+          "image_layout": "beside",
+          "prod_lightbox": true,
+          "enable_video_looping": false
+        }
+      },
+      "product-features": {
+        "type": "product-features",
+        "settings": {
+          "show": false,
+          "heading": "",
+          "icon_size": 25,
+          "color_icon": "#333333",
+          "color_text": "#333333",
+          "color_bg": "#fff8f4"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "recommendations_title": "Te Recomendamos",
+          "show_recommendations": true,
+          "products_per_row_int": 4,
+          "grid_show_vendor": false
+        }
+      },
+      "1587133822579": {
+        "type": "rich-text",
+        "custom_css": [
+          "h2 {margin-top: 40px;}"
+        ],
+        "settings": {
+          "title": "Craft Chocolate Makers",
+          "text": "<p>Somos Maraná, somos personas como tú enamoradas de nuestras raíces, de lo auténtico, de lo real. Venimos de un lugar mágico, llamado Perú. Hacemos chocolate por que nos apasiona, nos hace vibrar,  y buscamos con nuestro chocolate conectarte con los mágicos sabores del cacao peruano.</p>",
+          "link_text": "",
+          "link_url": "",
+          "color_bg": "#ffffff",
+          "color_text": "#000000",
+          "color_head": "#000000"
+        }
+      },
+      "1587138789319": {
+        "type": "slideshow",
+        "blocks": {
+          "1587138789319-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/peak-of-machu-picchu-lit.jpg",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 53,
+              "color": "#ffffff",
+              "heading": "En un país llamado Perú",
+              "subheading": "En el que puedes navegar por extensos ríos en la selva amazónica, ascender a nevados de más de 6 mil metros de altura en la cordillera de los Andes y contemplar al sol sumergirse en las aguas del océano Pacífico.  Es en estas tres regiones: San Martín, Cusco y Piura; donde obtenemos el más fino cacao, con el que elaboramos tres tipos de chocolates que te transportarán hacia una nueva forma de experimentar y disfrutar el Perú.",
+              "button_1_text": "SHOP",
+              "button_1_url": "shopify://collections/all",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
+          "1587139498095": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/pexels-photo-3215010-2.jpeg",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 50,
+              "color": "#ffffff",
+              "heading": "Hay una comunidad con propósito",
+              "subheading": "Nacimos de la pasión por el cacao peruano, de nuestro compromiso con las personas que le dedican su trabajo y su vida, y de nuestro deseo de crear el mejor chocolate.",
+              "button_1_text": "shop",
+              "button_1_url": "",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
+          "1587139695257": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/w1OYhqMA.jpeg",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 51,
+              "color": "#ffffff",
+              "heading": "Trabajando por un mundo mejor",
+              "subheading": "Nuestro compromiso se extiende a la salud de las personas y del mundo. Usamos ingredientes 100% orgánicos en la elaboración de todos nuestros chocolates.  El resultado se siente en su sabor fresco e intenso y en los aromas que nos transportan al origen de todo, a la tierra donde se cultiva el mejor cacao.",
+              "button_1_text": "shop",
+              "button_1_url": "",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
+          "1587147296361": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Marana_010C.jpg",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 64,
+              "color": "#ffffff",
+              "heading": "Con un chocolate de otro nivel",
+              "subheading": "Nuestros chocolates son artesanales y están hechos con la más fina selección de granos de cacao peruano zonas: Cada uno te ofrece sabores y aromas únicos que te transportarán a las  “Raíces del Chocolate Peruano”",
+              "button_1_text": "shop",
+              "button_1_url": "",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "1587138789319-0",
+          "1587139498095",
+          "1587139695257",
+          "1587147296361"
+        ],
+        "disabled": true,
+        "settings": {
+          "enable_carousel": false,
+          "slide_mode": "fade",
+          "slide_show_mobile_arrows": true,
+          "skip_container": false,
+          "head_img_height_fixed": true,
+          "head_img_height_int": 500
+        }
+      },
+      "1587145232189": {
+        "type": "newsletter",
+        "settings": {
+          "heading": "Suscríbete a nuestra Newsletter",
+          "text": "<p>Entérate de nuestros nuevos lanzamientos y recibe promociones y ofertas.</p>",
+          "button_text": "SUSCRIBETE",
+          "color_bg": "#dcd4cd"
+        }
+      },
+      "1587147871984": {
+        "type": "featured-images",
+        "blocks": {
+          "1587147871984-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Cusco_Collection_067855d0-1eb3-4d2b-9021-3981bf236b8a.jpg",
+              "tint_color": "#000000",
+              "tint_opacity": 0,
+              "link": "shopify://pages/our-product",
+              "size": "third",
+              "title": "",
+              "subheading": "",
+              "cta_text": "",
+              "text_color": "#ffffff"
+            }
+          },
+          "1587147871984-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Piura_Collection_2791ffb4-bc7c-44bc-b863-42ac2791b01e.jpg",
+              "tint_color": "#000000",
+              "tint_opacity": 0,
+              "link": "shopify://pages/our-product",
+              "size": "third",
+              "title": "",
+              "subheading": "",
+              "cta_text": "",
+              "text_color": "#ffffff"
+            }
+          },
+          "1587147885767": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/san_martin_collection.jpg",
+              "tint_color": "#000000",
+              "tint_opacity": 0,
+              "link": "shopify://pages/our-product",
+              "size": "third",
+              "title": "",
+              "subheading": "",
+              "cta_text": "",
+              "text_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "1587147871984-1",
+          "1587147871984-0",
+          "1587147885767"
+        ],
+        "custom_css": [
+          "div {margin-top: 0;}"
+        ],
+        "settings": {
+          "skip_container": false
+        }
+      },
+      "1587149140907": {
+        "type": "rich-text",
+        "custom_css": [
+          "div .rich-text-section {margin-bottom: 0;}"
+        ],
+        "settings": {
+          "title": "Descubre nuestros orígenes en nuestras colecciones",
+          "text": "",
+          "link_text": "",
+          "link_url": "",
+          "color_bg": "#ffffff",
+          "color_text": "#454f5b",
+          "color_head": "#212b36"
+        }
+      },
+      "1587149597432": {
+        "type": "slideshow",
+        "blocks": {
+          "1587149597432-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/CD_6301.jpg",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 25,
+              "color": "#ffffff",
+              "heading": "Our Origin: Where it all begins",
+              "subheading": "",
+              "button_1_text": "",
+              "button_1_url": "",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
+          "1587175643948": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Captura_de_pantalla_2020-04-17_a_las_15.32.03.png",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 25,
+              "color": "#ffffff",
+              "heading": "Feel the Culture",
+              "subheading": "",
+              "button_1_text": "",
+              "button_1_url": "",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
+          "1587149597432-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Captura_de_pantalla_2020-04-17_a_las_15.32.43.png",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 25,
+              "color": "#ffffff",
+              "heading": "Our Diversity",
+              "subheading": "",
+              "button_1_text": "",
+              "button_1_url": "",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
+          "1587175962694": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/IMG_7274.JPG",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 41,
+              "color": "#ffffff",
+              "heading": "Enjoy, The Roots of Peruvian Chocolates",
+              "subheading": "",
+              "button_1_text": "",
+              "button_1_url": "",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "1587149597432-0",
+          "1587175643948",
+          "1587149597432-1",
+          "1587175962694"
+        ],
+        "disabled": true,
+        "settings": {
+          "enable_carousel": false,
+          "slide_mode": "slide",
+          "slide_show_mobile_arrows": true,
+          "skip_container": false,
+          "head_img_height_fixed": true,
+          "head_img_height_int": 500
+        }
+      },
+      "1587150597312": {
+        "type": "rich-text",
+        "disabled": true,
+        "settings": {
+          "title": "Awards",
+          "text": "<p>Nacional & Internacional</p>",
+          "link_text": "",
+          "link_url": "",
+          "color_bg": "#ffffff",
+          "color_text": "#454f5b",
+          "color_head": "#212b36"
+        }
+      },
+      "1587152424567": {
+        "type": "featured-images",
+        "blocks": {
+          "1587152424567-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/CD_6259bn_a8e004e3-aa78-4cdc-8690-bf38dda333e8.jpg",
+              "tint_color": "#000000",
+              "tint_opacity": 25,
+              "link": "shopify://pages/about-us",
+              "size": "third",
+              "title": "",
+              "subheading": "Detrás de la marca",
+              "cta_text": "",
+              "text_color": "#ffffff"
+            }
+          },
+          "1587152498344": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Marana_009_618361c3-9bd7-4359-a692-008d4b02af0d.jpg",
+              "tint_color": "#000000",
+              "tint_opacity": 44,
+              "link": "shopify://pages/our-process",
+              "size": "third",
+              "title": "",
+              "subheading": "Mucho más que un chocolate",
+              "cta_text": "",
+              "text_color": "#ffffff"
+            }
+          },
+          "1587152490304": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Marana_0012_1_ead0c9af-840f-480d-b6f0-5182728639ed.jpg",
+              "tint_color": "#000000",
+              "tint_opacity": 43,
+              "link": "shopify://pages/store-locator",
+              "size": "third",
+              "title": "",
+              "subheading": "¿Dónde encontrarnos?",
+              "cta_text": "",
+              "text_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "1587152424567-1",
+          "1587152498344",
+          "1587152490304"
+        ],
+        "settings": {
+          "skip_container": false
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_terms_show": false,
+          "cart_terms_page": "",
+          "cart_note_show": false,
+          "show_tax_and_shipping": true,
+          "show_additional_checkout_buttons": true
+        }
+      },
+      "1587240069215": {
+        "type": "image-with-text",
+        "settings": {
+          "image": "shopify://shop_images/IMG_20190404_104909.jpg",
+          "layout": "left",
+          "title": "Hay una comunidad con propósito",
+          "text": "<p>Nacimos de la pasión por el cacao peruano, de nuestro compromiso con las personas que le dedican su trabajo y su vida, y de nuestro deseo de crear el mejor chocolate.</p>",
+          "button_text": "Nuestro Espíritu",
+          "button_link": "shopify://pages/about-us",
+          "color_bg": "#fbfafa",
+          "color_text": "#454f5b",
+          "color_head": "#212b36",
+          "skip_container": true
+        }
+      },
+      "1587240140813": {
+        "type": "image-with-text",
+        "settings": {
+          "image": "shopify://shop_images/fotos_567.jpg",
+          "layout": "right",
+          "title": "Trabajando por un mundo mejor",
+          "text": "<p>Nuestro compromiso se extiende a la salud de las personas y del mundo. Usamos ingredientes 100% orgánicos en la elaboración de todos nuestros chocolates. </p><p></p><p>El resultado se siente en su sabor fresco e intenso y en los aromas que nos transportan al origen de todo, a la tierra donde se cultiva el mejor cacao.</p>",
+          "button_text": "Compra aquí",
+          "button_link": "shopify://collections/all",
+          "color_bg": "#fbfafa",
+          "color_text": "#454f5b",
+          "color_head": "#212b36",
+          "skip_container": true
+        }
+      },
+      "1587240171336": {
+        "type": "image-with-text",
+        "settings": {
+          "image": "shopify://shop_images/peak-of-machu-picchu-lit.jpg",
+          "layout": "right",
+          "title": "En un país llamado Perú",
+          "text": "<p>Puedes navegar por extensos ríos en la selva amazónica, ascender a nevados de más de 6 mil metros de altura en la cordillera de los Andes y contemplar al sol sumergirse en las aguas del océano Pacífico. </p><p></p><p>Es en estas tres regiones: San Martín, Cusco y Piura; donde obtenemos el más fino cacao, con el que elaboramos tres tipos de chocolates que te transportarán hacia una nueva forma de experimentar y disfrutar el Perú.</p>",
+          "button_text": "COMPRA AQUÍ",
+          "button_link": "shopify://collections/all",
+          "color_bg": "#fbfafa",
+          "color_text": "#454f5b",
+          "color_head": "#212b36",
+          "skip_container": true
+        }
+      },
+      "1587502695689": {
+        "type": "logos",
+        "blocks": {
+          "1587502695689-0": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify://shop_images/ica-prize-logo-2016-winner-rgb.jpg",
+              "link": ""
+            }
+          },
+          "1587502695689-1": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify://shop_images/ica-prize-logo-2017-winner-rgb.jpg",
+              "link": ""
+            }
+          },
+          "1587502695689-2": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify://shop_images/ica-prize-logo-2018-winner-rgb.jpg",
+              "link": ""
+            }
+          },
+          "1587502695689-3": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify://shop_images/ica-prize-logo-2019-winner-rgb_f3074adb-ab9d-4f6b-b9ac-82c902cb5d56.jpg",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1587502695689-0",
+          "1587502695689-1",
+          "1587502695689-2",
+          "1587502695689-3"
+        ],
+        "disabled": true,
+        "settings": {
+          "title": "",
+          "logo_width": "160px"
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "header_image": "",
+          "show_all_collections": true
+        }
+      },
+      "1588126058245": {
+        "type": "video",
+        "settings": {
+          "title": "Descubre Nuestro Proceso",
+          "video_url": "https://www.youtube.com/watch?v=0Giv9UME1lA",
+          "autoplay": false,
+          "skip_container": false,
+          "tint_color": "#000000",
+          "tint_opacity": 0
+        }
+      },
+      "password-template": {
+        "type": "password-template",
+        "settings": {
+          "page_title": "Opening Soon",
+          "show_newsletter_signup": true,
+          "newsletter_title": "Find out when we open",
+          "newsletter_text": "",
+          "newsletter_placeholder": "Your email",
+          "newsletter_button": "Submit",
+          "show_sharing": true,
+          "social_heading": "Spread the word:",
+          "background_image": ""
+        }
+      },
+      "1604511842750": {
+        "type": "featured-collections",
+        "blocks": {
+          "7ba21f21-7082-4eb6-a6ea-7029c31e61bb": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "regalos-navidenos"
+            }
+          },
+          "collection_VEaYyR": {
+            "type": "collection",
+            "settings": {
+              "collection": "bundle-builder-products"
+            }
+          },
+          "0154cfa4-7686-4d78-9304-f8ee00d69704": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "dia-del-padre"
+            }
+          },
+          "1606538823864": {
+            "type": "collection",
+            "settings": {
+              "collection": "chocotejas"
+            }
+          },
+          "31d48f46-e656-447e-bfe5-a8855ee47c1c": {
+            "type": "collection",
+            "settings": {
+              "collection": "todos-los-chocolates"
+            }
+          },
+          "1604511917247": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "caja-de-cata-origenes-de-cacao-peruano-s-23-90-soles"
+            }
+          },
+          "f41b1206-73b2-428e-9053-cfb5ed81f5ba": {
+            "type": "collection",
+            "settings": {
+              "collection": "marana-bites"
+            }
+          },
+          "9ba7f93f-ed27-4022-9f48-d42d129c92fc": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "linea-repostera"
+            }
+          },
+          "1604511951337": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "souvenirs"
+            }
+          }
+        },
+        "block_order": [
+          "7ba21f21-7082-4eb6-a6ea-7029c31e61bb",
+          "collection_VEaYyR",
+          "0154cfa4-7686-4d78-9304-f8ee00d69704",
+          "1606538823864",
+          "31d48f46-e656-447e-bfe5-a8855ee47c1c",
+          "1604511917247",
+          "f41b1206-73b2-428e-9053-cfb5ed81f5ba",
+          "9ba7f93f-ed27-4022-9f48-d42d129c92fc",
+          "1604511951337"
+        ],
+        "custom_css": [],
+        "settings": {
+          "title": "Nuestras Líneas de Productos",
+          "collections_per_row_int": 2
+        }
+      },
+      "custom_html_dN7gYm": {
+        "type": "custom-html",
+        "custom_css": [
+          ".btn-libro {display: block; background: url(https://cdn.shopify.com/s/files/1/0293/0533/9997/files/libro_reclamaciones.png?v=1713377851); width: 130px; height: 78px; background-size: cover; margin: 0 auto; text-indent: -999px; overflow: hidden;}"
+        ],
+        "settings": {
+          "skip_container": false,
+          "custom_html": "<a href=\"https://www.marana.com.pe/pages/libro-de-reclamaciones\" class=\"btn-libro\"></a>"
+        }
+      }
+    },
+    "content_for_index": [
+      "1604511842750",
+      "1587133822579",
+      "1587240171336",
+      "1587240069215",
+      "1587240140813",
+      "1587149140907",
+      "1587147871984",
+      "1587150597312",
+      "1587502695689",
+      "1587149597432",
+      "1587138789319",
+      "1588126058245",
+      "1587152424567",
+      "1587145232189",
+      "custom_html_dN7gYm"
+    ],
+    "blocks": {
+      "14044569291296200651": {
+        "type": "shopify://apps/bundle-builder-kitenzo/blocks/bb-cart-integration-custom/78802baf-205d-4d1d-908c-fae911f24e36",
+        "disabled": false,
+        "settings": {
+          "theme_override": "",
+          "page_cartItemBox": "",
+          "page_cartItem": "",
+          "page_cartSubtotal": "",
+          "page_cartOriginalTotal": "",
+          "page_checkoutButton": "",
+          "drawer_cartItemBox": "",
+          "drawer_cartItem": "",
+          "drawer_cartSubtotal": "",
+          "drawer_cartOriginalTotal": "",
+          "drawer_checkoutButton": "",
+          "cartItemPrice": "",
+          "cartItemLinePrice": "",
+          "cartItemQuantity": "",
+          "observeTargets": ""
+        }
+      },
+      "9877325503541698247": {
+        "type": "shopify://apps/in-cart-upsell/blocks/ajax_cart_app_block/6a252f23-8726-4893-8b3b-1ae15957efc3",
+        "disabled": true,
+        "settings": {
+          "icu-ajax-selector": "",
+          "icu-ajax-action": "before",
+          "icu-ajax-cart-refresh-code": ""
+        }
+      },
+      "8765772171712610185": {
+        "type": "shopify://apps/t-lab-ai-language-translate/blocks/language_switcher/b5b83690-efd4-434d-8c6a-a5cef4019faf",
+        "disabled": true,
+        "settings": {
+          "enable_language_switcher": true,
+          "enable_country_region_switcher": false,
+          "use_currency_for_region": false,
+          "switcher_position": "custom",
+          "show_flags": true,
+          "switcher_appearance": "language-name",
+          "invert_switcher_icon_colors": false,
+          "dropdown_appearance": "language-name",
+          "use_modal_dialog": false,
+          "language_country_mapping": "",
+          "countries_filter": "",
+          "custom_css": "",
+          "header_switcher_reference_element": "",
+          "header_switcher_relative_position": "before",
+          "mobile_menu_switcher_reference_element": "",
+          "mobile_switcher_relative_position": "before",
+          "header_switcher_border_width": 0,
+          "switcher_viewport_position": "top-right",
+          "custom_position_spacing": "55,20,20,20",
+          "custom_switcher_font_size": "14px",
+          "custom_switcher_border_width": 1,
+          "custom_switcher_text_color": "#5c5c5c",
+          "custom_switcher_background_color": "#ffffff",
+          "custom_switcher_border_color": "#000000"
+        }
+      },
+      "9670189827046205946": {
+        "type": "shopify://apps/hextom-translate-and-currency/blocks/app-block/b927a799-be04-4b97-9efb-5c8f0290a68e",
+        "disabled": true,
+        "settings": {}
+      },
+      "2323586426992478052": {
+        "type": "shopify://apps/bundle-builder-kitenzo/blocks/bundle-page-redirect/78802baf-205d-4d1d-908c-fae911f24e36",
+        "disabled": true,
+        "settings": {
+          "bundle_prefix": "/apps/bundles/bundle"
+        }
+      },
+      "1386531382474587334": {
+        "type": "shopify://apps/bundle-builder-kitenzo/blocks/bb-cart-integration/78802baf-205d-4d1d-908c-fae911f24e36",
+        "disabled": true,
+        "settings": {
+          "hide_accelerated_checkout": false,
+          "placement": "below",
+          "hide_empty_line_items": false,
+          "font_size": 16,
+          "font_color": "",
+          "button_color": "",
+          "button_background": "",
+          "button_radius": 0,
+          "border_color": "#000000",
+          "background": "",
+          "heading": "Your cart contains {count} bundle",
+          "heading_plural": "Your cart contains {count} bundles",
+          "view_text": "View Details",
+          "modal_title": "Your bundle summary",
+          "modal_font_color": "#000000",
+          "modal_background": "#FFFFFF",
+          "modal_border_color": "#c4c4c4",
+          "modal_item_background": "",
+          "modal_item_content_background": "#f1f1f1",
+          "modal_item_product_background": "#ffffff",
+          "custom_css": ""
+        }
+      },
+      "3753596010683798665": {
+        "type": "shopify://apps/pushdaddy-whatsapp-live-chat/blocks/app-embed/e3f2054d-bf7b-4e63-8db3-00712592382c",
+        "disabled": false,
+        "settings": {}
+      },
+      "12793297677437526120": {
+        "type": "shopify://apps/t-lab-ai-language-translate/blocks/custom_translations/b5b83690-efd4-434d-8c6a-a5cef4019faf",
+        "disabled": false,
+        "settings": {}
+      },
+      "18228966181090706294": {
+        "type": "shopify://apps/selleasy/blocks/app-embed/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+        "disabled": false,
+        "settings": {
+          "storefrontAccessToken": ""
+        }
+      }
+    }
+  },
+  "presets": {
+    "SwimClub": {
+      "col_text": "#293b65",
+      "col_headings": "#152242",
+      "col_links": "#5c6ac4",
+      "col_page_bg": "#ffffff",
+      "col_stars": "#eeaf2e",
+      "col_header_text": "#152242",
+      "col_header_bg": "#ffffff",
+      "col_header_text_overlap": "#ffffff",
+      "col_page_heading_bg": "#eeeeee",
+      "col_page_heading_text": "#152242",
+      "col_page_heading_text_over_image": "#ffffff",
+      "col_nav_links": "#ffffff",
+      "col_nav_bg": "#152242",
+      "col_search_bg": "#ffffff",
+      "col_search_text": "#212b36",
+      "col_search_headings": "#000000",
+      "col_alt_text": "#1c1d1d",
+      "col_alt_text_bg": "rgba(0,0,0,0)",
+      "col_prod_sale": "rgba(0,0,0,0)",
+      "col_btn": "#ffffff",
+      "col_btn_bg": "#152242",
+      "col_label_sold_out": "#ffffff",
+      "col_label_sale": "#202e78",
+      "col_label_low_stock": "#000639",
+      "col_label_custom": "#50248f",
+      "type_base_font": "futura_n4",
+      "type_heading_font": "chivo_n4",
+      "type_nav_font": "chivo_n4",
+      "type_logo_font": "chivo_n4",
+      "font_size_base_int": 15,
+      "font_size_nav_int": 36,
+      "logo_size_int": 34,
+      "content_header_overlap": 0,
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "show_text_area": true,
+            "show_newsletter": true
+          }
+        },
+        "banner-index": {
+          "type": "banner-index",
+          "blocks": {
+            "1483959039059": {
+              "type": "image",
+              "settings": {}
+            },
+            "1484143749669": {
+              "type": "image",
+              "settings": {
+                "tint_opacity": 0
+              }
+            }
+          },
+          "block_order": [
+            "1483959039059",
+            "1484143749669"
+          ],
+          "settings": {
+            "enable_carousel": true,
+            "head_img_height_int": 800
+          }
+        },
+        "1484317010599": {
+          "type": "rich-text",
+          "settings": {}
+        },
+        "1483632146786": {
+          "type": "featured-collection",
+          "settings": {
+            "products_per_row_int": 3
+          }
+        },
+        "1485871096463": {
+          "type": "featured-images",
+          "blocks": {
+            "1566482439149": {
+              "type": "image",
+              "settings": {
+                "tint_opacity": 30,
+                "size": "third"
+              }
+            },
+            "1566482260946-0": {
+              "type": "image",
+              "settings": {
+                "tint_opacity": 40,
+                "size": "third"
+              }
+            },
+            "1566482260946-1": {
+              "type": "image",
+              "settings": {
+                "tint_opacity": 35,
+                "size": "third"
+              }
+            }
+          },
+          "block_order": [
+            "1566482439149",
+            "1566482260946-0",
+            "1566482260946-1"
+          ],
+          "settings": {
+            "skip_container": true
+          }
+        },
+        "1566493825980": {
+          "type": "slideshow-with-text",
+          "blocks": {
+            "1566493825980-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "1566493825980-1": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1566493825980-0",
+            "1566493825980-1"
+          ],
+          "settings": {}
+        },
+        "1566493567944": {
+          "type": "testimonials",
+          "blocks": {
+            "1566493567944-0": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "1568803947076": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1566493567944-0",
+            "1568803947076"
+          ],
+          "settings": {
+            "logo_height": 40
+          }
+        },
+        "1566494880243": {
+          "type": "video",
+          "settings": {
+            "autoplay": true,
+            "skip_container": true
+          }
+        },
+        "1483635546290": {
+          "type": "featured-blog",
+          "settings": {}
+        },
+        "1566496449350": {
+          "type": "image-with-text",
+          "settings": {
+            "skip_container": true
+          }
+        }
+      },
+      "content_for_index": [
+        "1484317010599",
+        "1483632146786",
+        "1485871096463",
+        "1566493825980",
+        "1566493567944",
+        "1566494880243",
+        "1483635546290",
+        "1566496449350"
+      ]
+    },
+    "Driftwood": {
+      "col_text": "#454f5b",
+      "col_headings": "#ff7c24",
+      "col_links": "#a94400",
+      "col_page_bg": "#fdfbfa",
+      "col_stars": "#f7c346",
+      "col_header_text": "#212b36",
+      "col_header_bg": "#fdfbfa",
+      "col_header_text_overlap": "#ffffff",
+      "col_page_heading_bg": "#e7e3e0",
+      "col_page_heading_text": "#4e1f00",
+      "col_page_heading_text_over_image": "#ffffff",
+      "col_nav_links": "#ffffff",
+      "col_nav_bg": "#25110d",
+      "col_search_bg": "#fdfbfa",
+      "col_search_text": "#212b36",
+      "col_search_headings": "#000000",
+      "col_alt_text": "#1c1d1d",
+      "col_alt_text_bg": "rgba(0,0,0,0)",
+      "col_prod_sale": "rgba(0,0,0,0)",
+      "col_btn": "#ff7c24",
+      "col_btn_bg": "#ffffff",
+      "col_label_sold_out": "#000000",
+      "col_label_sale": "#bf0711",
+      "col_label_low_stock": "#454f5b",
+      "col_label_custom": "#a94400",
+      "type_base_font": "neuzeit_s_n4",
+      "type_heading_font": "pacifico_n4",
+      "type_nav_font": "neuzeit_s_n4",
+      "type_logo_font": "pacifico_n4",
+      "font_size_base_int": 15,
+      "font_size_nav_int": 36,
+      "logo_size_int": 34,
+      "content_header_overlap": 75,
+      "prod_stock_warn_limit_int": 5,
+      "product_label_position": "tl",
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "show_text_area": true
+          }
+        },
+        "banner-index": {
+          "type": "banner-index",
+          "blocks": {
+            "1483959039059": {
+              "type": "image",
+              "settings": {
+                "tint_opacity": 18,
+                "button_2_text": "See more"
+              }
+            }
+          },
+          "block_order": [
+            "1483959039059"
+          ],
+          "settings": {
+            "head_img_height_int": 800
+          }
+        },
+        "1484317010599": {
+          "type": "rich-text",
+          "settings": {}
+        },
+        "1483632146786": {
+          "type": "featured-collection",
+          "settings": {
+            "products_per_row_int": 3
+          }
+        },
+        "1568220025039": {
+          "type": "image-with-text",
+          "settings": {
+            "layout": "left"
+          }
+        },
+        "1483632146787": {
+          "type": "featured-collection",
+          "settings": {
+            "products_per_row_int": 3
+          }
+        },
+        "1568220025040": {
+          "type": "image-with-text",
+          "settings": {}
+        },
+        "1483632146788": {
+          "type": "featured-collection",
+          "settings": {
+            "products_per_row_int": 2
+          }
+        },
+        "1483635546290": {
+          "type": "featured-blog",
+          "settings": {}
+        },
+        "1483632146789": {
+          "type": "featured-collection",
+          "settings": {
+            "products_per_row_int": 3
+          }
+        },
+        "1566493567944": {
+          "type": "testimonials",
+          "blocks": {
+            "1566493567944-0": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "1568803947076": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1566493567944-0",
+            "1568803947076"
+          ],
+          "settings": {
+            "autoplay": true,
+            "logo_height": 40
+          }
+        }
+      },
+      "content_for_index": [
+        "1484317010599",
+        "1483632146786",
+        "1568220025039",
+        "1483632146787",
+        "1568220025040",
+        "1483632146788",
+        "1483635546290",
+        "1483632146789",
+        "1566493567944"
+      ]
+    },
+    "CloudBreak": {
+      "col_text": "#333029",
+      "col_headings": "#333029",
+      "col_links": "#fe7259",
+      "col_page_bg": "#ffffff",
+      "col_stars": "#f7c346",
+      "col_header_text": "#333029",
+      "col_header_bg": "#ffffff",
+      "col_header_text_overlap": "#ffffff",
+      "col_page_heading_bg": "#ff8458",
+      "col_page_heading_text": "#333029",
+      "col_page_heading_text_over_image": "#ffffff",
+      "col_nav_links": "#333029",
+      "col_nav_bg": "#ffffff",
+      "col_search_bg": "#ff8458",
+      "col_search_text": "#5c1a03",
+      "col_search_headings": "#5c1a03",
+      "col_alt_text": "#333029",
+      "col_alt_text_bg": "rgba(0,0,0,0)",
+      "col_prod_sale": "rgba(0,0,0,0)",
+      "col_btn": "#ffffff",
+      "col_btn_bg": "#000000",
+      "col_label_sold_out": "#565656",
+      "col_label_sale": "#ffffff",
+      "col_label_low_stock": "#000000",
+      "col_label_custom": "#0b3d65",
+      "type_base_font": "basic_commercial_n4",
+      "type_heading_font": "basic_commercial_n4",
+      "type_nav_font": "basic_commercial_n4",
+      "type_logo_font": "basic_commercial_n4",
+      "font_size_base_int": 15,
+      "font_size_nav_int": 48,
+      "logo_size_int": 34,
+      "content_header_overlap": 0,
+      "prod_stock_warn_limit_int": 5,
+      "product_label_position": "tl",
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "show_text_area": true
+          }
+        },
+        "banner-index": {
+          "type": "banner-index",
+          "blocks": {
+            "1483959039059": {
+              "type": "image",
+              "settings": {
+                "subheading": ""
+              }
+            },
+            "1483959039060": {
+              "type": "image",
+              "settings": {
+                "subheading": "",
+                "button_1_text": "See more"
+              }
+            }
+          },
+          "block_order": [
+            "1483959039059",
+            "1483959039060"
+          ],
+          "settings": {
+            "head_img_height_int": 1000
+          }
+        },
+        "1483632146786": {
+          "type": "featured-collection",
+          "settings": {
+            "products_per_row_int": 3,
+            "product_rows_int": 2
+          }
+        },
+        "1568220025039": {
+          "type": "featured-images",
+          "blocks": {
+            "1485871096463-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "1485871096463-1": {
+              "type": "image",
+              "settings": {
+                "tint_opacity": 20
+              }
+            }
+          },
+          "block_order": [
+            "1485871096463-0",
+            "1485871096463-1"
+          ],
+          "settings": {
+            "skip_container": true
+          }
+        },
+        "1483632146787": {
+          "type": "featured-collection",
+          "settings": {
+            "products_per_row_int": 3,
+            "product_rows_int": 2
+          }
+        },
+        "1566493825980": {
+          "type": "slideshow-with-text",
+          "blocks": {
+            "1566493825980-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "1566493825980-1": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1566493825980-0",
+            "1566493825980-1"
+          ],
+          "settings": {
+            "slide_mode": "fade"
+          }
+        },
+        "1483635546290": {
+          "type": "featured-blog",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "1483632146786",
+        "1568220025039",
+        "1483632146787",
+        "1566493825980",
+        "1483635546290"
+      ]
+    },
+    "Seasons": {
+      "col_text": "#454f5b",
+      "col_headings": "#212b36",
+      "col_links": "#c05717",
+      "col_page_bg": "#ffffff",
+      "col_stars": "#f7c346",
+      "col_header_text": "#212b36",
+      "col_header_bg": "#ffffff",
+      "col_header_text_overlap": "#ffffff",
+      "col_page_heading_bg": "#fcf0e0",
+      "col_page_heading_text": "#212b36",
+      "col_page_heading_text_over_image": "#ffffff",
+      "col_nav_links": "#ffffff",
+      "col_nav_bg": "#25110d",
+      "col_search_bg": "#fdf8f2",
+      "col_search_text": "#454f5b",
+      "col_search_headings": "#212b36",
+      "col_alt_text": "#454f5b",
+      "col_alt_text_bg": "rgba(0,0,0,0)",
+      "col_prod_sale": "rgba(0,0,0,0)",
+      "col_btn": "#ffffff",
+      "col_btn_bg": "#330101",
+      "col_label_sold_out": "#444444",
+      "col_label_sale": "#bf0711",
+      "col_label_low_stock": "#330101",
+      "col_label_custom": "#c05717",
+      "type_base_font": "gill_sans_nova_n4",
+      "type_heading_font": "itc_novarese_n5",
+      "type_nav_font": "itc_novarese_n5",
+      "type_logo_font": "itc_novarese_n5",
+      "font_size_base_int": 15,
+      "font_size_nav_int": 36,
+      "logo_size_int": 34,
+      "content_header_overlap": 75,
+      "prod_stock_warn_limit_int": 5,
+      "product_label_position": "tl",
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "show_text_area": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "show_announcement": true,
+            "announcement_home_only": true,
+            "announcement_bar_text": "ANNOUNCE SOMETHING HERE"
+          }
+        },
+        "banner-index": {
+          "type": "banner-index",
+          "blocks": {
+            "1483959039059": {
+              "type": "image",
+              "settings": {}
+            },
+            "1484143749669": {
+              "type": "image",
+              "settings": {
+                "tint_opacity": 0
+              }
+            }
+          },
+          "block_order": [
+            "1483959039059",
+            "1484143749669"
+          ],
+          "settings": {
+            "enable_carousel": true,
+            "head_img_height_int": 800
+          }
+        },
+        "1484317010599": {
+          "type": "rich-text",
+          "settings": {}
+        },
+        "1566493567944": {
+          "type": "testimonials",
+          "blocks": {
+            "1566493567944-0": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "1568803947076": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1566493567944-0",
+            "1568803947076"
+          ],
+          "settings": {
+            "autoplay": true,
+            "logo_height": 40
+          }
+        },
+        "1566496449351": {
+          "type": "image-with-text",
+          "settings": {
+            "skip_container": true
+          }
+        },
+        "1483632146786": {
+          "type": "featured-collection",
+          "settings": {}
+        },
+        "1566493825980": {
+          "type": "slideshow-with-text",
+          "blocks": {
+            "1566493825980-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "1566493825980-1": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1566493825980-0",
+            "1566493825980-1"
+          ],
+          "settings": {}
+        },
+        "1483632146787": {
+          "type": "featured-collection",
+          "settings": {}
+        },
+        "1485871096463": {
+          "type": "featured-images",
+          "blocks": {
+            "1566482439149": {
+              "type": "image",
+              "settings": {
+                "tint_opacity": 30
+              }
+            },
+            "1566482260946-0": {
+              "type": "image",
+              "settings": {
+                "tint_opacity": 40
+              }
+            }
+          },
+          "block_order": [
+            "1566482439149",
+            "1566482260946-0"
+          ],
+          "settings": {
+            "skip_container": true
+          }
+        },
+        "1483635546290": {
+          "type": "featured-blog",
+          "settings": {}
+        },
+        "1566494880243": {
+          "type": "video",
+          "settings": {
+            "autoplay": true,
+            "skip_container": true
+          }
+        }
+      },
+      "content_for_index": [
+        "1484317010599",
+        "1566493567944",
+        "1566496449351",
+        "1483632146786",
+        "1566493825980",
+        "1483632146787",
+        "1485871096463",
+        "1483635546290",
+        "1566494880243"
+      ]
+    }
+  }
+}
