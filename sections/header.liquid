@@ -227,7 +227,7 @@
             </li>
           {%- endfor -%}
         </ul>
-
+       
       </div>
     
 
@@ -294,7 +294,9 @@
             </li>
           {%- endfor -%}
         </ul>
-          
+        <div class="main-menu-section main-menu-section--socials  main-menu-desktop-socials">
+            {% include 'social-icons', use_alt_custom_icon: true %}
+          </div>  
         <span class=" header-items__item header-items__login">
            <a class="header-items__login-link"
             href="{{ routes.account_login_url }}"
