@@ -1,15 +1,5 @@
 
-<div data-section-type="cart-template">
-  <div class="container">
-     {% for block in section.blocks %}
-      {%- case block.type -%}
-        {%- when '@app' -%}
-          {% render block %}
-        {%- else -%}
-          <!-- otros tipos de bloques como 'subtotal' o 'buttons' -->
-      {%- endcase -%}
-    {% endfor %}
-  </div>
+<div data-section-type="cart-template"> 
   {% capture header_content %}
     <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
       <a class="breadcrumbs__crumb" href="{{ routes.root_url }}">{{ 'general.breadcrumbs.home' | t }}</a>
@@ -33,6 +23,16 @@
       {{ header_content }}
     </div>
   {% endif %} 
+   <div class="container">
+     {% for block in section.blocks %}
+      {%- case block.type -%}
+        {%- when '@app' -%}
+          {% render block %}
+        {%- else -%}
+          <!-- otros tipos de bloques como 'subtotal' o 'buttons' -->
+      {%- endcase -%}
+    {% endfor %}
+  </div>
   <div class="container"> 
     <div id="main" class="content-main" role="main">  
 
