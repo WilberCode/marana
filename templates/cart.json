@@ -19,10 +19,10 @@
         "show_additional_checkout_buttons": true
       }
     },
-    "175017917550ab6c92": {
+    "17501791253feab564": {
       "type": "apps",
       "blocks": {
-        "goalify_progress_bar_block_cart_Mh7aMR": {
+        "goalify_progress_bar_block_cart_gBQmVG": {
           "type": "shopify://apps/goalify/blocks/progress-bar-blockCart/0834dd64-6591-4dfa-9cc4-bbb7ef032eed",
           "settings": {
             "n99gb_cart_css": "/* CSS Rules */",
@@ -31,13 +31,13 @@
         }
       },
       "block_order": [
-        "goalify_progress_bar_block_cart_Mh7aMR"
+        "goalify_progress_bar_block_cart_gBQmVG"
       ],
       "settings": {}
     }
   },
   "order": [
     "cart-items",
-    "175017917550ab6c92"
+    "17501791253feab564"
   ]
 }
