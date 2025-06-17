@@ -27,15 +27,15 @@
   {% endif %} 
   <div class="container"> 
     <div id="main" class="content-main" role="main"> 
-
-    {% if section.blocks.size > 0 %}
-        {% for block in section.blocks %}
-          <div class="scroll-trigger animate--slide-in">
-            {{ block.render }}
-          </div>
-        {% endfor %}
-      {% endif %}
-
+      
+    {% for block in section.blocks %}
+      {%- case block.type -%}
+        {%- when '@app' -%}
+          {% render block %}
+        {%- else -%}
+          <!-- otros tipos de bloques como 'subtotal' o 'buttons' -->
+      {%- endcase -%}
+    {% endfor %}
 
 
       {% if cart.item_count > 0 %}
