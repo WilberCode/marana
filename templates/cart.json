@@ -11,7 +11,13 @@
   "sections": {
     "cart-items": {
       "type": "cart-template",
-      "settings": {}
+      "settings": {
+        "cart_terms_show": false,
+        "cart_terms_page": "",
+        "cart_note_show": false,
+        "show_tax_and_shipping": true,
+        "show_additional_checkout_buttons": true
+      }
     }
   },
   "order": [
