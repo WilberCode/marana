@@ -28,7 +28,7 @@
   <div class="container"> 
       {% if section.blocks.size > 0 %}
             {% for block in section.blocks %}
-              {{ block }}
+              {{ block.render }}
             {% endfor %}
           {% endif %}
     <div id="main" class="content-main" role="main"> 
