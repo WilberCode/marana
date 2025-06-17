@@ -25,16 +25,13 @@
       {{ header_content }}
     </div>
   {% endif %} 
-  <div class="container">
-    <div id="main" class="content-main" role="main">
-
+  <div class="container"> 
       {% if section.blocks.size > 0 %}
             {% for block in section.blocks %}
               {{ block }}
             {% endfor %}
           {% endif %}
-
-
+    <div id="main" class="content-main" role="main"> 
       {% if cart.item_count > 0 %}
 
       <form action="{{ routes.cart_url }}" method="post" id="cartform">
