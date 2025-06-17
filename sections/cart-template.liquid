@@ -26,12 +26,18 @@
     </div>
   {% endif %} 
   <div class="container"> 
-      {% if section.blocks.size > 0 %}
-            {% for block in section.blocks %}
-              {{ block.render }}
-            {% endfor %}
-          {% endif %}
     <div id="main" class="content-main" role="main"> 
+
+    {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+          <div class="scroll-trigger animate--slide-in">
+            {{ block.render }}
+          </div>
+        {% endfor %}
+      {% endif %}
+
+
+
       {% if cart.item_count > 0 %}
 
       <form action="{{ routes.cart_url }}" method="post" id="cartform">
