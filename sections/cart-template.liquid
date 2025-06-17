@@ -28,6 +28,13 @@
   <div class="container">
     <div id="main" class="content-main" role="main">
 
+      {% if section.blocks.size > 0 %}
+            {% for block in section.blocks %}
+              {{ block }}
+            {% endfor %}
+          {% endif %}
+
+
       {% if cart.item_count > 0 %}
 
       <form action="{{ routes.cart_url }}" method="post" id="cartform">
@@ -260,7 +267,12 @@
         "id": "header_image",
         "label": "Image"
       }
-    ]
+    ],
+    "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
   }
 {% endschema %}
 
