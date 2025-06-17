@@ -1,7 +1,15 @@
-<!-- Begin ReCharge code -->
-{% include 'subscription-cart-footer' %}
-<!-- End ReCharge code -->
+
 <div data-section-type="cart-template">
+  <div class="container">
+     {% for block in section.blocks %}
+      {%- case block.type -%}
+        {%- when '@app' -%}
+          {% render block %}
+        {%- else -%}
+          <!-- otros tipos de bloques como 'subtotal' o 'buttons' -->
+      {%- endcase -%}
+    {% endfor %}
+  </div>
   {% capture header_content %}
     <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
       <a class="breadcrumbs__crumb" href="{{ routes.root_url }}">{{ 'general.breadcrumbs.home' | t }}</a>
@@ -26,17 +34,7 @@
     </div>
   {% endif %} 
   <div class="container"> 
-    <div id="main" class="content-main" role="main"> 
-      
-    {% for block in section.blocks %}
-      {%- case block.type -%}
-        {%- when '@app' -%}
-          {% render block %}
-        {%- else -%}
-          <!-- otros tipos de bloques como 'subtotal' o 'buttons' -->
-      {%- endcase -%}
-    {% endfor %}
-
+    <div id="main" class="content-main" role="main">  
 
       {% if cart.item_count > 0 %}
 
