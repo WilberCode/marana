@@ -3312,7 +3312,71 @@
           "show_less": "Show less",
           "details": "Details",
           "payment_details": "Payment details"
+        },
+        "emv_details": {
+          "auth": "AUTH:",
+          "aid": "AID:",
+          "source": "SOURCE:"
+        },
+        "card_payment_short_details": "{{paymentTypeLabel}} •••• {{lastDigits}}",
+        "payment_type": {
+          "gift_card": "Gift card",
+          "store_credit": "Store credit",
+          "money_order": "Postal giro",
+          "cash_on_delivery": "Cash on delivery",
+          "bank_deposit": "Bank deposit",
+          "manual": "Manual"
         }
+      },
+      "shipping": {
+        "address": "Shipping address",
+        "address_map_marker": "Shipping address",
+        "method": "Shipping method",
+        "summary": "Shipping",
+        "free": "Free",
+        "free_shipping_discount": "Free shipping",
+        "one_time": "One-time shipping",
+        "subscription": "Subscription shipping"
+      },
+      "show_items": "Show articles",
+      "subtitle": "Confirmation date: {{date}}",
+      "subtotal": "Subtotal",
+      "summary_list_title_accessibility_label": "Order items",
+      "summary_title": "Order Summary",
+      "summary_totals_title_accessibility_label": "Order totals",
+      "taxes": "Taxes",
+      "title": "Order {{name}}",
+      "total": "Total",
+      "unit_price": "{{price}}/unit",
+      "location": "Branch",
+      "not_applicable": "N. a.",
+      "fully_refunded_label": "REFUNDED",
+      "partially_refunded_label": "PARTIALLY REFUNDED",
+      "refunded_amount": "Refunded",
+      "discount": "Discount",
+      "no_data": "None",
+      "pagination": {
+        "load_more": "Load more",
+        "load_more_accessibility_label": "Load more items",
+        "loading_accessibility_label": "Loading articles"
+      },
+      "returns": {
+        "expand_events_label": "Show details",
+        "hide_events_label": "Hide details",
+        "print_shipping_label": "Print shipping label",
+        "tracking_number": "Tracking number:",
+        "return_and_refund_modal_header": "Refund Policy",
+        "ineligible_return_message": "No item in this order meets the return requirements.",
+        "ineligible_return_message_when_returned": "No other item in this order meets the return requirements."
+      },
+      "request_return_failed": "An error occurred while processing your request. Please try again.",
+      "mobile_summary_toggle_button": {
+        "open": "Show order summary",
+        "closed": "Hide order summary"
+      },
+      "shipment_timeline": {
+        "expand_events_label": "Show details",
+        "expand_events_accessibility_label": "Show order shipping details"
       }
     }
   }
