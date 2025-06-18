@@ -14,14 +14,14 @@
       "page": "Page {{ page }}"
     },
     "404": {
-      "title": "404 Page Not Found",
-      "subtext": "The page you requested does not exist.",
+      "title": "404 Page not found",
+      "subtext": "The response to this page does not exist",
       "link": "Continue shopping"
     },
     "search": {
       "title": "Search",
       "placeholder": "Search",
-      "no_results": "Your search for \"{{ terms }}\" did not yield any results.",
+      "no_results": "The search for \"{{ terms }}\" returned no results.",
       "results_with_count": {
         "one": "We found {{ count }} result",
         "other": "We found {{ count }} results"
@@ -34,22 +34,22 @@
       "on_facebook": "Share on Facebook",
       "on_twitter": "Share on Twitter",
       "on_pinterest": "Pin the main image",
-      "by_email": "Email this product to somebody",
+      "by_email": "Send this product by email to someone",
       "check_out_html": "Check out {{ title }}"
     },
     "pagination": {
       "previous": "Previous",
-      "next": "Next"
+      "next": "next"
     },
     "breadcrumbs": {
-      "home": "Home"
+      "home": "Home Page"
     },
     "accessibility_labels": {
       "previous": "Previous",
       "next": "Next",
       "close": "Close",
-      "video_play": "Play video",
-      "skip_to_content": "Skip to content"
+      "video_play": "Play the video",
+      "skip_to_content": "jump to content"
     },
     "currency": {
       "dropdown_label": "Currency"
@@ -4045,7 +4045,117 @@
       "wednesday": "Wednesday",
       "thursday": "Thursday",
       "friday": "Friday",
-      "saturday": "Saturday"
+      "saturday": "Saturday",
+      "tuesdayAbbreviation": "Ma.",
+      "sunday": "Sunday",
+      "mondayAbbreviation": "Moist.",
+      "thursdayAbbreviation": "Ju.",
+      "wednesdayAbbreviation": "Wed.",
+      "fridayAbbreviation": "Vi.",
+      "saturdayAbbreviation": "Yes.",
+      "sundayAbbreviation": "Do.",
+      "showNextMonth": "Show next month, {{month}} {{year}}",
+      "showPreviousMonth": "Show the previous month, {{month}} {{year}}",
+      "rangeStart": "Start of range",
+      "inRange": "Within range",
+      "rangeEnd": "End of range",
+      "autocompleteOptionsAvailable": {
+        "other": "{{count}} items available",
+        "one": "{{count}} item available"
+      },
+      "removeItem": "Delete {{label}}",
+      "removeTag": "Delete tag",
+      "month": {
+        "one": "month",
+        "other": "months"
+      },
+      "mapClusterTitle": {
+        "one": "Group of {{number}} scorer",
+        "other": "Group of {{number}} markers"
+      },
+      "qrCode": "QR Code",
+      "expandSheet": "Expand",
+      "addFile": "Add file",
+      "dropzoneInvalidFileType": "The file type is not supported.",
+      "dropzoneDraggedOver": "Drop the file to upload it",
+      "clipboardCopied": "Copied",
+      "clipboardFailedToCopy": "Error copying",
+      "clear": "Delete"
+    },
+    "profile_preview_bar": {
+      "customize_button": "Customize",
+      "hide_bar": "Hide bar",
+      "navigate_to_admin": "Navigate to the control panel",
+      "previewing": "Preview of:",
+      "saved_at": "Saved on {{date}} at {{time}}",
+      "viewing": "You are watching:",
+      "not_available": "Profile data not available",
+      "close_preview": "Close preview",
+      "actions_button": "Actions"
+    },
+    "settings": {
+      "loading_accessibility_message": "Loading configuration page",
+      "title": "Settings",
+      "log_out_everywhere": {
+        "title": "Close all sessions",
+        "description": "If you lost a device or have security concerns, log out of all sessions to ensure the security of your account.",
+        "button": "Close all sessions",
+        "warning_message": "The session will also be closed on this device."
+      }
+    },
+    "date": {
+      "range": "{{startDate}}–{{endDate}}",
+      "humanize": {
+        "lessThanOneYearAgo": "{{date}} at {{time}}",
+        "lessThanOneMinuteAgo": "Now",
+        "lessThanOneWeekAway": "{{weekday}} at {{time}}",
+        "lessThanOneWeekAgo": "{{weekday}} at {{time}}",
+        "yesterday": "Yesterday at {{time}}",
+        "today": "Today at {{time}}",
+        "tomorrow": "Tomorrow at {{time}}",
+        "lessThanOneYearAway": "{{date}} at {{time}}",
+        "lessThanOneHourAgo": {
+          "one": "{{count}} minute ago",
+          "other": "{{count}} minutes ago"
+        }
+      }
+    },
+    "active_inspector": {
+      "extension": {
+        "select": "Select the extension called \"{{extensionName}}\"",
+        "unselect": "Deselect the extension named \"{{extensionName}}\"",
+        "move_down": "Move the extension to the next position",
+        "move_up": "Move the extension to the previous position",
+        "remove": "Remove the extension",
+        "move_down_tooltip": "Move to the next position",
+        "move_up_tooltip": "Move to the previous position",
+        "remove_tooltip": "Delete"
+      }
+    },
+    "editor": {
+      "link_new_tab_confirmation": "This link cannot be opened within the editor. It will open in a new window ({{resolved_to_link}}). Click OK to continue."
+    },
+    "throttle": {
+      "too_many_attempts": {
+        "message": "Too many attempts",
+        "description": "Try again in a few minutes"
+      }
+    },
+    "shop_ads": {
+      "subtitle": "Available for a limited time",
+      "title": "Exclusive Shop Offers",
+      "button": "Explore in Shop",
+      "previous_button": "Previous",
+      "next_button": "Next"
+    },
+    "knowledge_base": {
+      "self_serve_returns": {
+        "enabled": "Customers can request and manage returns directly.",
+        "disabled": "Customers must contact the merchant to request a refund."
+      }
+    },
+    "privacy_banner": {
+      "cookie_preferences_link": "Cookie Preferences"
     }
   }
 }
