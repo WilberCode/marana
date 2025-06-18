@@ -1058,6 +1058,11 @@
         "type": "shopify://apps/ea-sticky-cart/blocks/app-embed-block/a725b883-a528-4381-b4d8-4a870dad14a6",
         "disabled": false,
         "settings": {}
+      },
+      "11128031370435530746": {
+        "type": "shopify://apps/cro-cart-drawer-free-gifts/blocks/app-embed/285be1af-7782-4800-bed8-6f91aa670a88",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
