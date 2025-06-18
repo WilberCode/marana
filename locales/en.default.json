@@ -388,8 +388,8 @@
     },
     "checkout": {
       "contact": {
-        "postal_code_label": "Distrito",
-        "postal_code_placeholder": "Distrito",
+        "postal_code_label": "District",
+        "postal_code_placeholder": "District",
         "title": "Information",
         "address_title": "Address",
         "delivery_option_title": "Delivery method",
@@ -414,7 +414,46 @@
         "province_label": "Province / State",
         "province_placeholder": "Province / State",
         "county_label": "County",
-        "county_placeholder": "County"
+        "county_placeholder": "County",
+        "state_label": "State",
+        "state_placeholder": "State",
+        "region_label": "Region",
+        "region_placeholder": "Region",
+        "prefecture_label": "Prefecture",
+        "prefecture_placeholder": "Prefecture",
+        "governorate_label": "Province",
+        "governorate_placeholder": "Province",
+        "emirate_label": "Emirate",
+        "emirate_placeholder": "Emirate",
+        "state_and_territory_label": "State/Territory",
+        "state_and_territory_placeholder": "State/Territory",
+        "phone_label": "Telephone",
+        "optional_phone_label": "Phone (optional)",
+        "phone_placeholder": "Telephone",
+        "phone_tooltip": "In case we need to contact you about your order.",
+        "zip_code_label": "District",
+        "zip_code_placeholder": "District",
+        "postcode_placeholder": "Postal code",
+        "pincode_label": "Personal Identification Code",
+        "pincode_placeholder": "Personal Identification Code",
+        "postcode_label": "District",
+        "region_none": "None selected",
+        "civic_number_warning": "Add a home phone number if you have one",
+        "optional_last_name_label": "Last name (optional)",
+        "company_contact_info": "{{companyName}} · {{contact}}",
+        "different_shipping_address_label": "Send to a different address",
+        "different_shipping_address_text": "Use an address only once for this order",
+        "change_company_location_link_label": "Change company branch",
+        "change_location_link_label": "Change branch",
+        "ship_to_company": "Send to {{companyName}}",
+        "shipping_used_as_billing_notice": "It will also be used as the billing address for this order.",
+        "company_attention_label": "Company/To the attention of",
+        "optional_company_attention_label": "Company/recipient (optional)",
+        "optional_zip_code_label": "Postal code (optional)",
+        "available_addresses_label": "Available addresses",
+        "optional_postal_code_label": "Postal code (optional)",
+        "optional_postcode_label": "Postal code (optional)",
+        "optional_pincode_label": "Personal identification code (optional)"
       },
       "field_errors": {
         "address_zip_blank": "Distrito"
@@ -704,6 +743,145 @@
           "dragged_over": "Drop the file you want to upload"
         },
         "loading": "Loading…"
+      },
+      "delivery_options": {
+        "ship": "Shipping",
+        "pick_up_in_two_hours": "It is usually ready in 2 hours",
+        "pick_up_in_four_hours": "Usually ready in 4 hours",
+        "pick_up_immediately": "Ready to be picked up now",
+        "pick_up_next_day": "Ready for pickup the next day",
+        "pick_up_in_one_hour": "Usually ready in 1 hour",
+        "pick_up_in_twenty_four_hours": "Usually ready in 24 hours",
+        "pick_up_in_two_to_four_days": "Usually ready in 2 to 4 days",
+        "pick_up": "I collect",
+        "free_total_label": "Free",
+        "pick_up_in_two_to_four_hours": "Ready for pickup in 4 hours",
+        "pick_up_in_zero_to_two_hours": "Ready for pickup in 2 hours",
+        "pick_up_in_five_or_more_days": "Usually ready in 5 days or more",
+        "shipping_address": "Shipping address",
+        "pick_up_locations": "Store branches",
+        "pickup_point_method_definition": "Shipping to a pickup point",
+        "retail_method_definition": "Retail shipping",
+        "none_method_definition": "No shipping",
+        "subscription_pickup_information": "This delivery method will apply to all items in this order and to all future orders placed using this subscription.",
+        "ship_to_address": "Send to an address",
+        "pick_up_from_store": "In-store pickup"
+      },
+      "customer_account": {
+        "not_user_label": "Aren't you %{first_name}?",
+        "have_an_account_label": "Do you have an account?",
+        "sign_in_link_label": "Log in",
+        "sign_out_link_label": "Log out",
+        "incomplete_address": "The selected address is incomplete. %{update_address_link} or select a different address.",
+        "invalid_address": "The selected address is not valid. %{update_address_link} or select a different address.",
+        "rollup_label": "Account",
+        "invalid_shipping_method_summary": "Select a valid shipping address to see available shipping methods.",
+        "saved_address_option_link": "Use a saved address",
+        "saved_address_modal_title": "Use my saved addresses",
+        "saved_address_option_description": {
+          "one": "You have {{count}} saved address.",
+          "other": "You have {{count}} saved addresses."
+        },
+        "save_my_information_label": "Save my information for next time"
+      },
+      "stock": {
+        "page_title": "Inventory problems",
+        "title": "Sold out",
+        "product_column_header": "Products",
+        "quantity_column_header": "Quantity",
+        "price_column_header": "Price",
+        "status_column_header": "State",
+        "removed_from_cart_notice": "Removed from the cart",
+        "sold_out_label": "Sold out",
+        "reduced_label": "Reduce",
+        "reduced_with_quantity_label": "Only %{quantity_available} left",
+        "remove_from_cart_button_label": "Remove from cart",
+        "continue_shopping_button_label": "Continue",
+        "go_back_to_cart_button_label": "Return to my cart",
+        "remove": "Remove",
+        "empty_cart_label": "Your cart is empty",
+        "quantity_update": {
+          "page_title": "Quantity update",
+          "title": "Quantity update",
+          "description": "The available quantities of these items have changed and were updated in your cart."
+        },
+        "unpurchasable_product": {
+          "title": "A product cannot be purchased",
+          "header": "Some items have been removed from the cart",
+          "message": "These items are not available for B2B orders.",
+          "status_column_header": "Not available"
+        },
+        "unpurchasable_product_generic": {
+          "title": "A product cannot be purchased",
+          "message": "These items are not available.",
+          "status_column_header": "Not available",
+          "header": "Some items have been removed from the cart"
+        },
+        "items_unavailable_notice": "Some items are not available. The shopping cart has been updated.",
+        "unshippable_product": {
+          "header": {
+            "one": "No delivery available for %{count} item",
+            "other": "No delivery available for %{count} items"
+          },
+          "title": "No delivery available",
+          "message": {
+            "other": "These items will be removed from the cart because there are no delivery options available for your address.",
+            "one": "This item will be removed from the cart because there are no delivery options available for your address."
+          },
+          "status_column_header": "No delivery"
+        },
+        "price_update": {
+          "title": "Price update",
+          "description": "The prices of these items changed and were updated in the cart."
+        },
+        "return_to_store_label": "Return to the store",
+        "item_label": {
+          "one": "{{count}} item",
+          "other": "{{count}} items"
+        },
+        "continue_cta_label": "Continue with the payment",
+        "out_of_stock": {
+          "description": "These items are no longer available and have been removed from the cart.",
+          "items_unavailable": "Some items are no longer available and have been removed from the cart."
+        },
+        "unfulfillable_product": {
+          "title": "Delivery not available",
+          "message": {
+            "one": "%{delivery_method} is no longer available for this item.",
+            "other": "%{delivery_method} is no longer available for these items."
+          },
+          "default_message": {
+            "one": "The chosen delivery method is no longer available for this item.",
+            "other": "The chosen delivery method is no longer available for these items."
+          }
+        },
+        "price_and_quantity_update": {
+          "title": "Price and quantity update",
+          "description": "The prices and quantities available for these items changed and were updated in the cart."
+        }
+      },
+      "order_summary": {
+        "title": "Order Summary",
+        "discount_title": "Discount",
+        "order_name_label": "Order %{name}",
+        "discount_label": "Discount code",
+        "discount_placeholder": "Discount code",
+        "gift_card_title": "Gift card",
+        "gift_card_label": "Gift card",
+        "gift_card_placeholder": "Gift card",
+        "gift_card_and_discount_title": "Discount code or gift card",
+        "gift_card_and_discount_label": "Discount code or gift card",
+        "gift_card_and_discount_placeholder": "Discount code or gift card",
+        "remove_discount_label": "Remove discount",
+        "remove_gift_card_label": "Delete gift card",
+        "free_shipping_discount_label": "Free shipping",
+        "apply_discount_button_label": "Apply",
+        "applied_discount_message": "%{amount} were deducted from the total price",
+        "discount_has_been_applied": "The discount has been applied",
+        "discount_has_been_removed": "The discount has been removed",
+        "gift_card_has_been_applied": "The gift card has been applied",
+        "gift_card_has_been_removed": "The gift card has been removed",
+        "shopping_cart_label": "Shopping cart"
       }
     }
   }
