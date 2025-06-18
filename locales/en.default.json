@@ -3120,7 +3120,199 @@
         "company_tracking_number": "Tracking number for {{company}}:",
         "confirmed_label": "Confirmed",
         "confirmed_title": "Your order is confirmed",
-        "delivered_description": "This shipment was delivered."
+        "delivered_description": "This shipment was delivered.",
+        "delivered_title": "Your shipment was delivered",
+        "estimated_delivery": "It is estimated for {{date}}",
+        "in_review_description": "We will contact you if we need more information or once the order is confirmed.",
+        "in_review_label": "Under review",
+        "delivered_label": "Delivered",
+        "in_review_title": "The order is being reviewed",
+        "no_tracking_number": "There is no tracking number for this shipment.",
+        "on_its_way_label": "On the way",
+        "on_its_way_title": "Your shipment is on its way",
+        "out_for_delivery_label": "Sent to the recipient",
+        "out_for_delivery_title": "Your shipment is being sent to the recipient",
+        "resume_tracking": "Resume tracking",
+        "submitted_label": "Sent",
+        "track_shipment": "Track shipment",
+        "request_return": "Request refund",
+        "attempted_delivery_label": "Delivery attempt",
+        "attempted_delivery_description": "The delivery attempt was not successful.",
+        "confirmed_description": "Your order has been received.",
+        "on_its_way_description": "This shipment is on its way.",
+        "out_for_delivery_description": "The delivery of this shipment is in progress.",
+        "preparing_for_shipping_label": "Preparing for shipment",
+        "preparing_for_shipping_description": "These items are being prepared for shipment.",
+        "ready_for_pickup_label": "Ready for retirement",
+        "ready_for_pickup_description": "These items are ready for pickup. Please bring the order confirmation when you come to collect them.",
+        "picked_up_label": "Withdrawn",
+        "picked_up_description": "These items were withdrawn.",
+        "submitted_description": "Review the order and payment details.",
+        "last_updated": "Last updated on {{date}}",
+        "multiple_shipments_label": "Multiple shipments",
+        "view_order_for_details": "View the order for information",
+        "confirmed_description_digital": "You will receive an email when the order is ready.",
+        "delivered_description_gift_card": {
+          "one": "The gift card was sent by email.",
+          "other": "The gift cards were sent by email."
+        },
+        "gift_card_label": {
+          "one": "Gift card",
+          "other": "Gift cards"
+        },
+        "ready_for_pickup_location": "Your order is ready for pickup at the branch",
+        "confirmed_description_pickup": "You will receive an email when your order is ready for pickup.",
+        "confirmed_gift_card_additional_description": {
+          "one": "The gift card will be sent in a separate email.",
+          "other": "Each gift card will be sent in a separate email."
+        },
+        "confirmed_description_gift_card_text": "You will receive a text message when your order is ready.",
+        "delivered_description_gift_card_text": {
+          "one": "The gift card was sent by text message.",
+          "other": "The gift cards were sent by text message."
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "The gift card will be sent in a separate text message.",
+          "other": "Each gift card will be sent in a separate text message."
+        },
+        "gift_resend_success": {
+          "one": "Gift card forwarded",
+          "other": "Forwarded gift cards"
+        },
+        "gift_resend_failure": {
+          "one": "There was a problem forwarding your gift card. Please try again or contact us.",
+          "other": "There was a problem forwarding your gift cards. Please try again or contact us."
+        },
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "Manage with Amazon",
+            "new_window_disclaimer": "(opens a new window)"
+          }
+        },
+        "there_was_a_problem_label": "There has been a problem",
+        "buy_with_prime_logo_accessibility_label": "Amazon Buy with Prime logo",
+        "delivered": "The {{date}} arrived",
+        "complete_label": "Completed",
+        "attempted_to_deliver_label": "Delivery was attempted.",
+        "multiple_statuses_label": "Statuses of various orders",
+        "status_timestamp": "Updated on {{date}}",
+        "delivered_description_digital": {
+          "one": "This article is completed.",
+          "other": "These articles are completed."
+        },
+        "delivery_promise": {
+          "promise_line": {
+            "single_brand_label": "Delivery backed by",
+            "mixed_brands_label": "Guaranteed delivery",
+            "not_delivered_by_label": "Not yet delivered on {{date}}",
+            "modal_accessibility_button_label": "Information about the delivery promise"
+          },
+          "claim_shop_cash_cta": {
+            "has_shop_app_label": "Claim your Shop Cash",
+            "no_shop_app_label": "{{appDownloadLink}} to claim Shop Cash",
+            "download_shop_app_label": "Download Shop"
+          },
+          "details_modal": {
+            "title": "Delivery backed by",
+            "modal_accessiblity_label": "Information about the delivery promise",
+            "delivery_by_label": "Delivery for {{date}}",
+            "delivery_guaranteed_by_label": "Guaranteed delivery date for {{date}}",
+            "shop_cash_claim": {
+              "may_be_eligible_label": "Shop Promise guarantees fast and reliable delivery. Request Shop Cash if your order arrives late.",
+              "may_be_eligible_not_authorized_label": "You may be able to claim Shop Cash because this order arrived late. Log in to see all the information.",
+              "redeemed_label": "You already claimed Shop Cash because this order arrived late.",
+              "expired_label": "This order does not meet the requirements for a late delivery claim because the 30-day warranty has expired.",
+              "no_shop_cash_label": "This order does not meet the requirements for a late delivery claim because it was not paid with Shop Pay.",
+              "no_longer_guaranteed_label": "These items are no longer covered by the delivery guarantee.",
+              "claim_shop_cash_title": "Scan to claim {{amount}} in Shop Cash",
+              "claim_shop_cash_description": "You can use your Shop Cash on future purchases in the Shop app."
+            },
+            "delivery_guarantee_label": "Delivery guarantee"
+          }
+        },
+        "external_promise_manage_button_label": {
+          "buy_with_prime": "Manage on Amazon"
+        },
+        "delivery_promise_v2": {
+          "promise_line": {
+            "shop_promise_brand_label": "Guaranteed delivery by",
+            "external_promise_brand_label": "Delivery before",
+            "not_delivered_by_label": "Delivered after {{date}}",
+            "delivery_guarantee_expired_label": "The delivery warranty has expired",
+            "modal_accessibility_button_label": "Information about the delivery promise",
+            "download_shop_app_button_label": "Download Shop to track",
+            "track_with_shop_button_label": "Track with Shop",
+            "claim_shop_cash_button_label": "Claim Shop Cash"
+          },
+          "details_modal": {
+            "title": "Delivery guarantee",
+            "active_delivery_guarantee_label": "Delivery for {{date}}",
+            "expired_delivery_guarantee_description": "The 30-day Shop Promise warranty for this order has expired.",
+            "expired_badge_label": "Expired",
+            "order_includes_guarantees_label": "Your order includes {{deliveryAgreementsCount}} warranties",
+            "delivered_after_label": "Delivered after {{date}}",
+            "claimed_shop_cash_description": "Since this order arrived late, you claimed {{amount}} of Shop Cash.",
+            "order_includes_guarantees_description": "Shop Promise guarantees fast and reliable delivery. Claim Shop Cash if your order arrives after {{date}}.",
+            "delivered_after_description": "Since your order arrived late, you are eligible to claim {{amount}} of Shop Cash.",
+            "eligible_to_claim_shop_cash_description": "Since your order arrived late, you are eligible to claim {{amount}} of Shop Cash.",
+            "learn_more_button_label": "More information",
+            "claim_shop_cash_button_label": "Claim Shop Cash",
+            "view_balance_in_shop_button_label": "View balance in Shop",
+            "scan_to_claim_shop_cash_label": "Scan to claim {{amount}} in Shop Cash"
+          }
+        },
+        "tracking_number": {
+          "one": "Tracking number",
+          "other": "Tracking numbers"
+        },
+        "gift_card_resend_button": {
+          "one": "Resend gift card",
+          "other": "Resend gift cards"
+        }
+      },
+      "status_mark_as_delivered": "Mark as delivered",
+      "buy_again": "Buy again",
+      "buy_again_accessibility_label": "Reorder for order {{orderId}}",
+      "manage": "Manage",
+      "manage_accessiblity_label": "Manage order {{orderId}}",
+      "fulfillment_status_title": "Order preparation status: {{status}}",
+      "list_title_with_pending_orders": "Orders:",
+      "list_title_confirmed_orders_accessibility_label": "Orders: confirmed",
+      "list_title_pending_orders_accessibility_label": "Orders: pending",
+      "switch_order_type_pending_orders_accessibility_label": "Change the order type. Currently, pending orders are displayed.",
+      "switch_order_type_confirmed_orders_accessibility_label": "Change the order type. Currently, confirmed orders are shown."
+    },
+    "order_details": {
+      "addresses_section_title": "Billing and shipping",
+      "billing_address": "Billing address",
+      "card_ending_with": "that ends in {{lastDigits}}",
+      "contact": "Contact",
+      "hide_items": "Hide items",
+      "loading": "Loading order details",
+      "loading_finished_accessibility_message": "The order details have been loaded.",
+      "payment": {
+        "status_in_review": "Payment due after review",
+        "status_unpaid": "Payment due on {{date}}",
+        "title": "Payment",
+        "card_payment_details": "finished in {{lastDigits}} - {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "Paid with Shop Pay Installments",
+          "view_schedule": "View schedule"
+        },
+        "manual_payment_methods": {
+          "money_order": "Postal giro: {{formattedTransactionAmount}}",
+          "cash_on_delivery": "Cash on Delivery (COD): {{formattedTransactionAmount}}",
+          "bank_deposit": "Bank deposit: {{formattedTransactionAmount}}",
+          "manual": "Manual - {{formattedTransactionAmount}}"
+        },
+        "gift_card_payment_details": "finished in {{lastDigits}} - {{formattedTransactionAmount}}",
+        "store_credit_payment_details": "Store credit: {{formattedTransactionAmount}}",
+        "transactions": {
+          "show_all": "Show all",
+          "show_less": "Show less",
+          "details": "Details",
+          "payment_details": "Payment details"
+        }
       }
     }
   }
