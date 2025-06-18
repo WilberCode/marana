@@ -386,7 +386,17 @@
     "addresses": {
       "postal_code": "Postal code",
       "zip_code": "Postal code",
-      "postcode": "Postal code"
+      "postcode": "Postal code",
+      "prefecture": "Prefecture",
+      "state": "State",
+      "pincode": "Postal code",
+      "region": "Region",
+      "province": "Province",
+      "state_and_territory": "State/Territory",
+      "county": "County",
+      "emirate": "Emirate",
+      "governorate": "Province",
+      "confirm": "Are you sure you want to delete this address?"
     },
     "checkout": {
       "contact": {
@@ -2634,6 +2644,130 @@
       "last_name": "Last name",
       "body": "message",
       "signature": "Address"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Characteristics",
+        "best_selling": "Best sellers",
+        "az": "Alphabetically, A-Z",
+        "za": "Alphabetically, Z-A",
+        "price_ascending": "Price, low to high",
+        "price_descending": "Price, highest to lowest",
+        "date_ascending": "Date: oldest to newest",
+        "date_descending": "Date: recent to old"
+      }
+    },
+    "errors": {
+      "blank": "cannot be blank",
+      "credit_card_session_expired": "The credit card authorization has expired. Please enter your payment information once again. No charge has been made to your card.",
+      "empty": "cannot be empty",
+      "invalid_email": "Must be a valid email address",
+      "discount_disabled": "This discount has been deactivated",
+      "discount_expired": "This discount is no longer valid",
+      "discount_limit_reached": "This discount has reached its usage limit",
+      "discount_not_found": "It was not possible to find a valid discount matching the entered code",
+      "customer_already_used_once_per_customer_discount_notice": "This discount has reached its usage limit",
+      "gift_card_already_applied": "The code has already been applied to your order",
+      "gift_card_code_invalid": "Invalid code",
+      "gift_card_currency_mismatch": "Your gift card is in %{gift_card_currency}. Contact us to have it reissued in %{checkout_currency}.",
+      "gift_card_depleted": "There are no funds available on this gift card",
+      "gift_card_disabled": "The gift card is deactivated",
+      "gift_card_expired": "The gift card has expired",
+      "invalid": "not valid",
+      "bad_domain": "contains an invalid domain name",
+      "taken": "has already been taken",
+      "contains_html_tags": "cannot contain HTML tags",
+      "too_short": "is too short (must contain a minimum of %{count} characters)",
+      "too_long": "is too long (the maximum is %{count} characters)",
+      "password_mismatch": "must match the supplied password",
+      "contains_spaces": "starts or ends with spaces.",
+      "email_domain_invalid": "the provider is not compatible",
+      "invalid_for_country": "not valid for %{country}",
+      "invalid_for_country_and_province": "not valid for %{province} and %{country}",
+      "invalid_province_in_country": "is not a valid province in %{country}",
+      "invalid_state_in_country": "is not a valid state in %{country}",
+      "invalid_region_in_country": "is not a valid region in %{country}",
+      "less_than_or_equal_to": "must be less than or equal to %{count}",
+      "not_supported": "is not compatible",
+      "full_name_required": "Enter a first and last name",
+      "invalid_for_card_type": "not valid for this type of card",
+      "expired": "The credit card has expired",
+      "invalid_format": "it is not a credit card number",
+      "invalid_type": "Sorry, we do not accept cards of this type",
+      "invalid_start_date_or_issue_number_for_debit": "A valid start date or issue number is required",
+      "invalid_expiry_year": "is not a valid expiration year",
+      "reset_password_html": "This email address has already been associated with an account. If the account is yours, you can <a href=\"/account/login#recover\">reset your password here</a>",
+      "verify_email": "We have sent an email to %{customer_email} please click on the included link to verify your email address.",
+      "blocked_address": "This location is not supported",
+      "product_not_available": "the product is not listed for this customer.",
+      "shop_404": {
+        "title": "Create an ecommerce website and sell online! Ecommerce software made by Shopify",
+        "heros": {
+          "store_unavailable": "We're sorry, this store is currently unavailable.",
+          "store_not_exist": "This store does not exist.",
+          "no_storefront": "This store does not have a website yet."
+        },
+        "links": {
+          "explore_other_stores": "Explore other stores",
+          "start_free_trial": "Start a free trial"
+        },
+        "owner_ctas": {
+          "header": "Are you the owner of the store?",
+          "fix_domain": "To finish setting up your new web address, go to %{domain_settings_link}. Click on \"Connect domain\" and enter: %{domain}.<br>If you have trouble accessing the store, try the page %{forgot_your_store_link}.",
+          "fix_domain_link_text": "the configuration of your domain",
+          "forgot_your_store_link_text": "Did you forget your store?",
+          "add_storefront": "To set up your website, you can configure the Online Store channel in the %{admin_link}. If you have trouble accessing the store, try the %{forgot_your_store_link} page.",
+          "admin_link_text": "control panel"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Sells in person",
+            "caption": "Get the features you need to manage your physical store, whether it's just starting out or growing.",
+            "link_text": "Start free trial"
+          },
+          "open_a_store": {
+            "header": "Open a new Shopify store",
+            "caption": "Start a free 3-day trial and continue for $1/month for the next 3 months.",
+            "link_text": "Register now"
+          },
+          "editions": {
+            "header": "Discover Shopify Editions",
+            "caption": "With over 100 product updates, you can be more productive, creative, and powerful in trading than you ever imagined.",
+            "link_text": "Explore the latest from Editions"
+          },
+          "store_owner": {
+            "header": "Are you the owner of the store?",
+            "caption": "Having trouble accessing the store? Try the %{forgot_your_store_link} feature. If you want to reactivate your store, contact %{shopify_support_link}.",
+            "shopify_support_link_text": "Shopify customer service"
+          }
+        }
+      }
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "Error resetting the password",
+        "no_account_found": "No account was found with this email address.",
+        "invalid_credentials": "Incorrect email or password.",
+        "denylisted_reset_password": "You cannot access your account because the current password is not secure. You will receive an email to update your password.",
+        "signup_disabled": "The creation of the customer account has been disabled.",
+        "subscribe_error": "Subscription error",
+        "unsubscribe_error": "Error canceling the subscription"
+      },
+      "address": {
+        "updated": "Address updated successfully.",
+        "error_updating": "Error updating the address.",
+        "created": "Address created successfully",
+        "error_creating": "Error creating the address.",
+        "deleted": "Address successfully deleted.",
+        "error_deleting": "Error deleting the address."
+      },
+      "order": {
+        "not_available": "This order is not available.",
+        "financial_status": {
+          "authorized": "Authorized",
+          "pending": "Pending"
+        }
+      }
     }
   }
 }
