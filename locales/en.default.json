@@ -881,7 +881,182 @@
         "discount_has_been_removed": "The discount has been removed",
         "gift_card_has_been_applied": "The gift card has been applied",
         "gift_card_has_been_removed": "The gift card has been removed",
-        "shopping_cart_label": "Shopping cart"
+        "shopping_cart_label": "Shopping cart",
+        "discount_requires_customer_notice": "Enter your shipping information to apply the discount code <strong style=\"text-transform:uppercase\">%{code}</strong>",
+        "cart_does_not_meet_discount_requirements_notice": "The discount code <strong style=\"text-transform:uppercase\">%{code}</strong> is not valid for the items in your cart",
+        "customer_does_not_meet_discount_requirements_notice": "The discount code <strong style=\"text-transform:uppercase\">%{code}</strong> is not available for you at this time",
+        "discount_already_applied": "We have applied a discount to your order. It is not possible to apply an additional discount.",
+        "shipping_information_does_not_meet_discount_requirements_notice": "The discount code <strong style=\"text-transform:uppercase\">%{code}</strong> is not available for your shipping address",
+        "customer_already_used_once_per_customer_discount_notice": "The discount code <strong style=\"text-transform:uppercase\">%{code}</strong> has already been used",
+        "subtotal_label": "Subtotal",
+        "shipping_label": "Shipping",
+        "tip_label": "Tip",
+        "shipping_default_value": "Calculated in the next step",
+        "shipping_pending_value": "—",
+        "shipping_pending_message": "Not available yet",
+        "shipping_policy_link": "Shipping costs",
+        "taxes_label": "Taxes",
+        "total_label": "Total",
+        "total_outstanding_label": "Amount to pay",
+        "partial_total_label": "Total",
+        "free_total_label": "Free",
+        "free_shipping_total_label": "Free",
+        "paid_label": "Paid",
+        "payment_due_label": "Pending payment",
+        "vat_label_html": "Includes %{amount} of taxes",
+        "discount_and_gift_card_savings_notice": "After the %{discount_amount} discount and %{gift_card_amount} in gift cards",
+        "discount_savings_notice": "After the %{discount_amount} discount",
+        "gift_card_savings_notice": "After %{gift_card_amount} in gift cards",
+        "cost_table_title": "Cost Summary",
+        "description_label": "Description",
+        "price_label": "Price",
+        "quantity_label": "Quantity",
+        "product_change_label": "Change",
+        "product_image_label": "Product image",
+        "scroll_order_summary": "Scroll to see more items",
+        "expand_order_summary_short": "Show",
+        "collapse_order_summary_short": "Hide",
+        "expand_order_summary": "Show order summary",
+        "collapse_order_summary": "Hide order summary",
+        "total_updated_label": "Updated total price:",
+        "order_total_updated_label": "Total updated",
+        "total_already_paid_label": "Paid",
+        "unit_price": {
+          "accessible_separator": "by",
+          "content_html": "%{price}%{accessible_separator}%{per_unit}",
+          "per_item": {
+            "single": "%{price} each item",
+            "one": "%{price} for %{count} item",
+            "other": "%{price} for %{count} items"
+          },
+          "per_unit": {
+            "single": "%{price}/%{unit}",
+            "plural": "%{price}/%{count}%{unit}"
+          }
+        },
+        "pickup_label": "In-store pickup",
+        "no_pickup_location": "There is no retirement place available.",
+        "calculating_shipping": "Calculating…",
+        "information_estimated_taxes_label": "Taxes (estimate)",
+        "multiple_shipping_lines_label": "Total shipping",
+        "estimated_taxes_label": "Estimated taxes",
+        "gift_card_ending": "Gift card ending in %{last_characters}",
+        "estimated_tax_label": "Estimated tax",
+        "applied_free_shipping_discount_label": "Applied",
+        "sale_price": "Offer price",
+        "recurring_subtotal_label": "Recurring subtotal",
+        "original_price": "Original price",
+        "recurring_total_label": "Recurring total",
+        "recurring_total_tooltip": "Does not include shipping, taxes, duties, or applicable discounts.",
+        "gift_card_subscriptions_notice": "Gift cards will only apply to your first payment",
+        "confirmation_number_label": "Confirmation No.%{confirmation_number}",
+        "estimated_taxes_finalization_tooltip_content": "The exact amount of taxes and the final total will be confirmed by email or text message after placing the order.",
+        "deferred_payment_info": {
+          "title": "The payment of %{amount_due} is due on %{due_at}",
+          "description_html": "If you have any questions about your order, %{contact_us}.",
+          "paid_today": "Total paid today",
+          "due_on_fulfillment_title": "The payment of %{amount_due} must be completed when preparing the order.",
+          "due_on_receipt_title": "The total amount to pay upon receipt is %{amount_due}",
+          "paid_today_next": "Paid today"
+        },
+        "percent_off_shipping": "%{percent} % discount on shipping",
+        "amount_off_shipping": "%{amount} discount on shipping",
+        "payment_terms_totals": {
+          "due_today": "Total to pay today",
+          "due_later": "Total to pay on %{due_at}",
+          "due_later_checkout_to_draft": "Total to be paid later",
+          "due_on_fulfillment": "Total to pay when preparing the order",
+          "due_on_receipt": "Total payment upon receipt",
+          "total_paid": "Total paid",
+          "due_today_next": "Beats today",
+          "due_on_fulfillment_next": "To be paid during the order preparation"
+        },
+        "maximum_discount_code_limit_reached": "You have reached the maximum number of discount codes. Remove an existing code to be able to use <strong style=\"text-transform:uppercase\">%{code}</strong>.",
+        "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong> could not be used with the existing discounts.",
+        "order_total_label": "Order total",
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> is not working at the moment. Contact us for assistance.",
+        "due_on_fulfillment": "Payable upon preparing the order",
+        "gift_card_masked": "•••• %{last_characters}",
+        "subscriptions": "Subscriptions",
+        "duties_label": "Tariffs",
+        "duties_and_taxes_label": "Tariffs and taxes",
+        "error_duties_tooltip": "This order is shipped from another country, so tariffs and taxes may be charged upon delivery.",
+        "may_be_charged_on_delivery": "Payment can be collected on delivery",
+        "total_updated_label_with_price": "Updated total price: %{totalPrice}",
+        "recurring_payments": "Recurring payments",
+        "recurring_total_multiple_label": "This order has a recurring charge for several items.",
+        "deferred_total_due_date_label": "Total to pay on {{date}}",
+        "full_price": "Regular price: %{price}",
+        "custom_discount": "Personalized discount",
+        "expand_component_information": {
+          "one": "Show %{count} item",
+          "other": "Show %{count} items"
+        },
+        "collapse_component_information": {
+          "other": "Hide %{count} items",
+          "one": "Hide %{count} item"
+        },
+        "discount_discovery": {
+          "merchandise_quantity_label": {
+            "one": "%{count} article",
+            "other": "%{count} items"
+          },
+          "add_code": "Add discount"
+        },
+        "component_quantity_title": "%{quantity} × %{product_title}",
+        "alternative_payment_currency_total": "Charged as follows %{amount_due}",
+        "calculating": "Calculating…",
+        "group_title_label": "Part of \"%{group_title}\"",
+        "discount_title_stacking": {
+          "one": "Discount",
+          "other": "Discounts"
+        },
+        "discount_order_stacking": {
+          "one": "Discount on orders",
+          "other": "Discounts on orders"
+        },
+        "price_per_item": {
+          "accessibility_label": "%{price} per item",
+          "label": "%{price}/unit"
+        },
+        "updated_shipping_method": "Updated shipping method: %{shipping_method}",
+        "discount_not_found": "It was not possible to find a valid discount matching the entered code",
+        "total_savings": "Total savings",
+        "return_restocking_fee_label": "Replacement charge",
+        "return_shipping_fee_label": "Return shipping",
+        "enter_shipping_address": "Enter the shipping address",
+        "shipping_discount_title": "Shipping discount",
+        "discount_code_applied": "Discount code applied",
+        "gift_card_applied": "Gift card applied",
+        "duties_included_label": "The total includes taxes and duties. No additional charges apply for delivery.",
+        "deferred_balance_info": {
+          "title": "The balance of {{amount_due}} is due on {{due_at}}",
+          "due_on_fulfillment_title": "The balance of {{amount_due}} is due upon completion of order preparation"
+        },
+        "eligible_customer_missing_notice": "The discount code <strong style=\"text-transform:uppercase\">%{code}</strong> requires an eligible customer.",
+        "subtotal_label_with_quantity": {
+          "one": "Subtotal · %{count} item",
+          "other": "Subtotal · %{count} items"
+        },
+        "cost_table_item_column_header": "Article",
+        "cost_table_value_column_header": "Value",
+        "product_image_quantity_label": "Quantity",
+        "more_items_modal": {
+          "clear_search": "Clear search",
+          "empty_results": "No results found for %{searchText}. Check the spelling or use a different word or phrase.",
+          "number_items_shown": "%{shownNumber} of %{totalNumber} items",
+          "search_item": "Search"
+        },
+        "number_items": {
+          "one": "%{count} article",
+          "other": "%{count} items"
+        },
+        "view_all_items": {
+          "one": "See %{count} article",
+          "other": "View %{count} items"
+        },
+        "price_before_discount_aria_text": "Original price",
+        "price_after_discount_aria_text": "Discounted price"
       }
     }
   }
