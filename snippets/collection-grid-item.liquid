@@ -26,9 +26,9 @@
               {{ collection.title }}
             </div>
             {% if collection.all_products_count == 1 %}
-              <p>1 producto</p>
+              <p>1 {{ section.settings.collection_items_text}}</p>
             {% else %}
-              <p> {{ collection.all_products_count }} productos</p>
+              <p> {{ collection.all_products_count }} {{ section.settings.collection_items_text}}s</p>
             {% endif %}
         </div>
         
