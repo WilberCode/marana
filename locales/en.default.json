@@ -992,71 +992,133 @@
           "one": "Show %{count} item",
           "other": "Show %{count} items"
         },
-        "collapse_component_information": {
-          "other": "Hide %{count} items",
-          "one": "Hide %{count} item"
+        "pickup_unavailable_banner_body": {
+          "ship_to_address": "Send it to an address",
+          "ship_to_address_instead_html": "%{link}"
         },
-        "discount_discovery": {
-          "merchandise_quantity_label": {
-            "one": "%{count} article",
-            "other": "%{count} items"
+        "pickup_unavailable_banner_title": {
+          "one": "There are no stores available with your item",
+          "other": "There are no stores available with your items"
+        },
+        "discount_code_aria_text": "Discount code",
+        "deposit_label": "Deposit",
+        "total_due_today_label": "Total to pay today",
+        "total_due_later_label": "Total to be paid later",
+        "discount_code_allocations_mismatch": "Your discount code <strong style=\"text-transform:uppercase\">%{code}</strong> has changed. Check your cart and try again.",
+        "deferred_total_due_date_label_next": "Due on %{date}"
+      },
+      "shipping": {
+        "title": "Shipping",
+        "waiting_on_rate_notice": "Getting available shipping rates...",
+        "waiting_on_pickup_location_notice": "Obtaining available branches for pickup...",
+        "no_rates_for_cart_or_destination_notice": "There are no shipping methods available for your cart or address",
+        "no_pickup_location_notice": "At least one of your products is not available for pickup",
+        "no_rates_for_country_notice": "No shipping rates were found for this address.",
+        "no_rates_contact_notice": "Get in touch with us for more information",
+        "free_rate_label": "Free",
+        "cheapest_rate_label": "More economical",
+        "please_enter_your_shipping_information_notice": "Please enter your shipping information.",
+        "estimated_delivery_date": {
+          "one": "%{count} business day",
+          "other": "%{count} business days"
+        },
+        "estimated_delivery_date_range": "%{minimum} to %{maximum} business days",
+        "shipping_line_phone_label": "Mobile phone number (required)",
+        "shipping_line_phone": "Your messaging and parcel service can use this number to contact you.",
+        "other_method": {
+          "zero": "There are no other shipping methods available",
+          "one": "%{count} different method available for",
+          "other": "Other %{count} shipping methods available from"
+        },
+        "shipping_rate_discounted_amount": "Before: %{original_amount}. Now: %{amount}",
+        "shipping_line_delivery_phone": "You may be contacted with updated information about your delivery.",
+        "optional_shipping_line_delivery_instructions_label": "Delivery instructions (optional)",
+        "shipping_line_delivery_phone_label": "Phone number",
+        "shipping_method_title": "Shipping methods",
+        "shipping_line_delivery_instructions": "Enter the necessary data such as door codes or delivery instructions.",
+        "local_delivery": "Local delivery",
+        "subscription_shipping": "Subscription shipping",
+        "shipping_method_one_time_purchase_group_title": "One-time purchase",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "for %{count} delivery",
+            "other": "for %{count} deliveries"
           },
-          "add_code": "Add discount"
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "every day",
+              "other": "every %{count} days"
+            },
+            "week": {
+              "one": "every week",
+              "other": "every %{count} weeks"
+            },
+            "year": {
+              "other": "every %{count} years",
+              "one": "every year"
+            },
+            "month": {
+              "other": "every %{count} months",
+              "one": "every month"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "%{shipping_price} per delivery",
+          "prepaid_shipping_price_label": "%{shipping_price} per delivery x %{delivery_interval_count}",
+          "initial_order_discounted": "Cost of the first shipment %{discounted_shipping_cost}, then %{frequency_description}",
+          "prepaid_initial_order_discounted": "Cost of the first shipment %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Cost of the first shipment %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Cost of the first shipment %{discounted_shipping_price} %{prepaid_delivery_frequency}, then %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Cost of the first shipment %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), then %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "Included",
+          "recurring_order_shipping_price": "followed by %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "First order included, followed by %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} per delivery), followed by %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "First order free",
+            "other": "First %{count} orders free"
+          },
+          "free_for_first_n_order": {
+            "one": "For the first order",
+            "other": "For the first %{count} orders"
+          },
+          "subscription_free_with_frequency_label": "Free shipping %{delivery_frequency}",
+          "free_shipping_cycles": {
+            "one": "Free shipping for %{count} more delivery",
+            "other": "Free shipping for %{count} more deliveries"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "Free shipping for %{count} delivery",
+            "other": "Free shipping for %{count} deliveries"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "Free shipping for %{count} more delivery and then for %{recurring_order_shipping_price}",
+            "other": "Free shipping for %{count} more deliveries and then for %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "Free shipping for %{count} delivery and then for %{recurring_order_shipping_price}",
+            "other": "Free shipping for %{count} deliveries and then for %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "%{count} delivers more for %{shipping_price}",
+            "other": "%{count} more deliveries for %{shipping_price} each"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{count} delivery for %{shipping_price}",
+            "other": "%{count} more deliveries for %{shipping_price} each"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "Free shipping during the first %{cycle} and then for %{recurring_order_shipping_price}",
+            "other": "Free shipping during the first %{cycle} and then for %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_one_cycle": {
+            "one": "%{shipping_price} for %{count} more delivery",
+            "other": "%{shipping_price} for %{count} more deliveries (%{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{shipping_price} for %{count} delivery"
+          }
         },
-        "component_quantity_title": "%{quantity} × %{product_title}",
-        "alternative_payment_currency_total": "Charged as follows %{amount_due}",
-        "calculating": "Calculating…",
-        "group_title_label": "Part of \"%{group_title}\"",
-        "discount_title_stacking": {
-          "one": "Discount",
-          "other": "Discounts"
-        },
-        "discount_order_stacking": {
-          "one": "Discount on orders",
-          "other": "Discounts on orders"
-        },
-        "price_per_item": {
-          "accessibility_label": "%{price} per item",
-          "label": "%{price}/unit"
-        },
-        "updated_shipping_method": "Updated shipping method: %{shipping_method}",
-        "discount_not_found": "It was not possible to find a valid discount matching the entered code",
-        "total_savings": "Total savings",
-        "return_restocking_fee_label": "Replacement charge",
-        "return_shipping_fee_label": "Return shipping",
-        "enter_shipping_address": "Enter the shipping address",
-        "shipping_discount_title": "Shipping discount",
-        "discount_code_applied": "Discount code applied",
-        "gift_card_applied": "Gift card applied",
-        "duties_included_label": "The total includes taxes and duties. No additional charges apply for delivery.",
-        "deferred_balance_info": {
-          "title": "The balance of {{amount_due}} is due on {{due_at}}",
-          "due_on_fulfillment_title": "The balance of {{amount_due}} is due upon completion of order preparation"
-        },
-        "eligible_customer_missing_notice": "The discount code <strong style=\"text-transform:uppercase\">%{code}</strong> requires an eligible customer.",
-        "subtotal_label_with_quantity": {
-          "one": "Subtotal · %{count} item",
-          "other": "Subtotal · %{count} items"
-        },
-        "cost_table_item_column_header": "Article",
-        "cost_table_value_column_header": "Value",
-        "product_image_quantity_label": "Quantity",
-        "more_items_modal": {
-          "clear_search": "Clear search",
-          "empty_results": "No results found for %{searchText}. Check the spelling or use a different word or phrase.",
-          "number_items_shown": "%{shownNumber} of %{totalNumber} items",
-          "search_item": "Search"
-        },
-        "number_items": {
-          "one": "%{count} article",
-          "other": "%{count} items"
-        },
-        "view_all_items": {
-          "one": "See %{count} article",
-          "other": "View %{count} items"
-        },
-        "price_before_discount_aria_text": "Original price",
-        "price_after_discount_aria_text": "Discounted price"
+        "shipping_method_subscription_group_title": "Subscription"
       }
     }
   }
