@@ -456,7 +456,45 @@
         "optional_pincode_label": "Personal identification code (optional)"
       },
       "field_errors": {
-        "address_zip_blank": "Distrito"
+        "address_zip_blank": "Enter the district",
+        "handle_phone_invalid": "Enter a valid phone number",
+        "handle_email_invalid": "Enter a valid email address",
+        "email_or_phone_blank": "Enter an email address or phone number.",
+        "email_invalid": "Enter a valid email address",
+        "email_or_phone_invalid": "Enter a valid email address or mobile phone number",
+        "address_first_name_blank": "Enter a name",
+        "address_last_name_blank": "Enter a last name",
+        "address_address1_blank": "Enter an address",
+        "address_address2_blank": "Enter an apartment, suite, etc.",
+        "address_city_blank": "Enter the city",
+        "address_country_blank": "Select a country/region",
+        "address_country_not_supported": "We do not ship to this country or region. Please enter a new shipping address and try again.",
+        "address_province_blank": "Select a state or province",
+        "address_company_blank": "Enter a company name",
+        "address_phone_blank": "Enter a valid phone number",
+        "address_zip_invalid_for_country": "Enter a valid area or postal code for %{country}",
+        "address_zip_invalid_for_country_and_province": "Enter a valid area or postal code for %{province}, %{country}",
+        "credit_card_name_blank": "Enter your name exactly as it appears on your card",
+        "credit_card_name_invalid": "Enter your name exactly as it appears on your card",
+        "credit_card_number_invalid": "Enter a valid card number",
+        "credit_card_expiry_invalid": "Enter a valid expiration date",
+        "credit_card_month_invalid": "Enter a valid expiration month",
+        "credit_card_year_invalid": "Enter a valid expiration year",
+        "credit_card_start_invalid": "Enter a valid card start date",
+        "credit_card_start_month_invalid": "Enter a valid card start month",
+        "credit_card_start_year_invalid": "Enter a valid card start year",
+        "credit_card_verification_value_blank": "Enter your card's security code (CVV)",
+        "delivery_line_detail_changed": "Some delivery details may have changed. Check the shipping method and try again.",
+        "reduction_code_discount_not_found": "Enter a valid discount code",
+        "reduction_code_code_not_found": "Enter a valid discount code or gift card",
+        "reduction_code_gift_card_code_invalid": "Enter a valid gift card",
+        "reduction_code_gift_card_unusable": "You cannot use a gift card to buy another gift card",
+        "shipping_line_phone_blank": "Enter a phone number to use this delivery method",
+        "shipping_line_phone_invalid": "Enter a valid phone number",
+        "gift_card_already_applied": "This gift card has already been applied to your order",
+        "gift_card_disabled": "This gift card is no longer available",
+        "gift_card_expired": "This gift card has expired",
+        "gift_card_depleted": "This gift card does not have sufficient balance"
       },
       "general": {
         "errors": {
@@ -1411,7 +1449,148 @@
         "purchase_options_cancellation_policy_label": "cancellation policy",
         "use_different_credit_card_label": "Use another card",
         "saved_credit_card": "Your saved credit card",
-        "mor_disclaimer_html": "By clicking below and completing the order, you accept the purchase of the items from Global-e as responsible for processing the payment\nof the transaction, in accordance with the <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">Terms and Conditions</a>\nand the <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">Privacy Policy</a> of Global-e. Global-e is an international\nlogistics service provider for %{shop_name}."
+        "mor_disclaimer_html": "By clicking below and completing the order, you accept the purchase of the items from Global-e as responsible for processing the payment\nof the transaction, in accordance with the <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">Terms and Conditions</a>\nand the <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">Privacy Policy</a> of Global-e. Global-e is an international\nlogistics service provider for %{shop_name}.",
+        "saved_credit_cards_modal": {
+          "done": "Ready",
+          "view_all_label": "View all saved cards",
+          "cancel": "Cancel"
+        },
+        "saved_credit_card_info": "Last four digits",
+        "expired_cards_info": {
+          "one": "There is %{count} expired card that you can view and edit in your account.",
+          "other": "There are %{count} expired cards that you can view and edit in your account."
+        },
+        "local_payment_method_receiver_notice": "After placing the order, you will receive the payment details. Make the payment at an ATM or online within {{dueDays}} days.",
+        "order_edit_banner_title": "Payment of {{amount_owed}} is required",
+        "order_edit_banner_subtitle": "Your order {{order_number}} has been updated. Review the changes and pay to confirm the order.",
+        "order_edit_banner_single_item_added": "Added",
+        "order_edit_banner_multiple_items_added": "Added {{amount}}.",
+        "order_edit_banner_single_item_removed": "Deleted",
+        "order_edit_banner_multiple_items_removed": "{{amount}} was deleted.",
+        "gift_card_wrapper": {
+          "heading": "Gift card",
+          "apply_gift_card_label": "Request a gift card",
+          "payment_tag": "Gift card",
+          "apply_another_gift_card_label": "Request another gift card",
+          "gift_card_label": "Gift card %{identifier}",
+          "add_label": "Add a gift card",
+          "manage_label": "Manage gift cards"
+        },
+        "custom_onsite_payment_method_modal": {
+          "title": "Customized on-site payment confirmation"
+        },
+        "markets_pro_disclaimer_label": "By clicking below and completing the order, you agree to purchase your item(s) from Global-e as the payment processor for the transaction, in accordance with Global-e's %{markets_pro_terms} and %{privacy_policy}. Global-e is an international logistics service provider for %{shop_name}.",
+        "markets_pro_disclaimer_terms_and_conditions": "Terms and Conditions",
+        "markets_pro_disclaimer_privacy_policy": "Privacy Policy",
+        "markets_pro_disclaimer_terms_and_conditions_title": "Terms and conditions of the payment processor",
+        "markets_pro_disclaimer_privacy_policy_title": "Privacy policy of the payment processor",
+        "purchase_order_number": {
+          "title": "Purchase order number",
+          "label": "Purchase order number (optional)"
+        },
+        "alternative_payment_currency_total_notice": "Note: You will be charged %{amount_due}.",
+        "waiting_on_taxes_message": "If your taxes are not calculated in the next few seconds, refresh the page.",
+        "waiting_on_taxes_notice": "Calculating taxes",
+        "order_edit_banner_single_item_returned": "Returned",
+        "order_edit_banner_multiple_items_returned": "{{amount}} was refunded.",
+        "shop_pay_installments_label": "Shop Pay installments",
+        "add_credit_card_modal": {
+          "title": "Add card",
+          "cancel": "Cancel",
+          "save": "Save"
+        },
+        "delete_credit_card_modal": {
+          "title": "Delete card",
+          "confirmation": "Do you confirm that you want to delete the {{brandName}} ending in {{lastDigits}}?",
+          "cancel": "Cancel",
+          "delete": "Delete"
+        },
+        "order_edit_banner_items_added": {
+          "one": "Added",
+          "other": "Added %{count}."
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "Deleted",
+          "with_quantities": "{{delta}} was removed from {{quantity}}."
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "Returned {{quantity}}",
+          "with_quantities": "Returned {{delta}} of {{quantity}}."
+        },
+        "saved_credit_card_actions": {
+          "edit": "Edit",
+          "delete": "Delete"
+        },
+        "edit_credit_card_modal": {
+          "cancel": "Cancel",
+          "done": "Ready",
+          "title": "Edit card",
+          "description": "You can only modify the billing address of your card.",
+          "fields": {
+            "default": "Set as default",
+            "card_number": "Card number",
+            "expiry": "Expiration date",
+            "security_code": "Security code",
+            "name": "Cardholder's name",
+            "billing": "Bill to"
+          }
+        },
+        "payment_method": "Payment method",
+        "expired_payment_method": "The selected payment method has expired.",
+        "subscription_heading": "Subscription agreement",
+        "use_order_billing_address_label": "Use the order's billing address",
+        "use_location_billing_address_label": "Use the branch's billing address",
+        "use_location_shipping_address_label": "Use the branch shipping address",
+        "purchase_options_agreement_label_wallets": "By continuing with the payment, you agree to the future charges listed on this page and the cancellation policy.",
+        "gift_card_store_credit": {
+          "add_label": "Add a gift card or store credit",
+          "manage_label": "Manage gift or store credit cards"
+        },
+        "saved_credit_card_cvv_verification": "For verification purposes, enter your card's security code.",
+        "order_edit_banner_updated_order_label": "Order updated",
+        "afterpay_label": "Afterpay",
+        "cashapppay_label": "Cash App Pay",
+        "card_nickname_label": "Nickname (optional)",
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "It was removed from the return",
+          "with_quantities": "{{delta}} was removed from the refund."
+        },
+        "order_edit_banner_single_item_return_line_item_removed": "It was removed from the return",
+        "order_edit_banner_multiple_items_return_line_item_removed": "{{amount}} was removed from the refund.",
+        "proposed_gateway_unavailable": "The proposed payment gateway is not available.",
+        "pay_in_installments_split_pay_short": "Four payments of %{amount}",
+        "payment_method_not_available_for_shipping_address_error": "The payment method is not available for the selected shipping address. Please choose another payment method.",
+        "shop_pay_ideal_unavailable_error": "The iDEAL option is not available for this order. Choose another payment method.",
+        "paypal_disconnect": "Disconnect",
+        "paypal_wallet_label": "PayPal Wallet",
+        "payment_method_update_failed": "Error trying to update the payment method.",
+        "alternative_payment_currency_total_manual_payment_notice": "Note: The total after conversion is %{amount_due}.",
+        "gift_cards_unavailable": "Your gift card can no longer be applied to this order, so it has been removed",
+        "network_card_payment_options": "Choose a card network",
+        "payment_flexibility_terms_id_mismatch": "Mismatch error in the identification of payment flexibility terms",
+        "offsite_gateway_review_page_redirect_hint": "After you review the order, you will be redirected to %{gateway_label} to complete your purchase securely.",
+        "przelewy24_label": "Przelewy24",
+        "twint_label": "TWINT",
+        "mobilepay_label": "MobilePay",
+        "gift_card_checkbox_label": "Apply gift card",
+        "blik_label": "Glance",
+        "simulated_express_checkout": "Wallets are not available in the editor preview due to your region or browser",
+        "vipps_label": "Vipps",
+        "grabpay_label": "GrabPay",
+        "kcp_creditcard_label": "KCP credit card",
+        "usdc_label": "USDC",
+        "payment_method_incompatible_with_payment_terms": "The payment method is not compatible with the payment terms.",
+        "swish_label": "Swish",
+        "offsite_gateway_redirect_hint_no_button_label": "After continuing, you will be redirected to %{gateway_label} to complete your purchase securely.",
+        "network_card_persistence_description": "The selected network will be saved with your payment method for future transactions."
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "Current balance %{amount}",
+        "credit_card_expires_on_notice": "Expires %{month}/%{year}",
+        "express_payment_gateway_label": "Express",
+        "manual_payment_gateway_label": "Manual",
+        "billing_address_title": "Billing address",
+        "free_label": "Free"
       }
     }
   }
