@@ -3627,8 +3627,166 @@
           "pagination": {
             "nav_accessibility_label": "Order review navigation buttons"
           },
-          "show_all_orders_in_review": "Show all orders under review"
+          "show_all_orders_in_review": "Show all orders under review",
+          "show_less_orders_in_review": "Show fewer orders in review",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "You have no pending orders",
+            "more_than_pagination_length": "You have more than {{count}} pending orders",
+            "pending_orders": {
+              "other": "You have {{count}} pending orders",
+              "one": "You have {{count}} pending order"
+            }
+          },
+          "pending_orders_count_more_than_pagination_length": "More than {{count}}"
+        },
+        "order_list_column_headers_location": "Branch",
+        "order_list_column_headers_contact": "Contact",
+        "removed_company_contact_tooltip": "Removed from the company",
+        "order_list_column_headers_status": "State"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "Confirmation date of {{date}} for order {{draftOrderName}}",
+        "loading": "Loading order details",
+        "loading_finished_accessibility_message": "The order details have been loaded.",
+        "payment_status": {
+          "draft": {
+            "description": "The payment details are decided when the order is confirmed.",
+            "title": "Payment not yet due",
+            "in_review": {
+              "description": "The payment details are decided when the order is confirmed.",
+              "title": "Payment not yet due"
+            },
+            "submitted": {
+              "description": "Make the payment to confirm this order.",
+              "title": "Pay to confirm",
+              "deposit": {
+                "title": "Pending payment",
+                "due_later": "The balance is subject to the conditions of {{translatedName}} and is due on {{dueDate}}.",
+                "due_on_fulfillment": "The balance must be paid once all items in this order are prepared.",
+                "due_on_receipt": "You will receive an invoice for the remaining balance.",
+                "due_on_date": "The payment date for the balance is {{dueDate}}."
+              }
+            },
+            "deposit": {
+              "due_later": "The deposit of {{depositAmount}} must be paid when your order is confirmed. The balance will be under the conditions of {{translatedName}}.",
+              "due_on_receipt": "The deposit of {{depositAmount}} must be paid when your order is confirmed. The deadline for the balance payment is set later.",
+              "due_on_fulfillment": "The deposit of {{depositAmount}} must be paid when your order is confirmed. The balance must be paid when the order is prepared.",
+              "due_on_date": "The deposit of {{depositAmount}} must be paid when your order is confirmed. The deadline for the balance payment is {{dueDate}}."
+            }
+          },
+          "paid": {
+            "description": "The order was paid in full.",
+            "title": "Paid",
+            "title_with_date": "Paid on {{date}}"
+          },
+          "pay_now": "Pay now",
+          "pending": {
+            "banner_overdue": {
+              "one": "The payment was due {{count}} day ago.",
+              "other": "The payment was due {{count}} days ago."
+            },
+            "banner_due": {
+              "one": "The payment is due in {{count}} day.",
+              "other": "The payment is due in {{count}} days."
+            },
+            "banner_due_today": "The payment is due today.",
+            "title": "Pending payment",
+            "title_with_date": "The payment is due on {{date}}",
+            "description_overdue": "The payment is delayed.",
+            "description_authorized": "You will be charged according to your payment method on the due date, or you can pay now.",
+            "title_due_on_receipt": "Unpaid payment",
+            "description_due_on_receipt": "You will receive an invoice when the payment is due.",
+            "title_due_on_fulfillment": "Payment must be made when preparing the order",
+            "description_partially_paid": "The order was partially paid. You have a remaining balance.",
+            "description_due_on_fulfillment": "Payment must be made once all the items in the order are prepared.",
+            "description_waiting_for_manual_payment": "This order has a pending payment. The balance will be updated when the payment is received.",
+            "description_due_on_receipt_partially_paid": "This order was partially paid. You have a remaining balance. You will receive an invoice when the payment is due.",
+            "description_due_on_fulfillment_partially_paid": "This order was partially paid. You have a remaining balance. Payment must be made once all items in the order are prepared."
+          },
+          "title": "Payment status",
+          "refund": {
+            "title": "Refunded",
+            "title_with_date": "Refunded on {{date}}",
+            "description_full_refund": "You received a full refund for this order.",
+            "description_single_refund": "You received a partial refund for this order.",
+            "description_multiple_refunds": "You received partial refunds for this order."
+          },
+          "canceled": {
+            "title": "Payment canceled",
+            "description": "You were not charged any amount."
+          },
+          "pay_now_accessibility_label": "Pay now for order {{orderName}}"
+        },
+        "subtitle": "Shipping date: {{date}}",
+        "title": "Order {{name}}",
+        "order_timeline": {
+          "expand_events_label": "Show details",
+          "expand_events_accessibility_label": "Show preliminary order details",
+          "hide_events_label": "Hide details",
+          "hide_events_accessibility_label": "Hide preliminary order details"
         }
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_with_replacement": "By deleting this payment method, preauthorized payments for this branch will be affected. Replace it with an alternative method to receive upcoming orders.",
+          "description_without_replacement": "This payment method will no longer be available for future purchases from this branch."
+        },
+        "payment_details": {
+          "order_label": "Order {{name}}",
+          "draft_label": "Preliminary order {{name}}"
+        }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "Add purchase order number",
+        "cancel": "Cancel",
+        "add_modal_title": "Add purchase order number",
+        "close_modal_accessibility_label": "Close purchase order number modal window",
+        "discard": "Discard",
+        "discard_changes_modal_title": "Discard changes?",
+        "edit_accessibility_label": "Edit purchase order number",
+        "edit_modal_title": "Edit purchase order number",
+        "empty_state": "Without purchase order number",
+        "modal_po_number_input_label": "Purchase order number",
+        "modal_po_number_input_max_length_error": "Purchase order numbers have a maximum of {{maxLength}} characters.",
+        "save": "Save",
+        "title": "Purchase order number: {{poNumber}}"
+      }
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "There was a problem deleting the address. Please try again or refresh the page."
+      },
+      "addresses_loading_issue": {
+        "description": "Connection error. Check your internet connection and try again."
+      },
+      "banner_title": {
+        "one": "There is {{count}} error",
+        "other": "There are {{count}} errors."
+      },
+      "failed_address_creation": {
+        "description": "There was a problem creating the address. Try refreshing this page or check your internet connection."
+      },
+      "failed_address_update": {
+        "description": "There was a problem updating the address. Try refreshing this page or check your internet connection."
+      },
+      "no_access_to_locations": {
+        "description": "You do not have access to any location."
+      },
+      "not_found": {
+        "description": "Check the URL or try again in a few minutes.",
+        "title": "There has been a problem loading this page."
+      },
+      "order_not_found": {
+        "description": "The order does not exist or you do not have permission to view it.",
+        "title": "Order not found"
+      },
+      "profile_update_error": {
+        "description": "There was a problem updating the profile. Try refreshing this page or check your internet connection."
+      },
+      "retry_action_label": "Retry",
+      "load_orders_error": {
+        "title": "Orders cannot be loaded",
+        "description": "Try again or come back later."
       }
     }
   }
