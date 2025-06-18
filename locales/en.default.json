@@ -2180,7 +2180,158 @@
           }
         },
         "title": "Waiting list",
-        "time_to_checkout_title": "Time to pay - {{shopName}}"
+        "time_to_checkout_title": "Time to pay - {{shopName}}",
+        "estimated_wait_time": {
+          "one": "Estimated wait time: {{count}} minute",
+          "less_than_one": "Estimated wait time: less than a minute",
+          "other": "Estimated wait time: {{count}} minutes",
+          "calculating": "Calculating estimated wait time"
+        },
+        "last_checked": "(Last verified: {{time}})",
+        "footer": {
+          "heading": "Do not refresh the page; it will update automatically.",
+          "body": "The items in your cart are not reserved until you complete the checkout process."
+        },
+        "too_many_attempts": {
+          "message": "Too many attempts.",
+          "description": "Try again in 30 minutes"
+        }
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "There has been a problem processing your request. Contact the store owner."
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "No delivery available for %{count} item",
+            "other": "No delivery available for %{count} items"
+          },
+          "message": {
+            "one": "This item will be removed from the cart because there are no delivery options available for your address.",
+            "other": "These items will be removed from the cart because there are no delivery options available for your address."
+          },
+          "label": "No delivery"
+        }
+      },
+      "no_address_location": {
+        "title": "Branch without address",
+        "header": "You do not have any shipping address for this branch",
+        "message": "Contact us to add an address for this branch so you can complete the payment.",
+        "email_us_button_label": "Send us an email",
+        "alt_header": "Shipping address is missing"
+      },
+      "order_errors": {
+        "creation_failure": "There was a problem creating your order. Please try again or contact us for more details.",
+        "network_failure": "The order could not be sent due to a network error. Check your connection and try again.",
+        "inventory_reservation_failure": "Some items are no longer available."
+      },
+      "session_errors": {
+        "session_not_unique": "There was a problem processing the order. Refresh this page to return to the store.",
+        "session_already_finished": "This order has already been shipped. You can return to the store to start a new order."
+      },
+      "pickup_point": {
+        "location_is_currently_closed": "Closed",
+        "title": "Pickup point",
+        "business_hours": "Store hours",
+        "or": "or",
+        "search_button": "Search",
+        "selector_tabs": "Pickup point selector",
+        "selector_tab_map": "Map",
+        "selector_tab_list": "List",
+        "could_not_resolve_address": "Address not found. Try again or use a different address.",
+        "no_pickup_points_near_you": "No pickup point was found near the selected address",
+        "no_pickup_points_near_location": "No pickup point was found near your location",
+        "no_pickup_points_found": "No pickup points found",
+        "paginator": {
+          "next_accessibility_label": "Next page",
+          "previous_accessibility_label": "Previous page",
+          "header": {
+            "one": "Showing %{first} - %{last} of %{count} point",
+            "other": "Showing %{first} - %{last} of %{count} points"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{pickup_point_index} of %{count} point",
+            "other": "%{pickup_point_index} of %{count} points"
+          },
+          "selected_page": {
+            "one": "%{first} - %{last} of %{count} point",
+            "other": "%{first} - %{last} of %{count} points"
+          }
+        },
+        "number_of_pickup_points_near_location": {
+          "one": "%{count} pickup point near your location",
+          "other": "%{count} pickup points near your location"
+        },
+        "change": "Change location",
+        "waiting_on_pickup_point_location_notice": "Searching for pickup points…",
+        "geolocation": {
+          "shared_location_button": "Use my location",
+          "errors": {
+            "unsuported_by_browser": "The browser does not support geolocation. Please try again or use another browser.",
+            "permission_denied": "Your location could not be obtained. Please try again.",
+            "permission_not_allowed": "Allows sharing your location."
+          }
+        },
+        "no_business_hours": "No business hours available.",
+        "open_twenty_four_hours": "Open 24 hours, 7 days a week",
+        "address_label": "Address",
+        "pickup_unavailable_banner_title": {
+          "one": "There are no pickup points available for your item",
+          "other": "There are no pickup points available for your items"
+        }
+      },
+      "error_page": {
+        "terminal": {
+          "message": "Refresh this page or try again in a few minutes",
+          "title": "There was a problem with our payment screen",
+          "action": {
+            "cta": "Refresh the page"
+          },
+          "request_id": "Request ID: {{requestId}}"
+        }
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Return to cart",
+        "return_to_cart_to_update_quantities": "%{return_to_cart_link_text} to modify the quantities",
+        "subscription_changed": "One of your subscriptions has changed.",
+        "company_location_changed": "The cart has been updated. Review your order before placing it.",
+        "violations_title": "Missing {{violation}} or has an invalid value",
+        "individual_violations_title": {
+          "DeliveryViolations": "Shipping address",
+          "PaymentViolations": "Billing address",
+          "OtherViolations": "Order information",
+          "UnhandledViolations": "Order information"
+        },
+        "all_violations_content": "Call us or {{emailLink}} to update this information and complete the order:",
+        "all_violations_email_link": "send us an email",
+        "editable_shipping_address_violations_message_title": "Add this information to complete your order:",
+        "editable_shipping_address_violations_email_link": "contact us",
+        "editable_shipping_address_violations_message_footer": "To permanently change the address for this branch, {{emailLink}}.",
+        "company_location_changed_product_removed": "The cart was modified because some products are not available at this branch. Review the order before sending it.",
+        "shipping_address_incomplete_title": "The shipping address is incomplete",
+        "calculating_shipping": "Shipping is still being calculated. Please try again in a few seconds. You have not been charged.",
+        "calculating_taxes": "Taxes are still being calculated. Please try again in a few seconds. You have not been charged.",
+        "generic_processing_error": {
+          "title": "There has been a problem processing the order",
+          "body": "You have not been charged. Please try again or use another payment method."
+        },
+        "contact_information": {
+          "title": "The contact information is not valid.",
+          "header": "To update your information, {{emailLink}}.",
+          "email_link": "contact us"
+        },
+        "payment_method_not_available_with_fulfillment_terms": "The selected payment method is no longer available because the payment for this order is now due at the order preparation.",
+        "payment_method_not_available_with_fixed_terms": "The selected payment method is no longer available because the payment for this order is due later.",
+        "payment_method_not_available_with_payment_terms": "The selected payment method is no longer available because the payment for this order is now due in {{paymentTerms}} days."
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "Review the",
+          "link_label": "terms and conditions of {{partnerDisplayName}}"
+        }
+      },
+      "online_store_chat": {
+        "title": "Do you have any questions? Chat with us"
       }
     }
   }
