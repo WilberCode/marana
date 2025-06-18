@@ -60,22 +60,22 @@
   },
   "blogs": {
     "tags": {
-      "label": "Tagged",
-      "all": "All",
-      "mobile_reveal": "Show tags"
+      "label": "Labeling",
+      "all": "Everyone",
+      "mobile_reveal": "Show labels"
     },
     "pagination": {
-      "older_articles": "Older articles",
-      "newer_articles": "Newer articles"
+      "older_articles": "Antique items",
+      "newer_articles": "New items"
     },
     "article": {
       "posted_by_compact_html": "{{ author }}",
       "posted_by_html": "<span class=\"author-label\">Written by</span> {{ author }}",
-      "tags": "Find similar articles",
+      "tags": "Find similar items",
       "featured_products_title": "Mentioned in this article",
       "other_posts_title": "More stories",
       "read_more_html": "Read more",
-      "no_matches": "You don't have any articles yet! Once you've written one, it will show up here."
+      "no_matches": "You don't have any items yet! Once you write one, it will appear here."
     },
     "comments": {
       "title": "Comments",
@@ -84,8 +84,8 @@
       "email": "Email",
       "message": "Message",
       "post": "Post comment",
-      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
-      "success": "Your comment was posted successfully! Thank you!",
+      "success_moderated": "Your comment was successfully published. We will post it shortly, as our blog is moderated.",
+      "success": "Your comment was successfully published! Thank you very much!",
       "author_meta": "{{ author }} on",
       "date_meta": "{{ comment_date }}",
       "comments_with_count": {
@@ -96,25 +96,25 @@
   },
   "cart": {
     "general": {
-      "title": "Your Cart",
-      "item": "Item",
+      "title": "Your Car",
+      "item": "Article",
       "price": "Price",
       "quantity": "Quantity",
       "total": "Total",
-      "remove": "Remove",
-      "update": "Update cart",
+      "remove": "Delete",
+      "update": "Update the Shopping Cart",
       "continue": "Continue shopping",
-      "checkout": "Check Out",
-      "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
+      "checkout": "Finish",
+      "taxes_and_shipping_at_checkout": "Taxes are included and the shipping cost will be calculated at checkout.",
       "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout",
-      "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
+      "taxes_included_but_shipping_at_checkout": "Taxes are included and the shipping cost will be calculated at checkout.",
       "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
-      "empty": "Your cart is currently empty.",
+      "empty": "Your cart is empty.",
       "continue_browsing": "Continue browsing"
     },
     "terms": {
       "agreement_html": "I agree to the <a href=\"{{ terms_url }}\" target=\"_blank\">terms and refund policy</a>",
-      "confirmation": "You must agree to the terms and conditions before continuing."
+      "confirmation": "You must accept the terms and conditions before continuing."
     },
     "label": {
       "note": "Special instructions for the seller:",
@@ -123,27 +123,27 @@
   },
   "collections": {
     "general": {
-      "no_matches": "Sorry, there are no products matching your search.",
+      "no_matches": "We're sorry, there are no products that match your search.",
       "product_count": {
         "one": "{{ count }} product",
         "other": "{{ count }} products"
       }
     },
     "filtering": {
-      "all": "All",
+      "all": "Everyone",
       "filter_by": "Filter",
       "mobile_reveal": "Show filters"
     },
     "sorting": {
       "title": "Sort by",
       "featured": "Featured",
-      "best_selling": "Best Selling",
+      "best_selling": "Best Sellers",
       "az": "Alphabetically, A-Z",
       "za": "Alphabetically, Z-A",
-      "price_ascending": "Price, low to high",
-      "price_descending": "Price, high to low",
-      "date_descending": "Date, new to old",
-      "date_ascending": "Date, old to new"
+      "price_ascending": "Prices from lowest to highest",
+      "price_descending": "Price from highest to lowest",
+      "date_descending": "Date, from the most recent to the oldest",
+      "date_ascending": "Date, from the oldest to the most recent"
     },
     "collection_list": {
       "title": "Collections",
@@ -156,7 +156,7 @@
       "email": "Email",
       "message": "Message",
       "send": "Send",
-      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
+      "post_success": "Thank you for contacting us. We will get in touch with you as soon as possible."
     }
   },
   "customer": {
@@ -166,7 +166,7 @@
     "account": {
       "title": "My Account",
       "details": "Account Details",
-      "view_addresses": "View Addresses",
+      "view_addresses": "View Directions",
       "return": "Return to Account Details"
     },
     "activate_account": {
@@ -179,14 +179,14 @@
     },
     "addresses": {
       "title": "Your Addresses",
-      "default": "Default",
+      "default": "Defect",
       "add_new": "Add a New Address",
       "edit_address": "Edit address",
-      "first_name": "First Name",
+      "first_name": "Name",
       "last_name": "Last Name",
       "company": "Company",
-      "address1": "Address1",
-      "address2": "Address2",
+      "address1": "Address 1",
+      "address2": "Address 2",
       "city": "City",
       "country": "Country",
       "province": "Province",
@@ -293,7 +293,7 @@
   "layout": {
     "header": {
       "menu": "Menu",
-      "cart": "Cart",
+      "cart": "Shopping Cart",
       "total": "Total",
       "checkout": "Checkout",
       "search": "Search",
@@ -301,7 +301,7 @@
       "menu_breadcrumb_home": "Home"
     },
     "search": {
-      "title": "Search Store",
+      "title": "Search in Store",
       "placeholder": "Search...",
       "submit": "Go",
       "see_all": "See all results"
@@ -314,7 +314,7 @@
     },
     "signup": {
       "email": "Email address",
-      "post_success": "Thank you for signing up!"
+      "post_success": "Thank you for registering!"
     },
     "footer": {
       "menu_aria_label": "Secondary"
