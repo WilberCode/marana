@@ -3919,9 +3919,133 @@
         "billing_address": {
           "title": "Billing address",
           "add_billing_address_button": "Add new",
-          "add_billing_address_button_accessibility_label": "Add new billing address"
+          "add_billing_address_button_accessibility_label": "Add new billing address",
+          "choose_billing_address_from_list_button_accessibility_label": "Choose a billing address from the list",
+          "choose_billing_address_from_list_button": "Choose from the list",
+          "missing_billing_address_error_message": "Enter a billing address.",
+          "default_checkbox": "Set as default payment method"
         }
-      }
+      },
+      "expires_soon": "This card will expire soon",
+      "expired": "This card has expired",
+      "card_update_consent": "This payment method will be saved for future purchases.",
+      "digital_wallet_title": "Digital wallet",
+      "credit_or_debit_card_title": "Credit or debit card",
+      "google_pay": {
+        "errors": {
+          "generic": "An error has occurred with Google Pay. Please try again or use another payment method.",
+          "missing_billing_address": "Google Pay requires a billing address. Add one to your account."
+        },
+        "loading": "Loading Google Pay",
+        "iframe_title_accessibility_label": "Add payment method Google Pay",
+        "loading_accessibility_message": "Loading Google Pay"
+      },
+      "apple_pay": {
+        "loading": "Loading Apple Pay",
+        "errors": {
+          "generic": "There has been a problem with Apple Pay. Please try again or use another payment method.",
+          "not_available": "Apple Pay is not available on this device.",
+          "missing_billing_address": "Apple Pay requires a billing address. Add one to your account."
+        }
+      },
+      "add_payment_method_banner": "Add a payment method to speed up the payment process or services with prior authorization.",
+      "edit_payment_method_button_accessibility_label": "Edit {{paymentMethodName}} ending in {{lastDigits}}",
+      "edit_payment_method_brand_button_accessibility_label": "Edit {{paymentMethodName}}",
+      "expiration_warning_button_accessibility_label": "Show expiration notice for {{paymentMethodName}} ending in {{lastDigits}}",
+      "no_payment_methods_banner": "No payment methods were added.",
+      "default": "Default",
+      "store_credit": {
+        "label": "Store credit",
+        "accesibility_label": "Store credit: {{formattedBalance}}",
+        "expirable_amounts_button": "View amounts that may expire",
+        "details_modal": {
+          "title": "In-store credit that may expire",
+          "balance_label": "Balance",
+          "expiration_date_label": "Expiration date",
+          "amount_label": "Amount",
+          "expirable_balance_info": "A part of the balance is due later",
+          "expirable_amount_label": "Total amount that can mature",
+          "expirable_amounts_info": "Amounts that are due earlier are applied first during payment",
+          "expired_amounts_button": "View overdue amounts",
+          "pagination": {
+            "load_more_label": "Load more",
+            "load_more_accessibility_label": "Load more amounts that may expire"
+          },
+          "date_label": "Date",
+          "expirable_amounts_button": "See",
+          "event_label": "Event",
+          "events": {
+            "adjustment": "Adjustment",
+            "order_payment": "Order payment",
+            "order_refund": "Order refund",
+            "payment_failure": "Payment error",
+            "payment_returned": "Payment refunded",
+            "order_cancellation": "Order cancellation",
+            "tax_finalization": "Tax determination"
+          }
+        },
+        "expirable_amounts_label": "Amounts that may become due"
+      },
+      "three_d_secure": {
+        "title": "3D Secure"
+      },
+      "pay_pal": {
+        "iframe_title_accessibility_label": "Add PayPal payment method",
+        "loading_accessibility_message": "Loading PayPal"
+      },
+      "card_update_consent_subscriptions": "This payment method will be saved for future purchases and can be used for any recurring or deferred purchase."
+    },
+    "payment_method_brands": {
+      "mastercard": "Mastercard",
+      "shoppay": "Shop Pay",
+      "visa": "Visa",
+      "applepay": "Apple Pay",
+      "googlepay": "Google Pay",
+      "paypal": "PayPal",
+      "americanexpress": "American Express",
+      "discover": "Discover",
+      "dinersclub": "Diners Club",
+      "jcb": "JCB",
+      "elo": "Hello",
+      "visaelectron": "Visa Electron",
+      "maestro": "Master",
+      "forbrugsforeningen": "The Consumer Association",
+      "dankort": "Dankort",
+      "hipercard": "Hipercard",
+      "unionpay": "UnionPay",
+      "laser": "Laser",
+      "storecredit": "Store credit",
+      "bogus": "Bogus"
+    },
+    "enable_javascript": "To view the account, enable JavaScript in the browser settings or log in with another browser.",
+    "ui_components": {
+      "closeNotification": "Close",
+      "expandNotification": "See more",
+      "closeModal": "Close",
+      "submit": "Send",
+      "processing": "Processing...",
+      "increase": "Increase {{type}}",
+      "decrease": "Reduce {{type}}",
+      "minimumReached": "Minimum of {{value}} reached",
+      "maximumReached": "Maximum of {{value}} reached",
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday"
     }
   }
 }
