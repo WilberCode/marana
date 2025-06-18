@@ -2031,7 +2031,156 @@
       "review": {
         "title": "Checkout",
         "review_title": "Review and pay",
-        "checkout_as_guest": "Complete purchase as guest"
+        "checkout_as_guest": "Complete purchase as guest",
+        "blocks": {
+          "payment_method_title": "Payment method",
+          "shipping_address_title": "Send to",
+          "billing_address_title": "Billing",
+          "contact_method_title": "Contact",
+          "shipping_method_title": "Shipping method",
+          "change_link_label": "Change",
+          "change_contact_method_link_label": "Change contact information",
+          "change_billing_address_link_label": "Change billing address",
+          "change_shipping_address_link_label": "Change shipping address",
+          "change_shipping_method_link_label": "Change shipping method",
+          "change_payment_method_link_label": "Change payment method",
+          "pick_up_in_store_shipping_method_html": "In-store pickup · %{location_name}",
+          "purchase_order_number_title": "Purchase order number",
+          "change_purchase_order_number_label": "Change purchase order number",
+          "change_delivery_method_link_label": "Change delivery method",
+          "no_address": "(There is no address)",
+          "no_purchase_order_number": "(Without purchase order number)",
+          "due_after_order_reviewed_html": "It expires once the order has been reviewed",
+          "review_title_free_order": "Review and complete the order",
+          "payment_method_saved_company_location": "Save card for this branch",
+          "company_location": "Company location"
+        },
+        "block_title": "Check your information",
+        "checkout_a_different_way": "Formalize the payment in a different way",
+        "item_header": {
+          "change_value": "Change value",
+          "section": "Section",
+          "value": "Value"
+        },
+        "review_and_confirm_title": "Review and confirm"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Send me news and offers by email",
+        "unsubscribe": {
+          "title": "You have canceled your subscription",
+          "description": "You will no longer receive shopping cart reminders from us."
+        },
+        "accept_sms_checkbox_label": "Send me news and offers by SMS",
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "Privacy Policy",
+            "terms_of_service": "Terms of Service",
+            "description_html": "By signing up via SMS, you agree to receive recurring automated marketing messages to the provided phone number, including cart reminders. Consent is not a condition of purchase. Reply STOP to unsubscribe. Reply HELP for help. Message frequency varies. Message and data rates may apply. See our %{privacy_policy_link} and our %{terms_of_service_link}.",
+            "description_transactional_html": "You can receive text messages related to order confirmation and shipping updates. Reply STOP to unsubscribe. Reply HELP for assistance. Message frequency varies. Message and data rates may apply. See our %{privacy_policy_modal_link} and our %{terms_of_service_modal_link}."
+          },
+          "mobile_phone_number": "Mobile phone number",
+          "get_offers_by_text": "Get offers by text"
+        },
+        "post_accept_marketing_checkbox_label": "You are subscribed to receive news and offers by email",
+        "pending_accept_marketing_checkbox_label": "Check your email and confirm your subscription to news and offers",
+        "accept_shop_pay_marketing_checkbox_label": "Sign me up to receive news and offers from this store",
+        "disclaimer": {
+          "privacy_policy": "Privacy Policy",
+          "terms_of_service": "Terms of Service"
+        }
+      },
+      "shop_policies": {
+        "refund_policy": "Refund Policy",
+        "privacy_policy": "Privacy Policy",
+        "terms_of_service": "Terms of Service",
+        "legal_notice": "Legal notice",
+        "shipping_policy": "Shipping Policy",
+        "terms_of_sale": "Terms of sale"
+      },
+      "subscriptions": {
+        "recurring_totals_with_policies": {
+          "following_cycles": ", then %{total_price} every %{interval}",
+          "first_cycles": {
+            "one": "First payment %{total_price}",
+            "other": "First %{count} payments of %{total_price} each"
+          }
+        },
+        "recurring_totals": "%{total_price} each %{interval}",
+        "recurring_total_intervals": {
+          "day": {
+            "one": "day",
+            "other": "%{count} days"
+          },
+          "week": {
+            "one": "week",
+            "other": "%{count} weeks"
+          },
+          "month": {
+            "one": "month",
+            "other": "%{count} months"
+          },
+          "year": {
+            "one": "year",
+            "other": "%{count} years"
+          }
+        },
+        "recurring_totals_with_initial_order_shipping_discount": "First payment %{total_price_with_discount}, then %{recurring_total}",
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", then %{count} payment of %{total_price}",
+            "other": ", then %{count} payments of %{total_price} each"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "Payment methods",
+        "title": "Payment methods",
+        "update_card_button_label": "Update card",
+        "delete_customer_mandate": {
+          "generic_error": "An error occurred while processing your request.",
+          "success_message": "Your payment method has been successfully removed."
+        }
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Terms and conditions of the payment processor",
+        "privacy_policy": "Privacy policy of the payment processor"
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "Product not available",
+          "other": "Products not available"
+        },
+        "products_not_available": {
+          "one": "This product will be removed from your cart because it is not available in your country or region.",
+          "other": "These products will be removed from your cart because they are not available in your country or region."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "This product is not available in your country or region.",
+          "other": "These products are not available in your country or region."
+        },
+        "unavailable_label": "Not available"
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "Your country or region has been changed. Enter your shipping address to continue with payment."
+      },
+      "throttle": {
+        "cart_summary_heading": "Your cart",
+        "line_to_check_out": "You are in line to pay",
+        "merchandise": {
+          "sold_out": "Sold out",
+          "available": "Available"
+        },
+        "inventory": {
+          "partial_inventory_banner": "Some items in your cart are out of stock and will not be available at checkout.",
+          "sold_out": {
+            "heading": "The items in your cart are out of stock",
+            "storefront_body": "Return to the store to continue shopping",
+            "no_storefront_body": "Unfortunately, the item you want to buy is no longer available.",
+            "link": "Return to the store"
+          }
+        },
+        "title": "Waiting list",
+        "time_to_checkout_title": "Time to pay - {{shopName}}"
       }
     }
   }
