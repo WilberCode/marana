@@ -2332,6 +2332,239 @@
       },
       "online_store_chat": {
         "title": "Do you have any questions? Chat with us"
+      },
+      "local_pickup": {
+        "location_information": {
+          "other": "There are %{count} stores with stock near %{address}.",
+          "one": "There are %{count} stores with stock near %{address}."
+        },
+        "toggle_location": "Change place",
+        "cancel": "Cancel",
+        "or": "Or",
+        "your_location": "your location",
+        "search_button": "Search stores",
+        "no_stores_found": "No stores found",
+        "could_not_resolve_address": "Address not found. Try again or use a different address",
+        "paginator": {
+          "accessibility_label": "In-store pickup pagination",
+          "previous": "Previous page",
+          "next": "Next page",
+          "label": {
+            "one": "%{first} - %{last} of %{count} store",
+            "other": "%{first} - %{last} of %{count} stores"
+          }
+        },
+        "reveal_more_label": {
+          "one": "Show %{count} more branch",
+          "other": "Show %{count} more branches"
+        },
+        "location_address_search_label": "Address",
+        "all_stores_far_away": {
+          "title": "The nearest stores are more than %{distance} away",
+          "description": "Select a store or %{ship_to_address_link} instead.",
+          "ship_to_address_link": "send to the address"
+        }
+      },
+      "captcha": {
+        "title": "Complete the CAPTCHA to continue",
+        "errors": {
+          "not_solved": "Complete the CAPTCHA to continue"
+        }
+      },
+      "discount_errors": {
+        "generic_error": "Your order could not be processed because the discount code is no longer available. Check your order total and try again."
+      },
+      "wallets": {
+        "return_to_store": "Return to the store",
+        "redirect_hint": "You must access by logging in to {{walletName}}.",
+        "logged_in": "Connected to {{email}}",
+        "shipping_line_label": "Shipping",
+        "connect_shipping_methods": "{{method1}} and {{method2}}",
+        "payment_in_progress_title": "Payment in progress",
+        "payment_in_progress_body": "The payment is being processed. The order will be completed shortly.",
+        "call_to_action": "Pay with {{walletName}}",
+        "errors": {
+          "unavailable": {
+            "title": "{{walletName}} is not available",
+            "description": "{{walletName}} was not available. Use a different payment method or try again later.",
+            "instructions": "An error has occurred with {{walletName}}. Return to the store to try again or pay using another method.",
+            "unavailable_for_country": "{{walletName}} is not available in {{countryName}}. Please select a different payment method to complete your purchase."
+          },
+          "generic": "There was a problem with {{walletName}}. Please try again or use another payment method.",
+          "terminal": "There was a problem with {{walletName}}. Please use another payment method.",
+          "detour": {
+            "stock_problems": "Some items are no longer available. Close {{walletName}} and try again.",
+            "price_change": "The prices of some items have changed. Close {{walletName}} to review your order and try again.",
+            "queue": "You have been placed on a waiting list to proceed with the payment. Close {{walletName}} to continue.",
+            "currency_change": "You cannot use a different address with {{walletName}}. Use the original address or try another payment method."
+          },
+          "unsupported": {
+            "address": "The merchant cannot make deliveries to the selected shipping address.",
+            "postal_code": "This branch is not supported",
+            "wallet_is_unavailable": "{{walletName}} cannot be used with this address. Choose a different address or close {{walletName}} to complete your purchase."
+          },
+          "outdated": {
+            "shipping_method": "The shipping options for the order have changed. Please review the selection.",
+            "payment_terms": "The payment terms have changed. Check your order"
+          },
+          "invalid": {
+            "shipping_address": "Enter a valid shipping address",
+            "billing_address": "Enter a valid billing address",
+            "shipping_option": "Select a valid shipping option",
+            "zone": "Enter a valid state or province",
+            "postal_code": "Enter a valid postal code",
+            "email": "Enter a valid email address",
+            "reduction_code": "Enter a valid discount code or gift card",
+            "billing_must_match_shipping": "Must match the shipping address.",
+            "phone": "Enter a valid phone number",
+            "billing_zone": "Enter a valid state or province for the billing address",
+            "emirate": "Enter a valid emirate",
+            "billing_phone": "Enter a valid phone number for the billing address",
+            "billing_zip": "Enter a valid postal code for the billing address"
+          },
+          "missing": {
+            "first_name": "Enter a name",
+            "last_name": "Enter a last name",
+            "address1": "Enter an address",
+            "address2": "Enter an apartment, suite, etc.",
+            "city": "Enter a city",
+            "province": "Select a state or province",
+            "country": "Select a country or region",
+            "zip": "Enter a postal code",
+            "phone": "Enter a phone number",
+            "billing_first_name": "Enter the billing address name",
+            "billing_address1": "Enter a billing address",
+            "billing_address2": "Enter an apartment, unit, etc. for the billing address",
+            "billing_city": "Enter the city of the billing address",
+            "billing_province": "Select a state or province for the billing address",
+            "billing_zip": "Enter a postal code for the billing address",
+            "contact_info": "Enter the contact information"
+          },
+          "formatting": {
+            "name_contains_emojis": "Remove emoji from the name",
+            "postal_code_contains_emoji": "Remove emoji from the postal code",
+            "first_name_too_long": "The name has too many letters",
+            "last_name_too_long": "The last name has too many letters",
+            "address_too_long": "The address line is too long."
+          },
+          "select_different_shipping_address_to_resolve_errors": "The shipping address is not valid. Please select another or use a new one.",
+          "unavailable_terminal": {
+            "instructions": "{{walletName}} is currently not available for your order. To continue with the purchase, please choose another payment method."
+          },
+          "discount_code": "This discount code cannot be applied. Check your code and try again."
+        },
+        "redirection_notice": "After clicking on \"{{buttonLabel}}\", you will be redirected to {{walletName}} to securely complete your purchase.",
+        "return_to_checkout": "Return to the payment screen",
+        "scrim": {
+          "continue_purchase_in_window": "Continue your purchase in the {{walletName}} window",
+          "and_return_to_checkout": "and return to the payment page",
+          "cancel": "Cancel"
+        }
+      },
+      "markets": {
+        "invalid_market_manager_error": "Check your contact information before completing the payment."
+      },
+      "store_credit_errors": {
+        "generic_error": "There was a problem with your store credit. Please try again or reload the page."
+      },
+      "note": {
+        "length_exceeds_maximum": "Reduce the note size to 5000 characters or less."
+      },
+      "billing": {
+        "billing_address_title": "Bill to",
+        "same_as_shipping": "Same as the shipping address",
+        "add_address": "Use another address",
+        "edit": "Edit",
+        "delete": "Delete",
+        "address_more": "More actions for this address",
+        "address_form": {
+          "save": "Save",
+          "add_address": "Add address",
+          "cancel": "Cancel"
+        },
+        "address_confirm": "Do you confirm that you want to delete this address from the account?",
+        "address_edit": "Edit address",
+        "address_delete": "Delete address"
+      },
+      "address_management": {
+        "confirm_address_deletion": "Do you confirm that you want to delete the address {{address}}?"
+      },
+      "redeemable_errors": {
+        "gift_card": {
+          "duplicate": "This gift card has already been applied to your order.",
+          "insufficient_funds": "This gift card does not have sufficient funds.",
+          "expired": "This gift card has expired",
+          "not_available": "This gift card is no longer available.",
+          "invalid": "Enter a valid gift card",
+          "currency_mismatch": "Only gift cards in %{shop_currency} are accepted.",
+          "generic": "The gift card could not be used during the checkout process.",
+          "throttle_limit_exceeded": "You have exceeded the maximum number of attempts. Please try again later.",
+          "no_longer_available": "This gift card can no longer be used on this checkout page"
+        }
+      },
+      "vaulted": {
+        "change_button": "Change"
+      },
+      "shop_pay_external": {
+        "errors": {
+          "problem_loading": "There is a problem loading Shop Pay.",
+          "try_again_later": "Check the connection or close this window and try again in a few minutes.",
+          "checkout_has_expired": "Your payment process has expired. Close this window and try to make the payment again from {{shopName}}."
+        },
+        "return_to_store": "Return to {{shopName}}",
+        "return_to_store_simple": "Return to the store",
+        "title": "Shop Pay Payment"
+      },
+      "company_location": {
+        "location_title": "Location"
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "The price of the gift card must be greater than 0.",
+            "subtotal_limit_reached": "The maximum number of item lines has been reached.",
+            "gift_card_price_must_not_exceed_limit": "The price of the gift card cannot exceed %{gift_card_limit}."
+          }
+        }
+      },
+      "clipboard": {
+        "copied": "Copied",
+        "failed_to_copy": "Error copying"
+      },
+      "payment_challenge_modal": {
+        "instructions": "Complete the purchase using your {{paymentMethod}} code",
+        "timer_message": "You have {{timeLeft}} to pay",
+        "copy_text": "Copy the code of {{paymentMethod}}",
+        "header": "Pay with {{paymentMethod}}",
+        "qr_code": {
+          "instructions": "Complete the purchase using your {{paymentMethod}} code"
+        },
+        "external": {
+          "instructions": "Confirm the payment in your app to complete this purchase"
+        },
+        "close": "Close the challenge",
+        "open_app_text": "Open the {{paymentMethod}} app"
+      },
+      "artifact_errors": {
+        "artifact_dissatisfaction_without_violation": "There has been a problem processing the order. Please try again in a few minutes."
+      },
+      "merchant_instruction_errors": {
+        "empty_stable_id": "The promotional merchandise instruction %{position} %{name} contains an empty stable ID.",
+        "invalid_stable_id_target": "The promotional merchandise instruction %{position} %{name} refers to the stable ID %{stable_id}, but that stable ID is not in the promotional merchandise lines.",
+        "duplicate_variant_id": "The promotional merchandise instruction %{position} %{name} contains a duplicate variant ID %{variant_id}.",
+        "invalid_variant_id_target": "The promotional merchandise instruction %{name} refers to the variant identification %{variant_id}, but this variant is not found in the promotional merchandise lines.",
+        "invalid_price_override_target": "The price cancels the instruction for the promotional merchandise for the item line %{stable_id} and is not valid because it is a component of a package."
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "Delivery of this product is not available for %{location_name}.",
+          "some_products_other": "Delivery of these products is not available for %{location_name}.",
+          "all_products_one": "Product delivery from the cart is not available for %{location_name}.",
+          "all_products_other": "The delivery of cart products is not available for %{location_name}."
+        },
+        "missing_country_fallback": "your country",
+        "indeterminate_location_fallback": "your location",
+        "cart_updated": "The cart has been updated."
       }
     }
   }
