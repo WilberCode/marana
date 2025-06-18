@@ -3786,7 +3786,141 @@
       "retry_action_label": "Retry",
       "load_orders_error": {
         "title": "Orders cannot be loaded",
-        "description": "Try again or come back later."
+        "description": "Try again or come back later.",
+        "retry_button": "Retry"
+      },
+      "load_extension_error": {
+        "description": "Refresh this page or try again in a few minutes.",
+        "refresh_button": "Refresh page",
+        "title": "Error"
+      },
+      "load_paypal_error": {
+        "description": "There was a problem loading PayPal. Please try again."
+      },
+      "logout_everywhere": {
+        "description": "An error occurred during logout. Please try again."
+      },
+      "resend_link": {
+        "too_many_requests": "Too many requests. Please try again later.",
+        "generic": "Request failed"
+      }
+    },
+    "shop_policies": {
+      "legal_notice": "Legal notice",
+      "privacy_policy": "Privacy Policy",
+      "refund_policy": "Refund Policy",
+      "shipping_policy": "Shipping Policy",
+      "subscription_policy": "Cancellation policy",
+      "terms_of_sale": "Terms of sale",
+      "terms_of_service": "Terms of Service"
+    },
+    "payment_methods": {
+      "title": "Payment methods",
+      "add_payment_method_button": "Add payment method",
+      "payment_details": {
+        "title": "Payment method details",
+        "payment_method_expiring_on": "Expires on {{expiryDate}}",
+        "preauthorized_payments": "Preauthorized payments",
+        "close_payment_modal": "Close",
+        "close_payment_modal_accessibility_label": "Close payment method details modal",
+        "payment_method_not_found_error": "The payment method is not found",
+        "payment_details_loading": "Loading payment method details",
+        "pre_authorized_payments": "Preauthorized payments",
+        "total_amount_of_subscription_line_items_left": "and {{total}} more",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "There are a total of {{totalItems}} items. {{totalItemsToDisplay}} are displayed.",
+        "next_payment_due": "The next payment is due on {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "Edit",
+        "edit_payment_method_button_accessibility_label": "Edit payment method ending in {{lastDigits}}",
+        "credit_card_details_accessibility_label": "finished in {{lastDigits}}",
+        "billing_title": "Billing address",
+        "card_info_title": "Card information",
+        "credit_card_details": "{{creditCardBrand}} •••• {{lastDigits}}",
+        "payment_method_expired_on": "Expired on {{expiryDate}}",
+        "invalid_payment_method": "Invalid payment method",
+        "loading_shop_pay": "Loading Shop Pay",
+        "invalid_payment_method_message": "Use another credit card to continue receiving future orders.",
+        "replace_payment_method": "Replace payment method",
+        "checkout_card_banner": "This payment method can only be used for preauthorized payments. It will not appear on the payment screen if you logged in to this store.",
+        "default_checkbox": "Set as default",
+        "default_checkbox_accessibility_label": "Set this payment method as default"
+      },
+      "delete_payment_method_button": "Delete",
+      "delete_payment_method_button_accessibility_label": "Delete {{paymentMethodName}}",
+      "back_button": "Back",
+      "back_button_accessibility_label": "Back to {{paymentMethodStepTitle}}",
+      "generic_card": "Card",
+      "payment_delete": {
+        "title": "Delete payment method",
+        "description_without_replacement": "This payment method will no longer be available for future purchases.",
+        "description_with_replacement": "Deleting this payment method will affect preauthorized payments. You can replace it with another payment method to continue receiving upcoming orders.",
+        "replace_method_with_new_method_description": "Your {{currentPaymentMethodName}} will be removed and replaced with your {{newPaymentMethodName}}.",
+        "delete_and_replace_button": "Delete and replace",
+        "payment_method_selector_placeholder": "Select a replacement payment method (optional)",
+        "error_when_deleting": "Sorry, but an error occurred and we were unable to delete this payment method. Please try again later or refresh the page.",
+        "delete_and_replace_button_accessibility_label": "Remove {{currentPaymentMethodName}} and replace it with {{newPaymentMethodName}}.",
+        "deleted_successfully": "The payment method was successfully deleted.",
+        "payment_method_selector_no_alternative_payment": "No replacement payment method",
+        "loading_available_payment_methods_accessibility_label": "Loading available payment methods",
+        "warning_message_with_replacement": {
+          "with_pending_orders_and_subscriptions": "Deleting this payment method will affect preauthorized payments. Unless you select an alternative payment method, this one will continue to be used to charge all outstanding balances on existing orders. Selecting an alternative payment method will allow you to receive upcoming subscription orders without interruptions.",
+          "with_pending_orders": "Deleting this payment method will remove it from your account and it will no longer be available for future purchases. Unless you select an alternative payment method, this one will continue to be used to charge all outstanding balances for existing orders.",
+          "with_subscriptions": "Deleting this payment method will affect preauthorized payments. Replace it with another to receive upcoming orders."
+        },
+        "warning_message_without_replacement": {
+          "with_pending_orders_and_subscriptions": "Deleting this payment method will affect preauthorized payments. This payment method will continue to be used to charge all outstanding balances on existing orders, but you will not receive future subscription orders. Add an alternative payment method to continue receiving subscription orders.",
+          "with_pending_orders": "Deleting this payment method will remove it from your account and it will no longer be available for future purchases. However, it will still be used to charge all outstanding balances for existing orders.",
+          "with_subscriptions": "Deleting this payment method will affect preauthorized payments. Add an alternative payment method to continue receiving upcoming orders."
+        }
+      },
+      "edit_payment_method": {
+        "title": "Edit payment method",
+        "save_payment_method_button": "Save",
+        "cancel_edit_payment_method_button": "Cancel",
+        "payment_method_updated_toast": "Payment method updated",
+        "billing_address": "Billing address",
+        "billing_address_add_new": "Add new",
+        "billing_address_choose_from_list": "Choose from the list",
+        "future_purchases_notice": "This payment method will be saved for future purchases.",
+        "generic_error": "There was a problem with the update. Please try again."
+      },
+      "card_fields": {
+        "card_number_label": "Card number",
+        "card_number_placeholder": "Card number",
+        "name_on_card_label": "Account holder's name",
+        "name_on_card_placeholder": "Account holder's name",
+        "card_expiry_label": "Expiration date (MM / YY)",
+        "card_expiry_placeholder": "Expiration date (MM / YY)",
+        "card_verification_value_label": "Security code",
+        "card_verification_value_placeholder": "Security code",
+        "card_start_label": "Start (MM / YY)",
+        "card_start_placeholder": "Start (MM / YY)",
+        "tooltip": {
+          "tooltip_accessibility_label": "More information",
+          "card_verification_value_explanation_amex": "4-digit security code on the front of your card",
+          "card_verification_value_explanation_other": "3-digit security code on the back of your card",
+          "card_verification_value_explanation": "3-digit security code usually located on the back of your card. American Express cards have a 4-digit code located on the front.",
+          "card_security_notice": "All transactions are secure and encrypted."
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "Enter your name exactly as it appears on your card",
+          "credit_card_number_invalid": "Enter a valid card number",
+          "credit_card_expiry_invalid": "Enter a valid card expiration date",
+          "credit_card_verification_value_blank": "Enter your card's security code (CVV)"
+        },
+        "unavailable": {
+          "text": "Credit and debit card payments are not available at this time.",
+          "link_text": "Reload the page",
+          "suffix": "or try again later."
+        }
+      },
+      "add_payment_method": {
+        "title": "Add payment method",
+        "payment_method_added_confirmation": "Payment method added",
+        "billing_address": {
+          "title": "Billing address",
+          "add_billing_address_button": "Add new",
+          "add_billing_address_button_accessibility_label": "Add new billing address"
+        }
       }
     }
   }
