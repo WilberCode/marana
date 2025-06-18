@@ -328,7 +328,7 @@
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {
-          "recommendations_title": "Te Recomendamos",
+          "recommendations_title": "Te tecomendamos",
           "show_recommendations": true,
           "products_per_row_int": 4,
           "grid_show_vendor": false
@@ -875,7 +875,9 @@
         "custom_css": [],
         "settings": {
           "title": "Nuestras Líneas de Productos",
-          "collections_per_row_int": 2
+          "collections_per_row_int": 2,
+          "collection_button_text": "Comprar",
+          "collection_items_text": "producto"
         }
       },
       "custom_html_dN7gYm": {
@@ -1056,11 +1058,6 @@
       },
       "7465990195487237579": {
         "type": "shopify://apps/ea-sticky-cart/blocks/app-embed-block/a725b883-a528-4381-b4d8-4a870dad14a6",
-        "disabled": false,
-        "settings": {}
-      },
-      "12108174171315376258": {
-        "type": "shopify://apps/aov-cart-drawer/blocks/avada-embed/938869e1-3feb-48fa-ab79-27fdfe609836",
         "disabled": false,
         "settings": {}
       }
