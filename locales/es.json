@@ -413,5 +413,12 @@
     "signup": {
       "success": "¡Muchas gracias por tu interés!, te mantendremos informado"
     }
+  },
+  "marana": {
+      "product": {
+        "button_buy": "Comprar",
+        "button_soldout":"Agotado",
+      }
   }
+
 }

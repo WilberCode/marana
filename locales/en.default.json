@@ -4157,5 +4157,11 @@
     "privacy_banner": {
       "cookie_preferences_link": "Cookie Preferences"
     }
+  },
+    "marana": {
+      "product": {
+        "button_buy": "Buy",
+        "button_soldout":"sold out"
+      }
   }
 }

@@ -50,9 +50,9 @@
   </div>
 <a href="{{ product.url }}" class="button button--full-width product-button {% unless product.available %} product-button--sold-out{% endunless %}">
   {% if product.available %}
-     {{ 'Comprar'  }}
+     {{ 'marana.product.button_buy'  | t }}
   {% else %}
-     {{ 'Agotado'   }}
+      {{ 'marana.product.button_soldout'  | t }}
   {% endif %}
 </a>
 </div>
