@@ -1115,10 +1115,127 @@
             "other": "%{shipping_price} for %{count} more deliveries (%{per_delivery_cost})"
           },
           "prepaid_order_one_cycle_delivery_not_included": {
-            "one": "%{shipping_price} for %{count} delivery"
+            "one": "%{shipping_price} for %{count} delivery",
+            "other": "%{shipping_price} for %{count} deliveries (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "%{shipping_price} for %{count} more delivery and then for %{recurring_order_shipping_price}",
+            "other": "%{shipping_price} for %{count} more deliveries (%{per_delivery_cost}) and then for %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "%{shipping_price} for %{count} delivery and then for %{recurring_order_shipping_price}",
+            "other": "%{shipping_price} for %{count} deliveries (%{per_delivery_cost}) and then for %{recurring_order_shipping_price}"
           }
         },
-        "shipping_method_subscription_group_title": "Subscription"
+        "shipping_method_subscription_group_title": "Subscription",
+        "one_time_purchase_shipping": "One-time shipping",
+        "estimated_delivery_time": "Estimated delivery date: %{time}",
+        "estimated_delivery_time_range": "Estimated delivery date: %{min_time}–%{max_time}",
+        "arrives_time": "Arrives in %{time}",
+        "arrives_time_range": "Arrives between %{min_time}–%{max_time}",
+        "estimated_time": "Estimated arrival: %{time}",
+        "estimated_time_range": "Estimated time: %{min_time}-%{max_time}",
+        "delivery_date_range": "%{min_time}–%{max_time}",
+        "subscription_local_delivery": "Subscription with local delivery",
+        "subscription_pickup": "Subscription with withdrawal",
+        "delivery_today": "Same day delivery %{time}",
+        "delivery_tomorrow": "Next day delivery %{time}",
+        "two_day_delivery": "Delivery in two days at %{time}",
+        "delivery": "Delivery at %{time}",
+        "duties_and_taxes_title": "Tariffs and taxes",
+        "shipping_information_required_notice": "Shipping information is required. {{link}}.",
+        "shipping_information_redirect_link": "Enter your information here",
+        "loading_progressive_rates": "Searching for more rates...",
+        "no_other_methods_available": "There are no other shipping methods available",
+        "duties_and_taxes_options": {
+          "ddu_title": "Pay upon delivery",
+          "ddu_caption": "Additional charges may apply",
+          "ddp_title": "Pay now",
+          "ddp_caption": "There are no additional charges for delivery"
+        },
+        "shipping_method_combinations": {
+          "without_separator": "%{firstMethod}, %{secondMethod}",
+          "with_separator": "%{rest}, %{current},",
+          "combination": "%{rest} and %{current}"
+        },
+        "shipping_used_as_billing_notice": "It will also be used as the billing address for this order.",
+        "address_update": "Modify address",
+        "shipping_address_title": "Send to",
+        "add_delivery_instructions": "Add delivery instructions",
+        "add_address": "Use a different address",
+        "edit": "Edit",
+        "delete": "Delete",
+        "address_more": "More actions for this address",
+        "address_edit": "Edit address",
+        "address_delete": "Delete address",
+        "address_confirm": "Do you confirm that you want to delete this address from the account?",
+        "address_form": {
+          "add_address": "Add address",
+          "save": "Save",
+          "cancel": "Cancel",
+          "generic_error": "There was a problem saving the address. Please try again.",
+          "one_time_address_subtitle": "Use an address only once for this order"
+        },
+        "method_summary": {
+          "incomplete_address_entered": "Enter a complete shipping address to see available shipping methods.",
+          "incomplete_address_selected": "Select a complete shipping address to see the available shipping methods."
+        },
+        "different_shipping_method_summary": "Enter a different shipping address to see the available shipping methods.",
+        "invalid_shipping_method_summary": "Enter a valid shipping address to see available shipping methods",
+        "local_pickup": {
+          "search_address": "Search the address",
+          "rollup_title": "Store branch"
+        },
+        "missing_shipping_address": "The shipping address is missing.",
+        "delivery_title": "Delivery",
+        "shipping_method_first_shipment_group_title": {
+          "one": "First shipment",
+          "other": "First shipments"
+        },
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Recurring shipment",
+          "other": "Recurring shipments"
+        },
+        "address_default": "Set as default",
+        "split_shipping_merchandise_quantity_label_standard": "%{quantity} items",
+        "split_shipping_merchandise_quantity_label_additional": "+%{quantity} more",
+        "split_shipping_merchandise_shipment_number": "Shipment %{number} of %{total}",
+        "pre_order_ships_now": "It is sent now",
+        "pre_order_ships_later": "Sent later",
+        "pre_order_ships_date": "Sent on %{date}",
+        "split_shipping_shipped_by_shop": "Shipping carried out by %{shop_name}",
+        "split_shipping_multiple_shipment_label": "Multiple shipments",
+        "split_shipping_shipping_label": "Method",
+        "split_shipping_multiple_shipment_quantity_label": "%{quantity} shipments",
+        "split_shipping_multiple_shipment_notice": "Your order will arrive in multiple shipments",
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "Your order will arrive in %{quantity} shipments",
+        "split_shipping_more_shipping_options": "More shipping options",
+        "split_shipping_shipment_number": "Shipping %{number}",
+        "split_shipping_merchandise_quantity_label_inline_primary": "Quantity: %{quantity}",
+        "split_shipping_merchandise_quantity_label_inline": "%{merchandise_title} x%{quantity}",
+        "split_shipping_option_free": "Free shipping",
+        "split_shipping_option_lowest_price": "Lowest price",
+        "split_shipping_option_fastest": "Faster shipping",
+        "split_shipping_option_recommended": "Recommended",
+        "split_shipping_option_custom": "Customized",
+        "default_description": "Ships in one business day",
+        "split_shipping_shipment_notice": "Your order will arrive in %{quantity_shipments}",
+        "unbranded_default_description": "Ready to ship",
+        "prime_not_available": {
+          "default": "Prime delivery is not available for your order. Your shipping options have been updated."
+        }
+      },
+      "payment": {
+        "amazon_payments_label": "Amazon Pay",
+        "amazon_payments_login_hint": "You must access by logging in to Amazon.",
+        "amazon_payments_logout": "Log out of Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "The selected payment method could not be used. Please select a different method or contact your bank or card issuer.",
+        "amazon_payments_abandoned_mfa_challenge": "Your payment could not be completed. Try a different payment method or contact your bank or card issuer.",
+        "amazon_payments_could_not_enqueue_authorize": "An error occurred while processing your payment. Please try again or use a different payment method.",
+        "title": "Payment",
+        "amount_left_to_pay_label": "Pending payment:",
+        "discount_button_action_label": "Apply discount code",
+        "gift_card_code_label": "Gift card code"
       }
     }
   }
