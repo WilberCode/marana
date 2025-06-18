@@ -2765,9 +2765,229 @@
         "not_available": "This order is not available.",
         "financial_status": {
           "authorized": "Authorized",
-          "pending": "Pending"
+          "pending": "Pending",
+          "partially_refunded": "Partially refunded",
+          "voided": "Cancelled",
+          "paid": "Paid",
+          "partially_paid": "Partially paid",
+          "unpaid": "Unpaid",
+          "refunded": "Refunded",
+          "expired": "Expired"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Completed",
+          "complete": "Complete",
+          "partial": "Partial",
+          "unfulfilled": "Not performed",
+          "restocked": "Spare part"
+        },
+        "transaction_status": {
+          "success": "Success",
+          "pending": "Pending",
+          "failure": "Failure",
+          "error": "Error"
+        },
+        "cancel_reason": {
+          "declined": "Payment declined",
+          "inventory": "Items not available",
+          "fraud": "Fraudulent order",
+          "customer": "The customer changed/canceled the order",
+          "other": "Other",
+          "staff": "Employee error"
+        },
+        "cash_on_delivery": "Cash on delivery"
+      },
+      "cart": {
+        "only_n_items_available": "You can only add %{count} %{name} to the cart.",
+        "too_many_items_in_cart": "You cannot add more %{name} to the cart.",
+        "all_items_in_cart": "Your cart contains: %{count} %{name}.",
+        "empty_update": "Cannot update an empty cart",
+        "missing_parameters": "Invalid identification or linear parameter",
+        "generic_error": "Error in the cart",
+        "too_many_line_items_error": "The cart cannot contain more than %{max} items.",
+        "link_expired": "The link has expired",
+        "link_no_longer_exists": "The link no longer exists.",
+        "stock_problems_html": "One or more items are no longer available. We have updated your <a href='%{link}'>cart</a>.",
+        "changed": "The cart has been modified",
+        "items_changed": "One or more items have been changed.",
+        "product_sold_out": "The item '%{name}' is already sold out.",
+        "variant_not_found": "Variant not found",
+        "variant_requires_selling_plan": "The variant can only be purchased with a sales plan.",
+        "shipping_address_not_required": "This cart does not require shipping",
+        "shipping_address_invalid": "There was a problem calculating your shipping rates. Continue to payment to select a shipping rate before completing your order.",
+        "selling_plan_not_applicable": "The sales plan cannot be applied to the variant",
+        "selling_plan_not_available_for_company_locations": "Only one-time purchases are allowed for B2B orders.",
+        "digital_product_not_available_for_company_locations": "This item cannot be added to a B2B order",
+        "product_not_available": "The product is not available",
+        "less_than_minimum": "This item has a minimum of %{min}.",
+        "more_than_maximum": "This item has a maximum of %{max}.",
+        "not_respect_step": "You can only add this item in increments of %{step}.",
+        "bundle_requires_components": "The product %{name} from the package cannot be added to the cart.",
+        "gift_card_with_components_not_supported": "The product %{name} from the package cannot be added to the cart.",
+        "gift_card_price_must_be_greater_than_zero": "The product %{name} from the package cannot be added to the cart.",
+        "cart_too_large": "The cart is too big.",
+        "gift_card_recipient_validation_error": "The specified gift card is not valid",
+        "merchandise_line_transformers": {
+          "run_error": "An error has occurred in your cart."
+        },
+        "view_lines_limit_reached": "The lines must be fewer than %{limit}.",
+        "invalid_input": "The parameter %{parameter} is not valid.",
+        "buyer_cannot_purchase_for_company_locations": "Cannot be purchased for this branch",
+        "only_one_added_to_cart": "Due to availability, only one item was added to the cart.",
+        "only_n_added_to_cart": "Due to availability, only %{quantity} items were added to the cart.",
+        "maximum_available_quantity_reached": "Your cart already has the maximum quantity of this item.",
+        "cart_attributes_error": "The cart attributes include invalid data."
+      },
+      "storefront": {
+        "invalid_password": "Incorrect password, please try again."
+      },
+      "tags": {
+        "add_articles": "Refine search to articles that also have the %{tag} label",
+        "add_products": "Refine selection to products matching the %{tag} tag",
+        "remove_articles": "Expand search to articles that are not tagged with %{tag}",
+        "remove_products": "Remove tag %{tag}"
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "Added %{delta}",
+          "increment_item": "Added %{delta}",
+          "decrement_item": "%{delta} of %{total} was removed",
+          "decrement_fulfilled_line_item": "Returned %{delta} of %{total}",
+          "decrement_return_line_item": "%{delta} was removed from the refund"
         }
       }
+    },
+    "page_titles": {
+      "products": "Products",
+      "account": "Account",
+      "create_account": "Create account",
+      "reset_account": "Reset account",
+      "addresses": "Directions",
+      "order": "Order%{name}",
+      "search": "Search",
+      "collections": "Collections",
+      "not_found": "404 Not Found",
+      "challenge": "Challenge",
+      "checkpoint": "Checkpoint",
+      "search_results": {
+        "one": "Search: %{count} result found for \"%{terms}\"",
+        "other": "Search: %{count} results found for \"%{terms}\""
+      },
+      "blog_or_article_with_error": "Error: %{title}",
+      "shopping_cart": "Your shopping cart"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} discounts have been applied"
+    },
+    "challenge": {
+      "message": "To continue, please indicate that you are not a robot.",
+      "error": "Your answer was not correct, please try again.",
+      "submit_button_text": "Send"
+    },
+    "checkpoint": {
+      "message": "Solve the Captcha to continue",
+      "error": "Captcha validation failed",
+      "submit_button_text": "Send"
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Thank you for subscribing to our mailing list.",
+        "unsubscribe": "Unsubscribe",
+        "disclaimer": "You can unsubscribe at any time."
+      },
+      "unsubscribed": {
+        "disclaimer": "We will not send you any more marketing news. You can subscribe again at any time.",
+        "preview": "You are reviewing the preview of what customers will see when they unsubscribe.",
+        "confirmation": "You have canceled your subscription to our email newsletter."
+      },
+      "open_tracking": {
+        "opt_out": {
+          "opted_out_html": "<b>You have unsubscribed from the open email tracking.</b>",
+          "visibility": "We will not see if you have opened our emails.",
+          "opt_in_html": "<a style='text-decoration:underline;' href='%{link}'>Accept</a> the tracking of opened emails.",
+          "preview_bar": "You are reviewing the preview of what customers will see when they unsubscribe from open email tracking."
+        },
+        "opt_in": {
+          "opted_in_html": "<b>You have subscribed to the tracking of opened emails.</b>",
+          "preview_bar": "You are reviewing the preview of what customers will see when they subscribe to open email tracking.",
+          "visibility": "Open email rates will be reported anonymously. We will only see if you have opened an email as part of an aggregated open email rate.",
+          "opt_out_html": "You can <a style='text-decoration:underline;' href='%{link}'>unsubscribe</a> from open email tracking if you do not wish to share this information."
+        },
+        "no_longer_track": {
+          "privacy_policy": "After sending this email, we have updated our privacy policy and no longer track opens.",
+          "status_html": "<b>We no longer track opened emails.</b>"
+        },
+        "track": {
+          "status_html": "<b>The tracking of opened emails is reported.</b>",
+          "visibility": "We will only see if you have opened the email as part of the total email open rate."
+        },
+        "updated_policy": {
+          "status_html": "<b>The tracking of opened emails is reported.</b>",
+          "visibility": "We have updated our policy and now track opened emails. Open email rates will be reported anonymously. We will only see if you have opened an email as part of the total open email rate.",
+          "opt_out_html": "If you do not wish to share this information, you can <a style='text-decoration:underline;' href='%{link}'>unsubscribe</a>."
+        }
+      }
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Usually ready in 1 hour",
+        "two_hours": "It is usually ready in 2 hours",
+        "four_hours": "Usually ready in 4 hours",
+        "twenty_four_hours": "Usually ready in 24 hours",
+        "two_to_four_days": "Usually ready in 2 to 4 days",
+        "five_or_more_days": "Usually ready in 5 days or more",
+        "zero_to_two_hours": "It is usually ready in 2 hours",
+        "two_to_four_hours": "Usually ready in 4 hours",
+        "immediately": "Ready for pickup now",
+        "next_day": "Ready for pickup the next day"
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "In stock",
+          "out_of_stock": "Sold out"
+        }
+      },
+      "boolean": {
+        "true_label": "Yes",
+        "false_label": "No"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "Relevance",
+        "price_ascending": "Price, low to high",
+        "price_descending": "Price, highest to lowest"
+      },
+      "error": "There has been a problem loading the search results. Refresh the page or try again later."
+    },
+    "subscriptions": {
+      "buyer_consent_product": "This item is a recurring or deferred purchase. By continuing, I accept the %{cancellationPolicyLink} and authorize charges to my payment method according to the prices, frequency, and dates indicated on this page until my order is prepared or I cancel it, if allowed.",
+      "buyer_consent_cart": "One or more of the items in your cart are part of a recurring or deferred purchase. By continuing, I accept the %{cancellationPolicyLink} and authorize charges to my payment method according to the prices, frequency, and dates indicated on this page until my order is prepared or I cancel it, if allowed.",
+      "cancellation_policy": "cancellation policy"
+    }
+  },
+  "customer_accounts": {
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "Hide the Account menu",
+        "label": "Account",
+        "show_accessibility_label": "Show the Account menu",
+        "nav_accessibility_label": "Account navigation",
+        "open_menu_accessibility_label": "Open account navigation",
+        "close_menu_accessibility_label": "Close account navigation",
+        "loading_message": "Loading account navigation"
+      },
+      "action_menu_accessibility_label": "More actions",
+      "close_menu_accessibility_label": "Close the main navigation",
+      "contact_email_subject": "Contact from the online store {{shopName}}",
+      "contact_link": "Contact information",
+      "delete_confirmation": {
+        "cancel": "Cancel",
+        "delete": "Delete"
+      },
+      "dismiss_toast": "Discard"
     }
   }
 }
