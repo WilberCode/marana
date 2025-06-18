@@ -3507,7 +3507,129 @@
         "load_more": "Load more",
         "load_more_accessibility_label": "Load more addresses"
       },
-      "save_new_address_accessibility_label": "Save address"
+      "save_new_address_accessibility_label": "Save address",
+      "edit_modal_title": {
+        "default": "Edit address",
+        "billing": "Edit billing address",
+        "shipping": "Edit shipping address"
+      },
+      "title": "Directions",
+      "delete_confirmation_title": "Delete address?",
+      "delete_confirmation_description": "Existing orders will not be affected.",
+      "add_address_banner": "Add the addresses you want to use on the payment screen",
+      "add_button_text": "Add",
+      "billing_address_dropdown_placeholder": "Billing address",
+      "add_button_accessibility_label": "Add address",
+      "back_button": "Back",
+      "back_button_accessibility_label": "Return to editing the address {{address}}",
+      "no_addresses_banner": "No addresses were added."
+    },
+    "address_form": {
+      "auto_complete_close_accessibility_label": "Close the suggestions.",
+      "auto_complete_title": "Suggestions",
+      "billing_address": "Use as billing address",
+      "cancel": "Cancel",
+      "cancel_accessibility_label": "Cancel editing the address {{address}}",
+      "creation_success_notification": "Address added",
+      "default_address": "This is my default address.",
+      "default_address_creation_success_notification": "Default address added",
+      "default_address_update_success_notification": "Default address updated",
+      "loading_add_form_accessibility_message": "Loading new address form",
+      "loading_edit_form_accessibility_message": "Loading address edit form",
+      "loading_finished_accessibility_message": "Address form loaded",
+      "save": "Save",
+      "save_accessibility_label": "Save the address {{address}}",
+      "section_title_accessibility_label": "Add address",
+      "update_success_notification": "Address updated",
+      "attention": "Attention",
+      "attention_help_text": "Name of a person or department",
+      "loading_form_accessibility_message": "Loading address form",
+      "attention_company": "Company/To the attention of"
+    },
+    "B2B": {
+      "account_information": {
+        "company_card_name_label": "Company name",
+        "company_card_section_accessibility_label": "Company"
+      },
+      "locations": {
+        "contact_email": "Email",
+        "contact_list_title": "People",
+        "contact_name": "Name",
+        "contact_permissions": "Permissions",
+        "contact_phone_number": "Phone number",
+        "location_picker_label": "Branch name",
+        "net_payment_terms_description": "{{name}}: payments due in {{numberOfDays}} days",
+        "payment_details_title": "Payment details",
+        "payment_terms": "Payment terms",
+        "permissions_label": "Your permissions",
+        "permissions_title": "Permissions",
+        "section_title": "Branch",
+        "shipping_address_required": "Add a billing address to this branch to start placing orders.",
+        "tax_details_title": "Tax information",
+        "tax_id": "Tax identification",
+        "tax_exemptions": "Tax exemptions",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} more",
+        "tax_exemptions_modal_close": "Close",
+        "multiple_tax_exemptions_and": "and",
+        "taxes_none": "None",
+        "tax_exemption_not_applicable": "N/A",
+        "tax_exemptions_modal_button_accessibility_label": "View all tax exemptions",
+        "pagination": {
+          "load_more": "Load more",
+          "load_more_accessibility_label": "Load more branches"
+        },
+        "own_role_contact_name": "You",
+        "staff_and_permissions_title": "Employees and permissions",
+        "location_picker_accessibility_label": "Branch name: {{locationName}}",
+        "deposit_percentage": "Deposit of {{percentage}}"
+      },
+      "location_selection": {
+        "description": "If you already have items in the cart, changing the branch may affect the prices and quantities in the cart.",
+        "list_accessibility_label": "List of branches",
+        "list_item_accessibility_label": "{{name}}: {{address}}",
+        "list_item_without_address_accessibility_label": "{{name}}: no address",
+        "list_loading_accessibility_message": "Loading branch list",
+        "list_loading_address_accessibility_message": "Loading address for {{locationName}}",
+        "list_loading_finished_accessibility_message": "The branch list has been loaded.",
+        "loading_store_accessibility_message": "Go to the store",
+        "selection_cancel_button": "Cancel",
+        "selection_confirmation_button": "Choose branch",
+        "title": "Which branch are you buying for?",
+        "continue_to_store": "Continue to the store",
+        "no_location_title": "Personal orders only",
+        "no_location_description": "You no longer have permission to place orders for {{company}}. You can still place personal orders.",
+        "no_locations_found": "No branch found",
+        "search": "Search for a branch",
+        "clear_search": "Clear search",
+        "try_new_search": "Try a new search",
+        "search_location_title": "Select a branch",
+        "selection_continue_button": "Continue"
+      },
+      "addresses": {
+        "add_billing_address_button": "Add billing address",
+        "add_billing_address_section_accessibility_label": "Add billing address",
+        "add_shipping_address_button": "Add shipping address",
+        "add_shipping_address_section_accessibility_label": "Add shipping address",
+        "billing_address_card_title": "Billing address",
+        "cancel_adding_billing_address_accessibility_label": "Cancel adding billing address",
+        "cancel_adding_shipping_address_accessibility_label": "Cancel adding shipping address",
+        "save_new_billing_address_accessibility_label": "Save billing address",
+        "save_new_shipping_address_accessibility_label": "Save shipping address",
+        "shipping_address_card_title": "Shipping address"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "Hide all",
+          "show_all": "Show all",
+          "hide_all_accessibility_label": "Hide all review orders",
+          "show_all_accessibility_label": "Show all review orders",
+          "title": "Pending",
+          "pagination": {
+            "nav_accessibility_label": "Order review navigation buttons"
+          },
+          "show_all_orders_in_review": "Show all orders under review"
+        }
+      }
     }
   }
 }
