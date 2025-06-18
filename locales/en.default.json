@@ -384,7 +384,9 @@
   },
   "shopify": {
     "addresses": {
-      "postal_code": "Distrito"
+      "postal_code": "Postal code",
+      "zip_code": "Postal code",
+      "postcode": "Postal code"
     },
     "checkout": {
       "contact": {
@@ -2564,8 +2566,74 @@
         },
         "missing_country_fallback": "your country",
         "indeterminate_location_fallback": "your location",
-        "cart_updated": "The cart has been updated."
+        "cart_updated": "The cart has been updated.",
+        "unavailable_line_item": "%{product_name} / %{variant_label}",
+        "change_address_only": "Change the delivery address to continue.",
+        "change_address_or_remove": "Change the delivery address or %{remove_action}.",
+        "remove_items_action": {
+          "one": "delete the unavailable item",
+          "other": "remove unavailable items"
+        },
+        "empty_cart_action": "empty the cart and return to the store"
+      },
+      "b2b_errors": {
+        "lost_b2b_purchasing_permissions": "You no longer have permission to place B2B orders. %{logout_url} to place a personal order.",
+        "log_out_link_text": "log out",
+        "lost_permissions_subtitle": "You no longer have permission to place B2B orders. Log out to place a personal order.",
+        "lost_permissions_title": "No branch permissions"
+      },
+      "units": {
+        "milligram": "mg",
+        "gram": "g",
+        "kilogram": "kg",
+        "milliliter": "ml",
+        "centiliter": "cl",
+        "liter": "L",
+        "cubic_meter": "m³",
+        "millimeter": "mm",
+        "centimeter": "cm",
+        "meter": "m",
+        "square_meter": "m²",
+        "ounce": "oz",
+        "pound": "lb",
+        "fluid_ounce": "fl oz",
+        "pint": "pt",
+        "quart": "qt",
+        "gallon": "gal",
+        "inch": "in",
+        "foot": "dog",
+        "yard": "yd",
+        "square_foot": "dogs²",
+        "item": "article"
+      },
+      "memberships": {
+        "delivery_promise_unfulfillable": "The address is not compatible with the current membership."
+      },
+      "editor": {
+        "navigation": {
+          "store_logo_accessibility_label": "Go to the online store"
+        }
       }
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "links": {
+      "powered_by_shopify": "Shopify Technology",
+      "learn_more": "Read more"
+    },
+    "feed": {
+      "more": "More"
+    },
+    "attributes": {
+      "email": "email",
+      "password": "password",
+      "password_confirmation": "password confirmation",
+      "first_name": "Name",
+      "last_name": "Last name",
+      "body": "message",
+      "signature": "Address"
     }
   }
 }
