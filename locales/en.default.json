@@ -2987,7 +2987,71 @@
         "cancel": "Cancel",
         "delete": "Delete"
       },
-      "dismiss_toast": "Discard"
+      "dismiss_toast": "Discard",
+      "document_title": "{{sectionName}} - {{shopName}} - Account",
+      "go_to_store_link": "Go to the store",
+      "log_out_link": "Log out",
+      "loading_message": "Loading",
+      "generic_accessibility_label": "{{label}}: {{value}}",
+      "logout_overlay_label": "Logging out...",
+      "nav_label_accessibility_label": "Main navigation",
+      "navigation_accessibility_message": "You navigated to {{sectionName}}",
+      "open_menu_accessibility_label": "Open main navigation",
+      "orders_link_label": "Orders",
+      "shop_logo_accessibility_label": "Logo of {{shopName}}",
+      "subscriptions_link_label": "Subscriptions",
+      "settings_link": "Settings",
+      "country_switcher_toast_message": "The country has been changed to {{countryName}}",
+      "switch_country": "Change country",
+      "search": "Search",
+      "location_switcher_toast_message": "The location was changed to {{locationName}}",
+      "switch_location": "Change location",
+      "view_details": "View information",
+      "company_location": "Company location"
+    },
+    "account_information": {
+      "loading_accessibility_message": "Loading account information",
+      "loading_finished_accessibility_message": "The account information has been loaded.",
+      "profile_card": {
+        "cancel": "Cancel",
+        "cancel_accessibility_label": "Cancel profile editing",
+        "edit": "Edit",
+        "edit_accessibility_label": "Edit profile",
+        "email_help_text": "The email used to log in cannot be changed.",
+        "first_name": "Name",
+        "last_name": "Last name",
+        "phone_number_help_text": "The phone number used to log in cannot be changed.",
+        "save": "Save",
+        "save_accessibility_label": "Save profile",
+        "title": "Profile",
+        "no_name_provided_accessibility_label": "No name was added."
+      },
+      "profile_update_confirmation_message": "Profile updated",
+      "title": "Profile",
+      "people": {
+        "pagination": {
+          "load_more": "Load more",
+          "load_more_accessibility_label": "Load more people",
+          "loading_accessibility_label": "Loading people"
+        }
+      },
+      "add_button": "Add"
+    },
+    "orders": {
+      "list_layout_accessibility_label": "Design options",
+      "list_title": "Orders",
+      "order_list": {
+        "column_headers": {
+          "total": "Total",
+          "items": "Articles",
+          "order": "Order",
+          "actions_accessibility_label": "Actions",
+          "products_accessibility_label": "Products"
+        },
+        "delivered": "Delivery date: {{date}}",
+        "empty_state_order_source_description": "Only orders placed by {{email}} will be shown here.",
+        "empty_state_subtitle": "Go to the store to place an order."
+      }
     }
   }
 }
