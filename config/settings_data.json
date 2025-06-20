@@ -137,6 +137,7 @@
           },
           "73dfe80c-ff67-4845-8159-14326fef1142": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/Caratula_tabletas_y_chocotejas_y_linea_repostera_y_caja_de_cata.png",
               "image_url": "",
