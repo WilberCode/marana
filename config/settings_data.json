@@ -684,6 +684,7 @@
           "1587152498344",
           "1587152490304"
         ],
+        "custom_css": [],
         "settings": {
           "title": "Descubre más sobre nosotros",
           "skip_container": false
@@ -794,7 +795,6 @@
       "list-collections-template": {
         "type": "list-collections-template",
         "settings": {
-          "header_image": "",
           "show_all_collections": true
         }
       },
@@ -941,7 +941,8 @@
         "custom_css": [
           "@media (min-width: 767px) {h1.text.slide-heading {font-size: 45px; font-weight: 800; }}",
           "@media (max-width: 767px) {.section-id-slideshow_VfNi8X .slide {height: 400px; }}",
-          ".innest {max-width: 100%;}"
+          ".innest {max-width: 100%;}",
+          ".slideshow .slide__image-bg {background-position: bottom; }"
         ],
         "name": "Slideshow",
         "settings": {
@@ -950,7 +951,7 @@
           "slide_show_mobile_arrows": false,
           "skip_container": true,
           "head_img_height_fixed": true,
-          "head_img_height_int": 850
+          "head_img_height_int": 950
         }
       }
     },
