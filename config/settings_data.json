@@ -499,6 +499,7 @@
           "div {margin-top: 0;}"
         ],
         "settings": {
+          "title": "",
           "skip_container": false
         }
       },
@@ -666,6 +667,7 @@
           "1587152490304"
         ],
         "settings": {
+          "title": "",
           "skip_container": false
         }
       },
@@ -681,6 +683,7 @@
       },
       "1587240069215": {
         "type": "image-with-text",
+        "disabled": true,
         "settings": {
           "image": "shopify://shop_images/IMG_20190404_104909.jpg",
           "layout": "left",
@@ -696,6 +699,7 @@
       },
       "1587240140813": {
         "type": "image-with-text",
+        "disabled": true,
         "settings": {
           "image": "shopify://shop_images/fotos_567.jpg",
           "layout": "right",
@@ -711,6 +715,7 @@
       },
       "1587240171336": {
         "type": "image-with-text",
+        "disabled": true,
         "settings": {
           "image": "shopify://shop_images/peak-of-machu-picchu-lit.jpg",
           "layout": "right",
@@ -891,10 +896,60 @@
           "skip_container": false,
           "custom_html": "<a href=\"https://www.marana.com.pe/pages/libro-de-reclamaciones\" class=\"btn-libro\"></a>"
         }
+      },
+      "slideshow_J7aejj": {
+        "type": "slideshow",
+        "blocks": {
+          "image_DJTYaC": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/peak-of-machu-picchu-lit.jpg",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 25,
+              "color": "#ffffff",
+              "heading": "Venimos de un lugar mágico llamado Perú",
+              "subheading": "",
+              "button_1_text": "",
+              "button_1_url": "",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
+          "image_cEpHP3": {
+            "type": "image",
+            "settings": {
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 25,
+              "color": "#ffffff",
+              "heading": "Slideshow",
+              "subheading": "Tell your story with images",
+              "button_1_text": "",
+              "button_1_url": "",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "image_DJTYaC",
+          "image_cEpHP3"
+        ],
+        "name": "Slideshow",
+        "settings": {
+          "enable_carousel": false,
+          "slide_mode": "slide",
+          "slide_show_mobile_arrows": false,
+          "skip_container": true,
+          "head_img_height_fixed": true,
+          "head_img_height_int": 700
+        }
       }
     },
     "content_for_index": [
       "1604511842750",
+      "slideshow_J7aejj",
       "1587133822579",
       "1587240171336",
       "1587240069215",
