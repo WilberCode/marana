@@ -897,9 +897,11 @@
           "9ba7f93f-ed27-4022-9f48-d42d129c92fc",
           "1604511951337"
         ],
-        "custom_css": [],
+        "custom_css": [
+          "@media (min-width: 767px) {h1 {font-size: 32px; font-weight: 800; }}"
+        ],
         "settings": {
-          "title": "Nuestras Líneas de Productos",
+          "title": "Nuestros productos",
           "collections_per_row_int": 2,
           "collection_button_text": "Comprar",
           "collection_items_text": "producto"
@@ -942,7 +944,7 @@
           "@media (min-width: 767px) {h1.text.slide-heading {font-size: 45px; font-weight: 800; }}",
           "@media (max-width: 767px) {.section-id-slideshow_VfNi8X .slide {height: 400px; }}",
           ".innest {max-width: 100%;}",
-          ".slideshow .slide__image-bg {background-position: bottom; }"
+          ".slideshow .slide__image-bg {background-position: bottom;}"
         ],
         "name": "Slideshow",
         "settings": {
