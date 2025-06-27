@@ -624,11 +624,25 @@
           "1587152424567-1": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/IMG_7310_763c7ca1-3537-4254-a2fd-ef7bcb4b5382.jpg",
+              "tint_color": "#000000",
+              "tint_opacity": 25,
+              "link": "shopify://pages/tiendas",
+              "size": "quarter",
+              "title": "Tienda",
+              "subheading": "",
+              "cta_text": "",
+              "text_color": "#ffffff"
+            }
+          },
+          "image_bxYVRz": {
+            "type": "image",
+            "settings": {
               "image": "shopify://shop_images/CD_6259bn_a8e004e3-aa78-4cdc-8690-bf38dda333e8.jpg",
               "tint_color": "#000000",
               "tint_opacity": 25,
               "link": "shopify://pages/about-us",
-              "size": "third",
+              "size": "quarter",
               "title": "",
               "subheading": "Detrás de la marca",
               "cta_text": "",
@@ -642,7 +656,7 @@
               "tint_color": "#000000",
               "tint_opacity": 44,
               "link": "shopify://pages/our-process",
-              "size": "third",
+              "size": "quarter",
               "title": "",
               "subheading": "Mucho más que un chocolate",
               "cta_text": "",
@@ -656,7 +670,7 @@
               "tint_color": "#000000",
               "tint_opacity": 43,
               "link": "shopify://pages/store-locator",
-              "size": "third",
+              "size": "quarter",
               "title": "",
               "subheading": "¿Dónde encontrarnos?",
               "cta_text": "",
@@ -666,6 +680,7 @@
         },
         "block_order": [
           "1587152424567-1",
+          "image_bxYVRz",
           "1587152498344",
           "1587152490304"
         ],
