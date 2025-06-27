@@ -339,7 +339,9 @@
       "1587133822579": {
         "type": "rich-text",
         "custom_css": [
-          "h2 {margin-top: 40px;}"
+          "p {font-size: 16px; line-height: 23px;}",
+          "@media (min-width: 767px) {h2 {margin-bottom: 0; font-size: 45px; font-weight: 600; } p {font-size: 40px; line-height: 58px; letter-spacing: 0.8px; } .rich-text-section {margin-top: 45px; }}",
+          ".reading-width {max-width: 100%;}"
         ],
         "settings": {
           "title": "Craft Chocolate Makers",
