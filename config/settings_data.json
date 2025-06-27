@@ -915,26 +915,15 @@
               "button_2_text": "",
               "button_2_url": ""
             }
-          },
-          "image_cEpHP3": {
-            "type": "image",
-            "settings": {
-              "image_url": "",
-              "tint_color": "#000000",
-              "tint_opacity": 25,
-              "color": "#ffffff",
-              "heading": "Slideshow",
-              "subheading": "Tell your story with images",
-              "button_1_text": "",
-              "button_1_url": "",
-              "button_2_text": "",
-              "button_2_url": ""
-            }
           }
         },
         "block_order": [
-          "image_DJTYaC",
-          "image_cEpHP3"
+          "image_DJTYaC"
+        ],
+        "custom_css": [
+          "@media (min-width: 767px) {h1.text.slide-heading {font-size: 45px; font-weight: 800; }}",
+          "@media (max-width: 767px) {.section-id-slideshow_VfNi8X .slide {height: 400px; }}",
+          ".innest {max-width: 100%;}"
         ],
         "name": "Slideshow",
         "settings": {
