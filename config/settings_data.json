@@ -508,7 +508,8 @@
       "1587149140907": {
         "type": "rich-text",
         "custom_css": [
-          "div .rich-text-section {margin-bottom: 0;}"
+          "div .rich-text-section {margin-bottom: 0;}",
+          "@media (min-width: 767px) {h2 {font-size: 36px; margin-bottom: 10px; font-weight: 600; }}"
         ],
         "settings": {
           "title": "Descubre nuestros orígenes en nuestras colecciones",
