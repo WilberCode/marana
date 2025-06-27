@@ -154,6 +154,7 @@
           },
           "1587094863606": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/Marana_011.jpg",
               "image_url": "",
