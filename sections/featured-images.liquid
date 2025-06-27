@@ -9,7 +9,12 @@
 {% endstyle %}
 
 <div class="{% unless section.settings.skip_container %}container container--not-mobile homepage-spaced-row{% endunless %}" data-section-type="gallery">
-  <div class="flexible-layout">
+{% if section.settings.title != blank %}
+    <div class="section-title-container align-center ">
+      <h2>{{ section.settings.title }}</h2>
+    </div>  
+{% endif %}
+<div class="flexible-layout"> 
     {% for block in section.blocks %}
     <div class="column-{{ block.settings.size }} img-block block-{{ block.id }}" {{ block.shopify_attributes }}>
 
@@ -68,6 +73,11 @@
     "class": "section--gallery section--no-spacing",
     "max_blocks": 20,
     "settings": [
+       {
+        "id": "title",
+        "type": "text",
+        "label": "Heading"
+      },
       {
         "type": "checkbox",
         "id": "skip_container",
