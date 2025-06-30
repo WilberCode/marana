@@ -92,7 +92,7 @@
             "type": "content",
             "settings": {
               "title": "Contenido",
-              "content_menu": "main-menu"
+              "content_menu": "footer-contenido"
             }
           },
           "legal_4WXFwr": {
