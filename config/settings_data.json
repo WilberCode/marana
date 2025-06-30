@@ -1147,6 +1147,11 @@
           "js_code": "",
           "liquid_code": ""
         }
+      },
+      "5958325610427746679": {
+        "type": "shopify://apps/search7-smart-search-filter/blocks/search-filter/88e24ea2-237e-4897-9894-0fe383246073",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
