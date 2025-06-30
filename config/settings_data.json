@@ -457,6 +457,7 @@
       },
       "1587145232189": {
         "type": "newsletter",
+        "disabled": true,
         "settings": {
           "heading": "Suscríbete a nuestra Newsletter",
           "text": "<p>Entérate de nuestros nuevos lanzamientos y recibe promociones y ofertas.</p>",
@@ -927,6 +928,7 @@
       },
       "custom_html_dN7gYm": {
         "type": "custom-html",
+        "disabled": true,
         "custom_css": [
           ".btn-libro {display: block; background: url(https://cdn.shopify.com/s/files/1/0293/0533/9997/files/libro_reclamaciones.png?v=1713377851); width: 130px; height: 78px; background-size: cover; margin: 0 auto; text-indent: -999px; overflow: hidden;}"
         ],
