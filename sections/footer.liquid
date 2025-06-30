@@ -51,7 +51,9 @@
       {% when 'follow' %}
         <div class="footnav-item footnav-item-{{ block.type }}" {{ block.shopify_attributes }}>
           <h4 class="footnav-title">{{ block.settings.title }}</h4> 
-            wsww
+          <div class="main-menu-section main-menu-section--socials">
+            {% include 'social-icons', use_alt_custom_icon: true %}
+          </div> 
         </div>   
 
     {% endcase %} 
@@ -115,7 +117,7 @@
           {
             "id": "content_menu",
             "type": "link_list",
-            "default": "footer",
+            "default": "main-menu",
             "label": "Menu de contenido",
           }
         ]
@@ -157,14 +159,18 @@
     "default": {
       "blocks": [
         {
-          "type": "content"
+          "type": "content",
+          "settings": {
+            "title": "Contenido",
+            "content_menu": "main-menu"
+          }
         },
-       /*  {
+        {
           "type": "legal",
           "settings": {
-            "menu": "footer"
+            "legal_menu": "footer"
           }
-        }, */
+        },
         /* {
           "type": "conectate"
         } */

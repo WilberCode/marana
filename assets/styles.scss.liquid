@@ -6138,7 +6138,8 @@ $flexible-layout-gutter: 0px;
 
 .footnav{
   display: flex;
-  gap: 50px;
+  flex-wrap: wrap;
+  gap: 50px; 
   
   .footnav-item {
     flex:1;
@@ -6147,19 +6148,44 @@ $flexible-layout-gutter: 0px;
       color: #ffffff;
       margin-bottom: 35px;
       text-transform: uppercase;
-      
+      @media (max-width: 767px) {
+              font-size:20px; 
+      }
     }
   }
+ .footnav-item-content,.footnav-item-legal, .footnav-item-follow{
+    min-width: 20%;
+  } 
+  @media (min-width: 767px) {
+    .footnav-item-logo{
+      min-width:320px;
+    } 
+  }
+  @media (max-width: 767px) {
+      flex-direction: column; 
+      .footnav-item-logo{
+        max-width:250px; 
+        margin:auto;
+
+    }
+      .footnav-item-content,.footnav-item-legal, .footnav-item-follow{
+        min-width: 30%;
+      } 
+  }
+  
   ul{
     margin: 0;
     padding: 0;
+    list-style: none;
     li{
+      list-style: none  ;
           margin-bottom: 10px; 
         a{
             font-size: 17px;
             &:hover {
               text-decoration: underline;
             }
+            
         }
       }
   }
