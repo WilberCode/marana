@@ -81,23 +81,41 @@
     "sections": {
       "footer": {
         "type": "footer",
-        "settings": {
-          "menu_linklist": "footer",
-          "menu_linklist_2": "",
-          "menu_linklist_3": "",
-          "show_menu_headings": false,
-          "show_social": false,
-          "show_text_area": false,
-          "text_area_heading": "",
-          "text_area_text": "",
-          "show_payment_icons": true,
-          "show_locale_selector": false,
-          "show_currency_selector": true,
-          "show_newsletter": false,
-          "newsletter_heading": "Subscribe to our newsletter",
-          "newsletter_text": "",
-          "newsletter_button_text": "Subscribe"
-        }
+        "blocks": {
+          "logo_ayThKc": {
+            "type": "logo",
+            "settings": {
+              "logo_image": "shopify://shop_images/Logo_Blanco.png"
+            }
+          },
+          "content_y3hq3K": {
+            "type": "content",
+            "settings": {
+              "title": "Contenido",
+              "content_menu": "main-menu"
+            }
+          },
+          "legal_4WXFwr": {
+            "type": "legal",
+            "settings": {
+              "title": "Legal",
+              "legal_menu": "footer"
+            }
+          },
+          "follow_rxBT8x": {
+            "type": "follow",
+            "settings": {
+              "title": "Síguenos en"
+            }
+          }
+        },
+        "block_order": [
+          "logo_ayThKc",
+          "content_y3hq3K",
+          "legal_4WXFwr",
+          "follow_rxBT8x"
+        ],
+        "settings": {}
       },
       "banner-index": {
         "type": "banner-index",
