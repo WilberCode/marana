@@ -4026,6 +4026,8 @@ body:not(.template-product):not(.has-banner):not(.scrolled-down) .pageheader__co
   background-color: $content-bg;
   text-align: left;
   clear: left;
+  background:black;
+  color:white;
 }
 
 .pagefooter .copyright a:hover {
@@ -6123,3 +6125,50 @@ $flexible-layout-gutter: 0px;
   font-weight: 600;
 }
 
+
+
+
+/*Footer*/
+.site-footer{
+  background: #000000;
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+
+.footnav{
+  display: flex;
+  gap: 50px;
+  
+  .footnav-item {
+    flex:1;
+    h4{
+      font-size: 28px; 
+      color: #ffffff;
+      margin-bottom: 35px;
+      text-transform: uppercase;
+      
+    }
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+          margin-bottom: 10px; 
+        a{
+            font-size: 17px;
+            &:hover {
+              text-decoration: underline;
+            }
+        }
+      }
+  }
+}
+
+.site-footer-copyright{
+  margin-top: 38px;
+  padding: 20px 10px 20px 10px;
+  border-top: 1px solid #3b3b3b;
+  text-align: center;
+ 
+}
