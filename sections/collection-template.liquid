@@ -1,3 +1,4 @@
+{% render 'rapid-search-results-template-v2' %}
 <div data-section-type="collection-template">
   {% capture header_content %}
     <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
@@ -7,7 +8,6 @@
     </nav>
 
     <h1>{{ collection.title }}</h1>
-
     {% if collection.description != blank %}
       <div class="rte reading-width align-center large-text">{{ collection.description }}</div>
     {% endif %}
