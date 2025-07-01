@@ -1,13 +1,28 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "name": "Collection",
   "sections": {
     "main": {
       "type": "collection-template",
-      "settings": {}
-    } 
+      "settings": {
+        "products_per_row_int": 4,
+        "show_tags": true,
+        "coll_show_sort": true,
+        "coll_show_feat": false,
+        "grid_show_vendor": false,
+        "header_image": "shopify://shop_images/Caratula_tabletas_y_chocotejas_y_linea_repostera_y_caja_de_cata.png",
+        "head_img_coll_handled": false
+      }
+    }
   },
-  "order": [ 
+  "order": [
     "main"
-  ] 
+  ]
 }
- 
