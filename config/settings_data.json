@@ -1148,15 +1148,8 @@
           "liquid_code": ""
         }
       },
-      "286a8285-f28c-495e-9e89-56ef9dfb1c9a": {
-        "type": "shopify://apps/boost-ai-search-filter/blocks/boost-sd-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
-        "disabled": false,
-        "settings": {
-          "templateId": "hbwmnLjsDh"
-        }
-      },
-      "16422382648059844097": {
-        "type": "shopify://apps/boost-ai-search-filter/blocks/instant-search-app-embedded/7fc998ae-a150-4367-bab8-505d8a4503f7",
+      "5182184951224911228": {
+        "type": "shopify://apps/rapid-search/blocks/script/bd827795-feaa-41a8-9219-2b83f238aa7d",
         "disabled": false,
         "settings": {}
       }
