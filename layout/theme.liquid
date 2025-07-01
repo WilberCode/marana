@@ -114,6 +114,7 @@
 
 
   {{ 'translation-lab-language-switcher-floating.css' | asset_url | stylesheet_tag }}
+  {% render 'rapid-search-settings' %}
 </head>
 
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if template contains 'customers' %} template-customer-area{% endif %}" >
