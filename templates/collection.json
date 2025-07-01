@@ -18,11 +18,11 @@
         "coll_show_feat": false,
         "grid_show_vendor": false,
         "header_image": "shopify://shop_images/Caratula_tabletas_y_chocotejas_y_linea_repostera_y_caja_de_cata.png",
-        "head_img_coll_handled": false
+        "head_img_coll_handled": false 
       }
     }
   },
-  "order": [
+  "order": [ 
     "main"
   ]
 }
