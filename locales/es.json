@@ -10,7 +10,8 @@
 {
   "general": {
     "meta": {
-      "page": "Pagina {{ page }}"
+      "page": "Pagina {{ page }}",
+      "tags": ""
     },
     "404": {
       "title": "404 Pagina no encontrado",
@@ -53,7 +54,8 @@
       "on_pinterest": "Pin la imagen principal",
       "on_twitter": "Compartir en Twitter",
       "share_link_html": "<i class=\"icon-share\"></i>",
-      "title": "Compartir"
+      "title": "Compartir",
+      "check_out_html": ""
     }
   },
   "layout": {
@@ -92,7 +94,9 @@
       "no_matches": "¡Aún no tienes ningún artículo! Una vez que haya escrito uno, aparecerá aquí.",
       "other_posts_title": "Más historias",
       "read_more_html": "Leer mas",
-      "tags": "Encuentra artículos similares"
+      "tags": "Encuentra artículos similares",
+      "posted_by_compact_html": "",
+      "posted_by_html": ""
     },
     "comments": {
       "email": "Correo Electrónico",
@@ -102,7 +106,13 @@
       "post": "Publicar comentario",
       "success": "¡Su comentario fue publicado con éxito!. ¡Muchas Gracias!",
       "success_moderated": "Su comentario fue publicado con éxito. Lo publicaremos dentro de poco, ya que nuestro blog está moderado.",
-      "title": "Comentarios"
+      "title": "Comentarios",
+      "author_meta": "",
+      "date_meta": "",
+      "comments_with_count": {
+        "one": "",
+        "other": ""
+      }
     },
     "pagination": {
       "newer_articles": "Artículos nuevos",
@@ -128,14 +138,17 @@
       "taxes_included_but_shipping_at_checkout": "Los impuestos están incluidos y el costo de envío será calculado al finalizar su compra",
       "title": "Su Carro",
       "total": "Total",
-      "update": "Actualiza el Carro de Compras"
+      "update": "Actualiza el Carro de Compras",
+      "taxes_and_shipping_policy_at_checkout_html": "",
+      "taxes_included_and_shipping_policy_html": ""
     },
     "label": {
       "note": "Instrucciones especiales para el vendedor:",
       "subtotal": "Subtotal"
     },
     "terms": {
-      "confirmation": "Debe aceptar los términos y condiciones antes de continuar."
+      "confirmation": "Debe aceptar los términos y condiciones antes de continuar.",
+      "agreement_html": ""
     }
   },
   "collections": {
@@ -149,7 +162,11 @@
       "mobile_reveal": "Mostrar filtros"
     },
     "general": {
-      "no_matches": "Lo sentimos, no hay productos que coincidan con su búsqueda."
+      "no_matches": "Lo sentimos, no hay productos que coincidan con su búsqueda.",
+      "product_count": {
+        "one": "",
+        "other": ""
+      }
     },
     "sorting": {
       "az": "Alfabéticamente, A-Z",
@@ -237,7 +254,12 @@
       "sku": "SKU",
       "subtotal": "Subtotal",
       "tax": "Impuesto",
-      "total": "Total"
+      "total": "Total",
+      "title": "",
+      "date": "",
+      "cancelled": "",
+      "cancelled_reason": "",
+      "fulfilled_at": ""
     },
     "orders": {
       "date": "Fecha",
@@ -270,7 +292,8 @@
       "password": "Contraseña",
       "password_confirm": "Confirmar Contraseña",
       "submit": "Restablecer la Contraseña",
-      "title": "Restablecer contraseña de cuenta"
+      "title": "Restablecer contraseña de cuenta",
+      "subtext": ""
     }
   },
   "date_formats": {
@@ -282,12 +305,16 @@
       "print": "Impresión",
       "redeem": "Use este código al momento de pagar para canjear su tarjeta de regalo",
       "shop_link": "Empieza a comprar",
-      "subtext": "¡Aquí está tu tarjeta de regalo!"
+      "subtext": "¡Aquí está tu tarjeta de regalo!",
+      "title_html": "",
+      "expired": "",
+      "active": ""
     }
   },
   "home_page": {
     "onboarding": {
-      "no_articles_html": "No hay artículos en este blog."
+      "no_articles_html": "No hay artículos en este blog.",
+      "no_products_html": ""
     },
     "placeholder": {
       "article_title": "Artículo",
@@ -311,7 +338,8 @@
   "products": {
     "labels": {
       "sale": "Rebaja",
-      "sold_out": "Agotado"
+      "sold_out": "Agotado",
+      "only_x_left": ""
     },
     "listing": {
       "from": "Desde"
@@ -331,7 +359,8 @@
       "selector_label": "Opciones",
       "sku": "SKU:",
       "vendor": "Por",
-      "view_in_space": "Ver en tu espacio"
+      "view_in_space": "Ver en tu espacio",
+      "shipping_policy_html": ""
     },
     "variant": {
       "non_existent": "Indisponible",
@@ -379,7 +408,8 @@
         "postal_code_label": "Distrito",
         "postal_code_placeholder": "Distrito",
         "address2_label": "Referencia",
-        "optional_address2_label": "Referencia"
+        "optional_address2_label": "Referencia",
+        "city_label": "Distrito"
       },
       "field_errors": {
         "address_zip_blank": "Introduce el distrito"
@@ -408,17 +438,17 @@
     "login": {
       "link": "Ingrese usando su contraseña",
       "label": "Ingresa a nuestra tienda usando tu contraseña:",
-      "button": "Ingresar"
+      "button": "Ingresar",
+      "admin_link_html": ""
     },
     "signup": {
       "success": "¡Muchas gracias por tu interés!, te mantendremos informado"
     }
   },
   "marana": {
-      "product": {
-        "button_buy": "Comprar",
-        "button_soldout":"Agotado",
-      }
+    "product": {
+      "button_buy": "Comprar",
+      "button_soldout": "Agotado"
+    }
   }
-
 }
