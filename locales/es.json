@@ -412,7 +412,8 @@
         "city_label": "Distrito"
       },
       "field_errors": {
-        "address_zip_blank": "Introduce el distrito"
+        "address_zip_blank": "Introduce el distrito",
+        "address_city_blank": "Introduce el distrito"
       },
       "review": {
         "title": "Checkout"
