@@ -6215,6 +6215,14 @@ $flexible-layout-gutter: 0px;
   background: #fff;
 }
 
+@media (max-width: 767px) {
+ .accordion-item:not(.accordion-item-type){
+    display: none;
+
+  }
+  
+}
+
 .accordion-toggle {
   width: 100%;
   padding: 1rem 1.5em;
@@ -6332,5 +6340,8 @@ body.template-collection .container{
 }
 #FacetFiltersForm{
   width: 100%;
-  max-width: 280px;
+  max-width: 100%;
+  @media (min-width:767px) {
+    max-width: 280px;
+  } 
 }
