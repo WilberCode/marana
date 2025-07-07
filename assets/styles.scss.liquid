@@ -6198,3 +6198,139 @@ $flexible-layout-gutter: 0px;
   text-align: center;
  
 }
+
+
+
+
+.filters-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.accordion-toggle {
+  width: 100%;
+  padding: 1rem 1.5em;
+  background: black;
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-radius: 0;
+}
+
+.accordion-toggle:hover {
+  background: black;
+}
+
+.accordion-icon {
+  font-size: .6rem;
+  transition: transform 0.3s;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg); /* Cambia + a x */
+}
+
+.accordion-content {
+  display: none;
+  padding: 0.75rem 1rem;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+/* Checkbox estilo */
+.filter-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.checkbox-label input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-custom {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #888;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  position: relative;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkbox-custom::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 6px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.price-range {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.price-range input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+
+
+body.template-collection .content-main {
+
+  gap: 15px;
+  @media (min-width:767px) {
+     display: flex;
+  }
+  
+}
+body.template-collection .content-main .product-list {
+  flex:1;
+}
+body.template-collection .container{
+  max-width: 1600px;
+
+}
+.has-banner .container .content-main{
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+#FacetFiltersForm{
+  width: 100%;
+  max-width: 280px;
+}

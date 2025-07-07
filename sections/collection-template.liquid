@@ -56,48 +56,50 @@
  
 
         {% if section.settings.enable_filtering and collection.filters != blank %}
-              <form id="FacetFiltersForm" class="facets" method="get" data-ajax>
-                {% for filter in collection.filters %}
-                  <div class="facet facet--{{ filter.label | handle }}"> 
-                    {% if filter.type != 'price_range' %} 
-                       <label class="facet__label">{{ filter.label }}</label>  
-                    {% endif %}
-                    {% if filter.type == 'list'%}
-                      <ul class="facet__list">
-                        {% for value in filter.values %}
-                          <li>
-                            <label>
-                              <input type="checkbox"
-                                    name="{{ filter.param_name }}"
-                                    value="{{ value.value }}"
-                                    {% if value.active %}checked{% endif %}
-                                    {% if value.count == 0 and value.active == false %}disabled{% endif %}>
-                              {{ value.label }} ({{ value.count }})
-                            </label>
-                          </li>
-                        {% endfor %}
-                      </ul>
-                    {% endif %}
+               <form id="FacetFiltersForm" class="filters-accordion" method="get">
+                    {% for filter in collection.filters %}
+                      <div class="accordion-item {% if filter.label == 'Tipo de producto' %}active{% endif %}">
+                        <button type="button" class="accordion-toggle">
+                          {{ filter.label | upcase }}   
+                          <span class="accordion-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                          </span>
+                        </button>
 
-                  {% comment %}   {% if filter.type == 'price_range' %}
-                      <div class="facet__price">
-                        <label>{{ 'collections.filtering.from' | t }}</label>
-                        <input name="{{ filter.min_value.param_name }}"
-                              type="number"
-                              min="{{ filter.range_min }}"
-                              max="{{ filter.range_max }}"
-                              value="{{ filter.min_value.value | default: '' }}">
-                        <label>{{ 'collections.filtering.to' | t }}</label>
-                        <input name="{{ filter.max_value.param_name }}"
-                              type="number"
-                              min="{{ filter.range_min }}"
-                              max="{{ filter.range_max }}"
-                              value="{{ filter.max_value.value | default: '' }}">
+                        <div class="accordion-content">
+                          {% if filter.type == 'list' %}
+                            <ul class="filter-options">
+                              {% for value in filter.values %}
+                                <li>
+                                  <label class="checkbox-label">
+                                    <input type="checkbox"
+                                          name="{{ filter.param_name }}"
+                                          value="{{ value.value }}"
+                                          {% if value.active %}checked{% endif %}
+                                          {% if value.count == 0 and value.active == false %}disabled{% endif %}>
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">{{ value.label }} ({{ value.count }})</span>
+                                  </label>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          {% endif %}
+
+                          {% if filter.type == 'price_range' %}
+                            <div class="price-range">
+                              <input type="number" name="{{ filter.min_value.param_name }}" placeholder="Desde"
+                                    value="{{ filter.min_value.value | default: '' }}">
+                              <input type="number" name="{{ filter.max_value.param_name }}" placeholder="Hasta"
+                                    value="{{ filter.max_value.value | default: '' }}">
+                            </div>
+                          {% endif %}
+                        </div>
                       </div>
-                    {% endif %} {% endcomment %}
-                  </div>
-                {% endfor %}
-              </form>
+                    {% endfor %}
+                  </form>
+
             {% endif %}
 
 
