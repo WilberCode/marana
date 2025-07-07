@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // Update URL without reload
         window.history.pushState({}, '', url.toString());
                 // Parche: forzar scroll pequeño para "despertar" el lazyload
-        window.scrollBy(0, 2);
-        window.scrollBy(0, -2);
+        window.scrollBy(0, 1);
+        window.scrollBy(0, -1);
       })
       .catch(err => {
         console.error('Error updating products via AJAX', err);

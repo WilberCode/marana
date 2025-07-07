@@ -814,6 +814,7 @@
       "list-collections-template": {
         "type": "list-collections-template",
         "settings": {
+          "title": "Tienda",
           "show_all_collections": true
         }
       },
@@ -1147,11 +1148,6 @@
           "js_code": "",
           "liquid_code": ""
         }
-      },
-      "5182184951224911228": {
-        "type": "shopify://apps/rapid-search/blocks/script/bd827795-feaa-41a8-9219-2b83f238aa7d",
-        "disabled": false,
-        "settings": {}
       }
     }
   },
