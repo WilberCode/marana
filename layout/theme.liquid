@@ -29,7 +29,6 @@
 
   {% include 'social-meta-tags' %}
 
-
   {{ content_for_header }}
 
   {{ 'styles.scss.css' | asset_url | stylesheet_tag }}
@@ -250,10 +249,5 @@
   });
 
 </script>
-<div class="shopify-dynamic-checkout---buttons" style="display:none!important;">{{ content_for_additional_checkout_buttons }}</div>
-
-
-{{ 'facets.js' | asset_url | script_tag }}
-</body>
-
+<div class="shopify-dynamic-checkout---buttons" style="display:none!important;">{{ content_for_additional_checkout_buttons }}</div></body>
 </html>

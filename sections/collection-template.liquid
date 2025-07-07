@@ -53,8 +53,8 @@
     <div id="main" class="content-main" role="main">
       {% assign num_per_page = section.settings.products_per_row_int | times: 4 %}
       {% paginate collection.products by num_per_page %}
- 
 
+<<<<<<< HEAD
         {% if section.settings.enable_filtering and collection.filters != blank %}
                <form id="FacetFiltersForm" class="filters-accordion" method="get">
                     {% for filter in collection.filters %}
@@ -100,10 +100,64 @@
                     {% endfor %}
                   </form>
 
+=======
+      {% if section.settings.show_tags or section.settings.coll_show_sort %}
+        <div class="mobile-filter-reveal align-center">
+          <div class="mobile-filter-reveal__inner">
+            <a href="#" class="feature-link filter-toggle-button">{{ 'collections.filtering.mobile_reveal' | t }}</a>
+          </div>
+        </div>
+
+        <div class="filters">
+          <div class="filters__inner">
+            {% if section.settings.show_tags %}
+              {%- if collection.url.size == 0 -%}
+                {%- assign collection_url = routes.all_products_collection_url -%}
+              {%- else -%}
+                {%- assign collection_url = collection.url -%}
+              {%- endif -%}
+
+              {%- assign show_tag_filter = false -%}
+              {%- capture tag_filter_html -%}
+                <span class="filter">
+                  <label for="filter-tag">{{ 'collections.filtering.filter_by' | t }}</label>
+                  <select id="filter-tag">
+                    <option value="{{ collection_url }}">{{ 'collections.filtering.all' | t }}</option>
+                    {%- for tag in collection.all_tags -%}
+                      {%- unless tag contains 'meta-' -%}
+                        {%- assign new_url = tag | link_to_tag: tag | split: 'href="' | last | split: '"' | first -%}
+                        <option value="{{ new_url }}"{% if current_tags contains tag %} selected="selected"{% endif %}>{{ tag }}</option>
+                        {%- assign show_tag_filter = true -%}
+                      {%- endunless -%}
+                    {%- endfor -%}
+                  </select>
+                </span>
+              {%- endcapture -%}
+              {%- if show_tag_filter -%}{{ tag_filter_html }}{%- endif -%}
+>>>>>>> main
             {% endif %}
 
+            {% if section.settings.coll_show_sort %}
+              <span class="filter">
+                <label for="sort-by">{{ 'collections.sorting.title' | t }}</label>
+                {%- assign current_sort_by = collection.sort_by | default: collection.default_sort_by -%}
+                <select id="sort-by" data-initval="{{ current_sort_by }}">
+                  {% if section.settings.coll_show_feat or current_sort_by == 'manual' %}<option value="manual">{{ 'collections.sorting.featured' | t }}</option>{% endif %}
+                  <option value="price-ascending">{{ 'collections.sorting.price_ascending' | t }}</option>
+                  <option value="price-descending">{{ 'collections.sorting.price_descending' | t }}</option>
+                  <option value="title-ascending">{{ 'collections.sorting.az' | t }}</option>
+                  <option value="title-descending">{{ 'collections.sorting.za' | t }}</option>
+                  <option value="created-descending">{{ 'collections.sorting.date_descending' | t }}</option>
+                  <option value="created-ascending">{{ 'collections.sorting.date_ascending' | t }}</option>
+                  <option value="best-selling">{{ 'collections.sorting.best_selling' | t }}</option>
+                </select>
+              </span>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
 
-      <div class="grid grid--row-gutters product-list" data-products> 
+      <div class="grid grid--row-gutters product-list">
         {% for product in collection.products %}
           {% include 'product-grid-item' %}
         {% else %}
@@ -131,12 +185,6 @@
         "step": 1,
         "label": "Number of products per row",
         "default": 4
-      },
-        {
-      "type": "checkbox",
-      "id": "enable_filtering",
-      "default": true,
-      "label": "Filtro"
       },
       {
         "type": "checkbox",
@@ -192,7 +240,7 @@
       {
         "type": "paragraph",
         "content": "If you do this, you will need to upload an image for every collection on your store, or it will encounter missing-file errors."
-      } 
+      }
     ]
   }
 {% endschema %}
