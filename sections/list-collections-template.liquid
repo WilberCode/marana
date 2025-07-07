@@ -4,9 +4,13 @@
       <a class="breadcrumbs__crumb" href="{{ routes.root_url }}">{{ 'general.breadcrumbs.home' | t }}</a>
       <span class="breadcrumbs__divider" aria-hidden="true">{% include 'svg-chevron-right' %}</span>
       <span class="breadcrumbs__crumb">{{ 'collections.collection_list.title' | t }}</span>
-    </nav>
-
-    <h1>{{ 'collections.collection_list.title' | t }}</h1> 
+    </nav>  
+ 
+    {% if section.settings.title != blank %}
+      <h1> {{ section.settings.title }}</h1>
+    {% else %} 
+        <h1>{{ 'collections.collection_list.title' | t }}</h1> 
+    {% endif %}
   {% endcapture %}
 
   {% if section.settings.header_image != blank %}
@@ -63,6 +67,12 @@
     "name": "Collection list",
     "max_blocks": 48,
     "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Collections"
+      },
       {
         "type": "header",
         "content": "Header image"
