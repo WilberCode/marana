@@ -4160,8 +4160,9 @@
   },
     "marana": {
       "product": {
-        "button_buy": "Buy",
-        "button_soldout":"sold out"
+         "button_add_to_cart": "Add to cart",
+          "button_view_product": "View product",
+          "button_soldout": "Sold out"
       }
   }
 }

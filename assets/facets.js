@@ -46,3 +46,67 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Manejar el agregar al carrito
+  document.querySelectorAll('.add-to-cart-btn:not([disabled])').forEach(button => {
+    button.addEventListener('click', async function(e) {
+      e.preventDefault();
+      const form = this.closest('form');
+      
+      try {
+        // Mostrar loader
+        this.classList.add('loading');
+        const originalText = this.innerHTML;
+        this.innerHTML = '<span>Agregando...</span>';
+        
+        const response = await fetch('/cart/add.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            items: [{
+              id: form.querySelector('input[name="id"]').value,
+              quantity: 1
+            }]
+          })
+        });
+        
+        const result = await response.json();
+        
+        // Actualizar el carrito
+        if (typeof Shopify !== 'undefined' && Shopify.theme.cart) {
+          Shopify.theme.cart.getCart();
+        }
+        
+        // Mostrar notificación
+        showNotification('Producto agregado al carrito');
+        
+      } catch (error) {
+        console.error('Error:', error);
+        showNotification('Error al agregar el producto', true);
+      } finally {
+        if (button && !button.disabled) {
+          button.classList.remove('loading');
+          button.innerHTML = originalText || '<span>Agregar al carrito</span>';
+        }
+      }
+    });
+  });
+
+  function showNotification(message, isError = false) {
+    const notification = document.createElement('div');
+    notification.className = `cart-notification ${isError ? 'error' : ''}`;
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+      notification.classList.add('fade-out');
+      setTimeout(() => {
+        notification.remove();
+      }, 300);
+    }, 3000);
+  }
+});

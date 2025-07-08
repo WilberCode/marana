@@ -12,9 +12,9 @@
 {% elsif num_per_row == 5 %}{% capture col_class %}fifth{% endcapture %}
 {% else %}{% capture col_class %}quarter{% endcapture %}{% endif %}
 
-<div class="prod-block column reveal-candidate {{ col_class }}{% unless product.available %} sold-out{% endunless %}{% if on_sale %} on-sale{% endif %}">
+<div class="prod-block column reveal-candidate product-card {{ col_class }}{% unless product.available %} sold-out{% endunless %}{% if on_sale %} on-sale{% endif %}">
   <div class="prod-image-wrap {% if settings.product_hover_image and product.media.size > 1 %}prod-image-wrap--with-hover{% endif %}">
-    <a href="{{ product.url | within: collection }}">
+    <a href="{{ product.url | within: collection }}" class="product-main-link">
       {% include 'responsive-image', image: product.featured_media.preview_image %}
 
       {% if settings.product_hover_image and product.media.size > 1 %}
@@ -48,11 +48,19 @@
       <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
     </a>
   </div>
-<a href="{{ product.url }}" class="button button--full-width product-button {% unless product.available %} product-button--sold-out{% endunless %}">
-  {% if product.available %}
-     {{ 'marana.product.button_buy'  | t }}
-  {% else %}
-      {{ 'marana.product.button_soldout'  | t }}
-  {% endif %}
-</a>
-</div>
+
+  <!-- Botones de acción - mismo nivel que prod-caption -->
+  <div class="product-actions">
+    <form action="/cart/add" method="post" class="product-form">
+      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+      <button type="submit" class="btn action-btn add-to-cart-btn" aria-label="{{ 'marana.product.button_add_to_cart' | t }}" {% unless product.available %}disabled{% endunless %}>
+        <span>{% if product.available %}  {{ 'marana.product.button_add_to_cart' | t }}{% else %}{{ 'marana.product.button_soldout' | t }}{% endif %}</span>
+      </button>
+    </form>
+    
+    <a href="{{ product.url | within: collection }}" class="btn action-btn view-product-btn">
+      <span>{{ 'marana.product.button_view_product' | t }}</span>
+    </a>
+  </div>
+</div> 
+ 

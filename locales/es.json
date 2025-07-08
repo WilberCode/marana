@@ -448,7 +448,8 @@
   },
   "marana": {
     "product": {
-      "button_buy": "Comprar",
+      "button_add_to_cart": "Añadir al carrito",
+      "button_view_product": "Ver producto",
       "button_soldout": "Agotado"
     }
   }
