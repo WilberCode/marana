@@ -5955,18 +5955,33 @@ $flexible-layout-gutter: 0px;
     transform: translateY(10px);
 }
 
-
+.collection-link-list li a {  
+  display: flex;
+}
 .collection-link-list li{
-  margin-bottom: 5px;
+  margin-bottom: 5px; 
 }
 .collection-link-list li.active a {
-  font-weight: bold;
-  color: #e60023; /* rojo o cualquier color que quieras */ 
+  font-weight: bold; 
+
 }
+.collection-link-list li.active a span{
+ font-size: 14px;
+
+}
+.collection-link-list li a:hover span:nth-child(2){
+  text-decoration: underline; 
+
+}
+.collection-link-list li a span:nth-child(2){ 
+  font-size: 16px; 
+}
+
 
 .collection-link-list li a span{
   font-size:23px;
   vertical-align:bottom;
+  margin-right: 5px;
 }
 
 

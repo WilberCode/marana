@@ -77,8 +77,8 @@
                                   {% assign current_handle = collection.handle %} 
                                   <li class="{% if current_handle == 'all' %}active{% endif %}">
                                       <a href="{{ '/collections/all' }}">
-                                      {% if current_handle == 'all' %} ✅ {% else %}<span>☐</span> {% endif %}
-                                       {{ 'Todo' }}
+                                     <span> {% if current_handle == 'all' %} ✅ {% else %}☐{% endif %}</span> 
+                                      <span> {{ 'Todo' }} </span>
                                       </a>
                                     </li> 
                                   {% for block in section.blocks %}
@@ -86,8 +86,8 @@
                                      {% assign item_handle = block.settings.collection.handle %}
                                       <li class="{% if item_handle == current_handle %}active{% endif %}">
                                         <a href="{{ block.settings.collection.url }}"> 
-                                          {% if item_handle == current_handle %} ✅ {% else %} <span>☐</span> {% endif %}
-                                          {{ block.settings.collection.title }}
+                                       <span>    {% if item_handle == current_handle %}  ✅  {% else %} ☐{% endif %}</span> 
+                                         <span>{{ block.settings.collection.title }} </span>
                                         </a>
                                       </li> 
                                     {% endif %} 
