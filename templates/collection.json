@@ -11,6 +11,45 @@
   "sections": {
     "main": {
       "type": "collection-template",
+      "blocks": {
+        "collection_amFaqR": {
+          "type": "collection",
+          "settings": {
+            "collection": "todos-los-chocolates"
+          }
+        },
+        "collection_x88pQa": {
+          "type": "collection",
+          "settings": {
+            "collection": "chocotejas"
+          }
+        },
+        "collection_n6y4jP": {
+          "type": "collection",
+          "settings": {
+            "collection": "marana-bites"
+          }
+        },
+        "collection_HE39rp": {
+          "type": "collection",
+          "settings": {
+            "collection": "bundle-builder-products"
+          }
+        },
+        "collection_ipgHy8": {
+          "type": "collection",
+          "settings": {
+            "collection": "souvenirs"
+          }
+        }
+      },
+      "block_order": [
+        "collection_amFaqR",
+        "collection_x88pQa",
+        "collection_n6y4jP",
+        "collection_HE39rp",
+        "collection_ipgHy8"
+      ],
       "settings": {
         "enable_filtering": true,
         "products_per_row_int": 4,
