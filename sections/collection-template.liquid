@@ -53,10 +53,52 @@
       {% assign num_per_page = section.settings.products_per_row_int | times: 4 %}
       {% paginate collection.products by num_per_page %} 
 
-        {% if section.settings.enable_filtering and collection.filters != blank %}  
-               <form id="FacetFiltersForm" class="filters-accordion" method="get">
+        {% if section.settings.enable_filtering and collection.filters != blank %}   
+               <form id="FacetFiltersForm" class="filters-accordion" method="get">   
+                      {% if section.blocks.size > 0 %}
+                      <div class="collection-link-list accordion-item active ">
+                        <button type="button" class="accordion-toggle">
+                          {{ 'Colecciones' }}
+                          <span class="accordion-icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="size-6"
+                            >
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                          </span>
+                        </button>
+                        <div class="accordion-content"> 
+                            <ul class="filter-options"> 
+                                  {% assign current_handle = collection.handle %} 
+                                  <li class="{% if current_handle == 'all' %}active{% endif %}">
+                                      <a href="{{ '/collections/all' }}">
+                                      {% if current_handle == 'all' %} ✅ {% else %}<span>☐</span> {% endif %}
+                                       {{ 'Todo' }}
+                                      </a>
+                                    </li> 
+                                  {% for block in section.blocks %}
+                                    {% if block.settings.collection %} 
+                                     {% assign item_handle = block.settings.collection.handle %}
+                                      <li class="{% if item_handle == current_handle %}active{% endif %}">
+                                        <a href="{{ block.settings.collection.url }}"> 
+                                          {% if item_handle == current_handle %} ✅ {% else %} <span>☐</span> {% endif %}
+                                          {{ block.settings.collection.title }}
+                                        </a>
+                                      </li> 
+                                    {% endif %} 
+                                  {% endfor %}
+                            </ul> 
+                        </div>
+                      </div>
+                    {% endif %}
+ 
                     {% for filter in collection.filters %}
-                      <div class="accordion-item {% if filter.label == 'Tipo de producto' %}active accordion-item-type {% endif %}">
+                      <div class="accordion-item {% if filter.label == 'Tipo de producto' %} accordion-item-type {% endif %}">
                         <button type="button" class="accordion-toggle">
                           {{ filter.label | upcase }}   
                           <span class="accordion-icon">
@@ -96,9 +138,27 @@
                         </div>
                       </div>
                     {% endfor %}
-                  </form>
 
+
+                    {% assign menu_handle = 'menu-principal' %}
+                    {% assign parent_link_title = 'Tienda' %}
+
+                    {% assign menu = linklists[menu_handle] %}
+
+                    {% if menu %}
+                      {% for link in menu.links %}
+                        {% if link.title == parent_link_title and link.links != blank %}
+                          <ul class="submenu-de-tienda">
+                            {% for sublink in link.links %}
+                              <li><a href="{{ sublink.url }}">{{ sublink.title }}</a></li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      {% endfor %}
+                    {% endif %}   
+                  </form> 
             {% endif %}
+            
 
 
       <div class="grid grid--row-gutters product-list" data-products> 
@@ -191,6 +251,19 @@
         "type": "paragraph",
         "content": "If you do this, you will need to upload an image for every collection on your store, or it will encounter missing-file errors."
       }
-    ]
+    ],
+    "blocks": [
+    {
+      "type": "collection",
+      "name": "Enlace a una colección",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Enlace"
+        }
+      ]
+    }
+  ]
   }
 {% endschema %}

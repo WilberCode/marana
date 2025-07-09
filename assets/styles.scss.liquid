@@ -5955,6 +5955,22 @@ $flexible-layout-gutter: 0px;
     transform: translateY(10px);
 }
 
+
+.collection-link-list li{
+  margin-bottom: 5px;
+}
+.collection-link-list li.active a {
+  font-weight: bold;
+  color: #e60023; /* rojo o cualquier color que quieras */ 
+}
+
+.collection-link-list li a span{
+  font-size:23px;
+  vertical-align:bottom;
+}
+
+
+
 .image-with-text-section__content > .content .feature-link{
     padding: 16px 23px;
     color: #000;
@@ -6216,7 +6232,7 @@ $flexible-layout-gutter: 0px;
 }
 
 @media (max-width: 767px) {
- .accordion-item:not(.accordion-item-type){
+ .accordion-item:not(.collection-link-list){
     display: none;
 
   }
@@ -6489,3 +6505,5 @@ body.template-collection .container{
  
 
 /* PRODUCT CART - END */
+
+
