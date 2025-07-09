@@ -12,6 +12,7 @@
     "main": {
       "type": "collection-template",
       "settings": {
+        "enable_filtering": true,
         "products_per_row_int": 4,
         "show_tags": true,
         "coll_show_sort": true,
