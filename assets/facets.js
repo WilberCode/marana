@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
+// Script para manejar el botón "Agregar al carrito" y mostrar notificaciones
 document.addEventListener('DOMContentLoaded', function() {
   // Manejar el agregar al carrito
   document.querySelectorAll('.add-to-cart-btn:not([disabled])').forEach(button => {
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         const result = await response.json();
-        
+         
         // Actualizar el carrito
         if (typeof Shopify !== 'undefined' && Shopify.theme.cart) {
           Shopify.theme.cart.getCart();
@@ -90,8 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
       } finally {
         if (button && !button.disabled) {
           button.classList.remove('loading');
-          button.innerHTML = originalText || '<span>Agregar al carrito</span>';
-        }
+          button.innerHTML = '<span>Agregar al carrito</span>'; 
+        } 
       }
     });
   });
@@ -110,3 +110,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 3000);
   }
 });
+
+
+ // Script para insertar CSS en el head del iframe de la aplicación de carrito
+  document.addEventListener("DOMContentLoaded", function () { 
+   setTimeout(()=>{
+     const iframe = document.getElementById("cro-cart-app-iframe"); 
+if (iframe && iframe.contentDocument) { 
+    const iframeHead = iframe.contentDocument.head;
+
+    if (iframeHead) {
+        const style = iframe.contentDocument.createElement('style');
+        style.type = 'text/css';
+        style.innerHTML = ` .CROCart__sc-1a3j46a-4 p::before, .sc-hVcFVo.kvvalc>div:nth-child(2)::before,.CROCart__sc-srrv9y-2::before, .sc-lnsjTu>span::before, .sc-iEYVpv.bWoTyo::before, .sc-iqziPC.bJfsxJ::before, .sc-BCDEK.bJfPsG::before{
+        content: "S/";
+    }
+        `;
+        iframeHead.appendChild(style);
+        console.log('CSS insertado exitosamente en el head del iframe.');
+    } else {
+        console.error('No se pudo acceder al head del iframe.');
+    }
+} else {
+    console.error('El iframe o su contentDocument no están disponibles.');
+}
+   },2000)
+  }); 
