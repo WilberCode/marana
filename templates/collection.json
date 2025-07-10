@@ -12,22 +12,28 @@
     "main": {
       "type": "collection-template",
       "blocks": {
-        "collection_amFaqR": {
-          "type": "collection",
-          "settings": {
-            "collection": "todos-los-chocolates"
-          }
-        },
         "collection_x88pQa": {
           "type": "collection",
           "settings": {
             "collection": "chocotejas"
           }
         },
+        "collection_amFaqR": {
+          "type": "collection",
+          "settings": {
+            "collection": "todos-los-chocolates"
+          }
+        },
         "collection_n6y4jP": {
           "type": "collection",
           "settings": {
             "collection": "marana-bites"
+          }
+        },
+        "collection_kqkQmG": {
+          "type": "collection",
+          "settings": {
+            "collection": "pack-de-3-tabletas-a-s-56-soles"
           }
         },
         "collection_HE39rp": {
@@ -38,9 +44,10 @@
         }
       },
       "block_order": [
-        "collection_amFaqR",
         "collection_x88pQa",
+        "collection_amFaqR",
         "collection_n6y4jP",
+        "collection_kqkQmG",
         "collection_HE39rp"
       ],
       "settings": {
