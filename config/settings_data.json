@@ -864,17 +864,23 @@
               "collection": "marana-bites"
             }
           },
+          "collection_VEaYyR": {
+            "type": "collection",
+            "settings": {
+              "collection": "bundle-builder-products"
+            }
+          },
+          "1604511951337": {
+            "type": "collection",
+            "settings": {
+              "collection": "pack-de-3-tabletas-a-s-56-soles"
+            }
+          },
           "7ba21f21-7082-4eb6-a6ea-7029c31e61bb": {
             "type": "collection",
             "disabled": true,
             "settings": {
               "collection": "regalos-navidenos"
-            }
-          },
-          "collection_VEaYyR": {
-            "type": "collection",
-            "settings": {
-              "collection": "bundle-builder-products"
             }
           },
           "0154cfa4-7686-4d78-9304-f8ee00d69704": {
@@ -897,25 +903,18 @@
             "settings": {
               "collection": "linea-repostera"
             }
-          },
-          "1604511951337": {
-            "type": "collection",
-            "disabled": true,
-            "settings": {
-              "collection": "souvenirs"
-            }
           }
         },
         "block_order": [
           "1606538823864",
           "31d48f46-e656-447e-bfe5-a8855ee47c1c",
           "f41b1206-73b2-428e-9053-cfb5ed81f5ba",
-          "7ba21f21-7082-4eb6-a6ea-7029c31e61bb",
           "collection_VEaYyR",
+          "1604511951337",
+          "7ba21f21-7082-4eb6-a6ea-7029c31e61bb",
           "0154cfa4-7686-4d78-9304-f8ee00d69704",
           "1604511917247",
-          "9ba7f93f-ed27-4022-9f48-d42d129c92fc",
-          "1604511951337"
+          "9ba7f93f-ed27-4022-9f48-d42d129c92fc"
         ],
         "custom_css": [
           "@media (min-width: 767px) {h1 {font-size: 32px; font-weight: 800; }}"
