@@ -962,7 +962,7 @@
         ],
         "custom_css": [
           "@media (min-width: 767px) {h1.text.slide-heading {font-size: 45px; font-weight: 800; }}",
-          "@media (max-width: 767px) {.section-id-slideshow_VfNi8X .slide {height: 400px; }}",
+          "@media (max-width: 767px) {.section-id-slideshow_J7aejj .slide{height: 400px; }}",
           ".innest {max-width: 100%;}",
           ".slideshow .slide__image-bg {background-position: bottom;}"
         ],
