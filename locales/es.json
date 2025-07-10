@@ -450,7 +450,9 @@
     "product": {
       "button_add_to_cart": "Añadir al carrito",
       "button_view_product": "Ver producto",
-      "button_soldout": "Agotado"
+      "button_soldout": "Agotado",
+      "collection_title": "Colecciones",
+      "all_title": "Todos los productos",
     }
   }
 }

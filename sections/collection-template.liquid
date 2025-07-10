@@ -58,7 +58,7 @@
                       {% if section.blocks.size > 0 %}
                       <div class="collection-link-list accordion-item active ">
                         <button type="button" class="accordion-toggle">
-                          {{ 'Colecciones' }}
+                          {{ 'marana.product.collection_title' | t }}
                           <span class="accordion-icon">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@
                                   <li class="{% if current_handle == 'all' %}active{% endif %}">
                                       <a href="{{ '/collections/all' }}">
                                      <span> {% if current_handle == 'all' %} ✅ {% else %}☐{% endif %}</span> 
-                                      <span> {{ 'Todo' }} </span>
+                                      <span> {{ 'marana.product.all_title' | t }} </span>
                                       </a>
                                     </li> 
                                   {% for block in section.blocks %}

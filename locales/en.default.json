@@ -4162,7 +4162,9 @@
       "product": {
          "button_add_to_cart": "Add to cart",
           "button_view_product": "View product",
-          "button_soldout": "Sold out"
+          "button_soldout": "Sold out",
+          "collection_title": "Collections",
+          "all_title": "All products",
       }
   }
 }
