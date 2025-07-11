@@ -381,7 +381,7 @@
         "save_my_information_label": "Guardar mi información para una próxima vez"
       },
       "shipping": {
-        "shipping_method_title": "Métodos de envíos"
+        "shipping_method_title": "Métodos de envío (solo Lima Metropolitana)"
       },
       "thank_you": {
         "order_updates_current_step_prefix": "Paso actual:",
@@ -452,7 +452,7 @@
       "button_view_product": "Ver producto",
       "button_soldout": "Agotado",
       "collection_title": "Colecciones",
-      "all_title": "Todos los productos",
+      "all_title": "Todos los productos"
     }
   }
 }
