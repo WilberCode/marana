@@ -962,7 +962,7 @@
         ],
         "custom_css": [
           "@media (min-width: 767px) {h1.text.slide-heading {font-size: 45px; font-weight: 800; }}",
-          "@media (max-width: 767px) {.section-id-slideshow_J7aejj .slide{height: 400px; }}",
+          "@media (max-width: 767px) {.section-id-slideshow_J7aejj .slide {height: 400px; }}",
           ".innest {max-width: 100%;}",
           ".slideshow .slide__image-bg {background-position: bottom;}"
         ],
@@ -1145,6 +1145,11 @@
       },
       "11128031370435530746": {
         "type": "shopify://apps/cro-cart-drawer-free-gifts/blocks/app-embed/285be1af-7782-4800-bed8-6f91aa670a88",
+        "disabled": false,
+        "settings": {}
+      },
+      "1409715032340194113": {
+        "type": "shopify://apps/gokwik-cart-slide-cart-drawer/blocks/app-embed/531cd8ff-cc36-43b1-9a44-c16d44927215",
         "disabled": false,
         "settings": {}
       }
