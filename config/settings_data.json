@@ -962,7 +962,7 @@
         ],
         "custom_css": [
           "@media (min-width: 767px) {h1.text.slide-heading {font-size: 45px; font-weight: 800; }}",
-          "@media (max-width: 767px) {.section-id-slideshow_J7aejj .slide{height: 400px; }}",
+          "@media (max-width: 767px) {.section-id-slideshow_J7aejj .slide {height: 400px; }}",
           ".innest {max-width: 100%;}",
           ".slideshow .slide__image-bg {background-position: bottom;}"
         ],
@@ -1147,6 +1147,20 @@
         "type": "shopify://apps/cro-cart-drawer-free-gifts/blocks/app-embed/285be1af-7782-4800-bed8-6f91aa670a88",
         "disabled": false,
         "settings": {}
+      },
+      "6770548097779500122": {
+        "type": "shopify://apps/koala-upsells-gifts/blocks/gifts-embed/baf92dc5-8ffa-40c0-967e-57b74cddc9e3",
+        "disabled": false,
+        "settings": {}
+      },
+      "2131494470682214141": {
+        "type": "shopify://apps/corner-cart-drawer-free-gift/blocks/corner-widget/73667a27-0d48-44b7-91f9-aef741c803ed",
+        "disabled": false,
+        "settings": {
+          "elementToReplaceInCartPage": "main",
+          "hide_theme_cart": false,
+          "enable_defer_loading": false
+        }
       }
     }
   },
