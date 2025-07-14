@@ -126,7 +126,7 @@
               "image": "shopify://shop_images/BANNER_JULIO_MARANA_3.jpg",
               "image_url": "",
               "tint_color": "#000000",
-              "tint_opacity": 25,
+              "tint_opacity": 0,
               "color": "#ffffff",
               "heading": "",
               "subheading": "",
