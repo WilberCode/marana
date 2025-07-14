@@ -283,9 +283,9 @@
         "settings": {
           "enable_carousel": false,
           "slide_mode": "slide",
-          "slide_show_mobile_arrows": false,
+          "slide_show_mobile_arrows": true,
           "head_img_height_fixed": true,
-          "head_img_height_int": 600
+          "head_img_height_int": 700
         }
       },
       "announcement": {
