@@ -1802,5 +1802,10 @@
         "1566494880243"
       ]
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".slide::nth-child(1){max-height:auto; height: auto; width: 100%;}"
+    ]
   }
 }
