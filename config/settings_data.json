@@ -1805,8 +1805,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".slide.block-1 {max-height: auto; /*height: 100%; width: 100%;*/}",
-      ".slide.block-1 {background-size: content;}"
+      ".slide.block-1 .slide__image-bg{background-size: content;}"
     ]
   }
 }
