@@ -4337,8 +4337,21 @@ body:not(.template-product):not(.has-banner):not(.scrolled-down) .pageheader__co
       padding-left: $general-space * 2;
       padding-right: $general-space * 2;
     }
+  
   }
 }
+ @media (min-width: 767px) {
+  .slide__image--mobile{
+      display: none;
+    }
+  }
+ @media (max-width: 766px) {
+  .slide__image--desktop{
+      display: none;
+    }
+  }
+
+
 
 .slideshow:not(.slick-initialized) .slide:not(:first-child) {
   display: none;
@@ -6551,4 +6564,5 @@ body.template-collection .container{
 
 #shopify-section-banner-index .slideshow .block-1 .slide__image-bg {
   background-size: contain !important;
+  background-position:top center;
 }

@@ -30,7 +30,19 @@
 
               {%- if block.settings.image -%}
                 {%- if section.settings.head_img_height_fixed -%}
-                  {%- include 'responsive-background', image: block.settings.image, class: 'slide__image-bg', manual_image_load: true -%}
+                  {% comment %}  display mobile anda desktop banner {% endcomment %} 
+                  {%- if block.settings.image_movil != blank -%}
+                       <div class="slide__image-bg slide__image--mobile  ">
+                        {%- include 'responsive-image', image: block.settings.image_movil, manual_image_load: true, no_max_width: true -%}  
+                      </div>
+                  {%- endif -%} 
+                      {%- if block.settings.image_movil != blank -%}
+                          {% assign image_class = 'slide__image-bg slide__image--desktop' %}
+                      {% else %}
+                        {% assign image_class = 'slide__image-bg' %}
+                      {% endif %}
+                     {%- include 'responsive-background', image: block.settings.image, class: image_class, manual_image_load: true -%} 
+                 
                 {%- else -%}
                   {%- include 'responsive-image', image: block.settings.image, manual_image_load: true, no_max_width: true -%}
                 {%- endif -%}
@@ -153,6 +165,15 @@
           {
             "type": "image_picker",
             "id": "image",
+            "label": "Image"
+          },
+           {
+            "type": "header",
+            "content": "Imagen de movil"
+          },
+           {
+            "type": "image_picker",
+            "id": "image_movil",
             "label": "Image"
           },
           {
