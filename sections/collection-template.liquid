@@ -75,8 +75,8 @@
                         <div class="accordion-content"> 
                             <ul class="filter-options"> 
                                   {% assign current_handle = collection.handle %} 
-                                  <li class="{% if current_handle == 'all' %}active{% endif %}">
-                                      <a href="{{ '/collections/all' }}">
+                                  <li class="{% if current_handle == 'productos' %}active{% endif %}">
+                                      <a href="{{ '/collections/productos' }}">
                                      <span> {% if current_handle == 'all' %} ✅ {% else %}☐{% endif %}</span> 
                                       <span> {{ 'marana.product.all_title' | t }} </span>
                                       </a>
