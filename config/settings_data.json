@@ -1804,8 +1804,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-      "body .slideshow .slide__image-bg {background-size: content !important;}"
-    ]
+    "custom_css": []
   }
 }
