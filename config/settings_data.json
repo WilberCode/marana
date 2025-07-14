@@ -282,9 +282,9 @@
         ],
         "settings": {
           "enable_carousel": false,
-          "slide_mode": "fade",
+          "slide_mode": "slide",
           "slide_show_mobile_arrows": false,
-          "head_img_height_fixed": false,
+          "head_img_height_fixed": true,
           "head_img_height_int": 700
         }
       },
