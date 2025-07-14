@@ -663,6 +663,9 @@ img { height: auto; }
 }
 .column.third {
   width: calc(33.33333% - #{ $grid-gutter });
+  @media (max-width: $breakpoint-ipad-landscape) {
+    width: calc(50% - #{ $grid-gutter }); 
+  }
 }
 .column.two-thirds {
   width: calc(66.666667% - #{ $grid-gutter });
@@ -5867,7 +5870,7 @@ $flexible-layout-gutter: 0px;
        padding:20px 30px;
     }
     .title{
-      font-size: 22px;
+      font-size: 20px;
       line-height:normal;
       margin-bottom:10px;
       color:white;
