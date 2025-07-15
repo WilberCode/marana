@@ -124,7 +124,7 @@
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/BANNER_JULIO_MARANA_3.jpg",
-              "image_movil": "shopify://shop_images/BANNER_JULIO_MARANA_3_mobile.jpg",
+              "image_movil": "shopify://shop_images/BANNER_JULIO_MARANA_MOBILE.jpg",
               "image_url": "shopify://collections/todos-los-chocolates",
               "tint_color": "#000000",
               "tint_opacity": 0,
