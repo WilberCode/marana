@@ -1806,7 +1806,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "@media (max-width: 767px) {.section-id-banner-index .slide {height: 460px !important; }}"
+      "@media (max-width: 767px) {.section-id-banner-index .slide {height: 480px !important; }}"
     ]
   }
 }
