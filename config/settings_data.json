@@ -1805,6 +1805,8 @@
     }
   },
   "platform_customizations": {
-    "custom_css": []
+    "custom_css": [
+      ".section-id-banner-index .slide {height: 450px !important;}"
+    ]
   }
 }
