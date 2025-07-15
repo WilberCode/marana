@@ -864,16 +864,16 @@
       "1604511842750": {
         "type": "featured-collections",
         "blocks": {
-          "1606538823864": {
-            "type": "collection",
-            "settings": {
-              "collection": "chocotejas"
-            }
-          },
           "31d48f46-e656-447e-bfe5-a8855ee47c1c": {
             "type": "collection",
             "settings": {
               "collection": "todos-los-chocolates"
+            }
+          },
+          "1606538823864": {
+            "type": "collection",
+            "settings": {
+              "collection": "chocotejas"
             }
           },
           "f41b1206-73b2-428e-9053-cfb5ed81f5ba": {
@@ -924,8 +924,8 @@
           }
         },
         "block_order": [
-          "1606538823864",
           "31d48f46-e656-447e-bfe5-a8855ee47c1c",
+          "1606538823864",
           "f41b1206-73b2-428e-9053-cfb5ed81f5ba",
           "1604511951337",
           "collection_VEaYyR",
@@ -1805,8 +1805,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-      "@media (max-width: 767px) {.section-id-banner-index .slide {height: 520px !important; }}"
-    ]
+    "custom_css": []
   }
 }
