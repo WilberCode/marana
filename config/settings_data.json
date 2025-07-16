@@ -1179,6 +1179,11 @@
           "hide_theme_cart": false,
           "enable_defer_loading": false
         }
+      },
+      "7465990195487237579": {
+        "type": "shopify://apps/ea-sticky-cart/blocks/app-embed-block/a725b883-a528-4381-b4d8-4a870dad14a6",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
