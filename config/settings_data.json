@@ -122,10 +122,9 @@
         "blocks": {
           "image_TLzNVd": {
             "type": "image",
-            "disabled": true,
             "settings": {
-              "image": "shopify://shop_images/BANNER_JULIO_MARANA_3.jpg",
-              "image_movil": "shopify://shop_images/CHOCOLATES_Y_CHOCOTEJAS.jpg",
+              "image": "shopify://shop_images/BANNER_JULIO_MARANA_2_1.jpg",
+              "image_movil": "shopify://shop_images/BANNER_JULIO_MARANA_MOBILE_2.jpg",
               "image_url": "shopify://collections/todos-los-chocolates",
               "tint_color": "#000000",
               "tint_opacity": 0,
