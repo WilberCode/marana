@@ -249,6 +249,39 @@
   });
 
 </script>
+
+
+        <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  // Asegúrate de que el iframe y su contenido estén completamente cargados antes de intentar acceder a ellos.
+// Una buena práctica es esperar al evento 'load' del iframe, o ejecutar este código después de que se sepa que el iframe está listo.
+
+   setTimeout(()=>{
+     const iframe = document.getElementById("cro-cart-app-iframe");
+ 
+// Verificar si el iframe existe y si contentDocument está accesible 
+if (iframe && iframe.contentDocument) { 
+    const iframeHead = iframe.contentDocument.head;
+
+    if (iframeHead) {
+        const style = iframe.contentDocument.createElement('style');
+        style.type = 'text/css';
+        style.innerHTML = ` .CROCart__sc-1a3j46a-4 p::before, .sc-jiaSqj.ka-DQIo>div:nth-child(2)::before,.CROCart__sc-srrv9y-2::before, .sc-iKOmoZ  >span::before, .sc-kUNLVD.hvZZBj::before, .sc-dxfTlo.EcnaQ::before, .sc-kiTBBF.eZwUoR::before{
+        content: "S/";
+    }
+        `;
+        iframeHead.appendChild(style);
+        console.log('CSS insertado exitosamente en el head del iframe.');
+    } else {
+        console.error('No se pudo acceder al head del iframe.');
+    }
+} else {
+    console.error('El iframe o su contentDocument no están disponibles.');
+}
+   },2000)
+  });
+</script>
+
 <div class="shopify-dynamic-checkout---buttons" style="display:none!important;">{{ content_for_additional_checkout_buttons }}</div>
   {{ 'facets.js'  | asset_url | script_tag }}
 </body>
