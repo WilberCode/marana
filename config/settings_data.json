@@ -1172,14 +1172,6 @@
           "n99gb_embed_js": "/* JS Code */"
         }
       },
-      "5133962947178206058": {
-        "type": "shopify://apps/kraken-cart-drawer/blocks/cart-drawer/395e4ebd-4534-4c0b-b7c2-4ccc91f8fe1e",
-        "disabled": false,
-        "settings": {
-          "custom_style": "",
-          "custom_script": ""
-        }
-      },
       "15746506029051422284": {
         "type": "shopify://apps/mega-code-embed/blocks/code-body/f06216cf-23cd-4ffb-8719-16e9a878d094",
         "disabled": false,
@@ -1189,11 +1181,6 @@
           "js_code": "",
           "liquid_code": ""
         }
-      },
-      "11128031370435530746": {
-        "type": "shopify://apps/cro-cart-drawer-free-gifts/blocks/app-embed/285be1af-7782-4800-bed8-6f91aa670a88",
-        "disabled": false,
-        "settings": {}
       },
       "6770548097779500122": {
         "type": "shopify://apps/koala-upsells-gifts/blocks/gifts-embed/baf92dc5-8ffa-40c0-967e-57b74cddc9e3",
@@ -1208,6 +1195,11 @@
           "hide_theme_cart": false,
           "enable_defer_loading": false
         }
+      },
+      "585288358657334602": {
+        "type": "shopify://apps/cartly-cart-drawer/blocks/app-embed/156e4744-d777-4afa-8826-5d2f440b3936",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
