@@ -1008,10 +1008,23 @@
           "cta_text": "Ver más",
           "grid_show_vendor": true
         }
+      },
+      "featured_collection_QXnJwR": {
+        "type": "featured-collection",
+        "name": "Featured collection",
+        "settings": {
+          "title": "Chocotejas",
+          "collection": "chocotejas",
+          "products_per_row_int": 4,
+          "product_rows_int": 1,
+          "cta_text": "Ver más",
+          "grid_show_vendor": true
+        }
       }
     },
     "content_for_index": [
       "featured_collection_TwLpf3",
+      "featured_collection_QXnJwR",
       "1604511842750",
       "slideshow_J7aejj",
       "1587133822579",
