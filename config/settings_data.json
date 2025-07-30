@@ -282,9 +282,7 @@
           "1587180843246",
           "1483959039059"
         ],
-        "custom_css": [
-          "div .block-1 .slide__image-bg {background-size: contain !important; background-position: top center;}"
-        ],
+        "custom_css": [],
         "settings": {
           "enable_carousel": false,
           "slide_mode": "slide",
