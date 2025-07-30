@@ -996,9 +996,22 @@
           "head_img_height_fixed": true,
           "head_img_height_int": 950
         }
+      },
+      "featured_collection_TwLpf3": {
+        "type": "featured-collection",
+        "name": "Featured collection",
+        "settings": {
+          "title": "Tabletas",
+          "collection": "todos-los-chocolates",
+          "products_per_row_int": 4,
+          "product_rows_int": 1,
+          "cta_text": "Ver más",
+          "grid_show_vendor": true
+        }
       }
     },
     "content_for_index": [
+      "featured_collection_TwLpf3",
       "1604511842750",
       "slideshow_J7aejj",
       "1587133822579",
