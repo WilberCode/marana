@@ -1808,7 +1808,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "@media (max-width: 767px) {.section-id-banner-index .slide {height: 550px !important; }}"
+      "@media (max-width: 767px) {.section-id-banner-index .slide {height: 550px !important; }}",
+      "#pageheader .header-left ul .main-menu-desktop-item:nth-child(1) a {background: red; border-radius: 10px;}"
     ]
   }
 }
