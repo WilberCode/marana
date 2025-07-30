@@ -892,6 +892,7 @@
           },
           "collection_VEaYyR": {
             "type": "collection",
+            "disabled": true,
             "settings": {
               "collection": "bundle-builder-products"
             }
