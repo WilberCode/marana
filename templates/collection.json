@@ -35,20 +35,13 @@
           "settings": {
             "collection": "pack-de-3-tabletas-a-s-56-soles"
           }
-        },
-        "collection_HE39rp": {
-          "type": "collection",
-          "settings": {
-            "collection": "bundle-builder-products"
-          }
         }
       },
       "block_order": [
         "collection_x88pQa",
         "collection_amFaqR",
         "collection_n6y4jP",
-        "collection_kqkQmG",
-        "collection_HE39rp"
+        "collection_kqkQmG"
       ],
       "settings": {
         "enable_filtering": true,
