@@ -12,6 +12,12 @@
     "main": {
       "type": "collection-template",
       "blocks": {
+        "collection_3cTJyi": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
         "collection_x88pQa": {
           "type": "collection",
           "settings": {
@@ -35,13 +41,28 @@
           "settings": {
             "collection": "pack-de-3-tabletas-a-s-56-soles"
           }
+        },
+        "collection_TbD3j8": {
+          "type": "collection",
+          "settings": {
+            "collection": "linea-repostera"
+          }
+        },
+        "collection_76i7X6": {
+          "type": "collection",
+          "settings": {
+            "collection": "tabletas-mini"
+          }
         }
       },
       "block_order": [
+        "collection_3cTJyi",
         "collection_x88pQa",
         "collection_amFaqR",
         "collection_n6y4jP",
-        "collection_kqkQmG"
+        "collection_kqkQmG",
+        "collection_TbD3j8",
+        "collection_76i7X6"
       ],
       "settings": {
         "enable_filtering": true,
