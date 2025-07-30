@@ -1205,8 +1205,8 @@
         "disabled": false,
         "settings": {
           "elementToReplaceInCartPage": "main",
-          "hide_theme_cart": false,
-          "enable_defer_loading": false
+          "hide_theme_cart": true,
+          "enable_defer_loading": true
         }
       }
     }
