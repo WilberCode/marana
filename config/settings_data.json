@@ -155,6 +155,22 @@
               "button_2_url": ""
             }
           },
+          "1587130903983": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Foto_Marana.jpg",
+              "image_url": "",
+              "tint_color": "#000000",
+              "tint_opacity": 22,
+              "color": "#ffffff",
+              "heading": "Bean to Bar",
+              "subheading": "CHOCOLATE ARTESANAL PERUANO",
+              "button_1_text": "Compra Aquí",
+              "button_1_url": "",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
           "78c4c3eb-4276-428d-afc8-1242767178d3": {
             "type": "image",
             "settings": {
@@ -201,22 +217,6 @@
               "subheading": "DE LUNES A VIERNES DE 9AM A 5PM.",
               "button_1_text": "Compra Aquí",
               "button_1_url": "shopify://collections",
-              "button_2_text": "",
-              "button_2_url": ""
-            }
-          },
-          "1587130903983": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/Foto_Marana.jpg",
-              "image_url": "",
-              "tint_color": "#000000",
-              "tint_opacity": 22,
-              "color": "#ffffff",
-              "heading": "Bean to Bar",
-              "subheading": "CHOCOLATE ARTESANAL PERUANO",
-              "button_1_text": "Compra Aquí",
-              "button_1_url": "",
               "button_2_text": "",
               "button_2_url": ""
             }
@@ -274,10 +274,10 @@
         "block_order": [
           "image_TLzNVd",
           "34de4838-f73d-4fda-b7b5-9b7088ef108b",
+          "1587130903983",
           "78c4c3eb-4276-428d-afc8-1242767178d3",
           "73dfe80c-ff67-4845-8159-14326fef1142",
           "1587094863606",
-          "1587130903983",
           "1587094335575",
           "1587180843246",
           "1483959039059"
