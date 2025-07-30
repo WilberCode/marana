@@ -938,7 +938,7 @@
           "9ba7f93f-ed27-4022-9f48-d42d129c92fc"
         ],
         "custom_css": [
-          "@media (min-width: 767px) {h1 {padding-top:70px; font-size: 32px; font-weight: 800; }}"
+          "@media (min-width: 767px) {h1 {padding-top: 70px; font-size: 32px; font-weight: 800; }}"
         ],
         "settings": {
           "title": "Nuestros productos",
@@ -1003,7 +1003,7 @@
         "settings": {
           "title": "Tabletas",
           "collection": "todos-los-chocolates",
-          "products_per_row_int": 4,
+          "products_per_row_int": 5,
           "product_rows_int": 1,
           "cta_text": "Ver más",
           "grid_show_vendor": true
@@ -1015,7 +1015,7 @@
         "settings": {
           "title": "Chocotejas",
           "collection": "chocotejas",
-          "products_per_row_int": 4,
+          "products_per_row_int": 5,
           "product_rows_int": 1,
           "cta_text": "Ver más",
           "grid_show_vendor": true
