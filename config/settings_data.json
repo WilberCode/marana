@@ -1164,14 +1164,6 @@
         "disabled": false,
         "settings": {}
       },
-      "14391867418331573003": {
-        "type": "shopify://apps/goalify/blocks/progress-bar-embed/0834dd64-6591-4dfa-9cc4-bbb7ef032eed",
-        "disabled": false,
-        "settings": {
-          "n99gb_embed_css": "/* CSS Rules */",
-          "n99gb_embed_js": "/* JS Code */"
-        }
-      },
       "15746506029051422284": {
         "type": "shopify://apps/mega-code-embed/blocks/code-body/f06216cf-23cd-4ffb-8719-16e9a878d094",
         "disabled": false,
@@ -1187,17 +1179,13 @@
         "disabled": false,
         "settings": {}
       },
-      "2131494470682214141": {
-        "type": "shopify://apps/corner-cart-drawer-free-gift/blocks/corner-widget/73667a27-0d48-44b7-91f9-aef741c803ed",
-        "disabled": false,
-        "settings": {
-          "elementToReplaceInCartPage": "main",
-          "hide_theme_cart": false,
-          "enable_defer_loading": false
-        }
-      },
       "18155451270687726080": {
         "type": "shopify://apps/snap-cart-drawer-sticky-cart/blocks/sticky_button/749c3d78-31de-41bb-a321-492d569e1a37",
+        "disabled": false,
+        "settings": {}
+      },
+      "7465990195487237579": {
+        "type": "shopify://apps/ea-sticky-cart/blocks/app-embed-block/a725b883-a528-4381-b4d8-4a870dad14a6",
         "disabled": false,
         "settings": {}
       }
