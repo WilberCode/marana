@@ -1190,7 +1190,7 @@
         "disabled": false,
         "settings": {
           "external_elements": true,
-          "external_cart_count": ".header-items__cart-link",
+          "external_cart_count": ".cart__count",
           "external_cart_open": ".header-items__cart-link",
           "external_add_to_cart": "",
           "external_script": false
