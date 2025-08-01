@@ -1184,20 +1184,15 @@
         "disabled": false,
         "settings": {}
       },
-      "7465990195487237579": {
-        "type": "shopify://apps/ea-sticky-cart/blocks/app-embed-block/a725b883-a528-4381-b4d8-4a870dad14a6",
-        "disabled": false,
-        "settings": {}
-      },
       "2309446604239391888": {
         "type": "shopify://apps/vtn-cart-drawer-pro/blocks/cart-drawer/0aa347a6-1508-4def-80cb-cd710541ef1a",
         "disabled": false,
         "settings": {
-          "external_elements": false,
+          "external_elements": true,
           "external_cart_count": "",
           "external_cart_open": "",
           "external_add_to_cart": "",
-          "external_script": false
+          "external_script": true
         }
       }
     }
