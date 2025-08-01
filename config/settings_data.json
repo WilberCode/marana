@@ -1115,33 +1115,6 @@
           "bundle_prefix": "/apps/bundles/bundle"
         }
       },
-      "1386531382474587334": {
-        "type": "shopify://apps/bundle-builder-kitenzo/blocks/bb-cart-integration/78802baf-205d-4d1d-908c-fae911f24e36",
-        "disabled": true,
-        "settings": {
-          "hide_accelerated_checkout": false,
-          "placement": "below",
-          "hide_empty_line_items": false,
-          "font_size": 16,
-          "font_color": "",
-          "button_color": "",
-          "button_background": "",
-          "button_radius": 0,
-          "border_color": "#000000",
-          "background": "",
-          "heading": "Your cart contains {count} bundle",
-          "heading_plural": "Your cart contains {count} bundles",
-          "view_text": "View Details",
-          "modal_title": "Your bundle summary",
-          "modal_font_color": "#000000",
-          "modal_background": "#FFFFFF",
-          "modal_border_color": "#c4c4c4",
-          "modal_item_background": "",
-          "modal_item_content_background": "#f1f1f1",
-          "modal_item_product_background": "#ffffff",
-          "custom_css": ""
-        }
-      },
       "3753596010683798665": {
         "type": "shopify://apps/pushdaddy-whatsapp-live-chat/blocks/app-embed/e3f2054d-bf7b-4e63-8db3-00712592382c",
         "disabled": false,
@@ -1181,8 +1154,36 @@
       },
       "18155451270687726080": {
         "type": "shopify://apps/snap-cart-drawer-sticky-cart/blocks/sticky_button/749c3d78-31de-41bb-a321-492d569e1a37",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
+      },
+      "1386531382474587334": {
+        "type": "shopify://apps/bundle-builder-kitenzo/blocks/bb-cart-integration/78802baf-205d-4d1d-908c-fae911f24e36",
+        "disabled": false,
+        "settings": {
+          "hide_accelerated_checkout": false,
+          "show_compare_at": false,
+          "placement": "below",
+          "hide_empty_line_items": false,
+          "font_size": 16,
+          "font_color": "",
+          "button_color": "",
+          "button_background": "",
+          "button_radius": 0,
+          "border_color": "#000000",
+          "background": "",
+          "heading": "Your cart contains {count} bundle",
+          "heading_plural": "Your cart contains {count} bundles",
+          "view_text": "View Details",
+          "modal_title": "Your bundle summary",
+          "modal_font_color": "#000000",
+          "modal_background": "#FFFFFF",
+          "modal_border_color": "#c4c4c4",
+          "modal_item_background": "",
+          "modal_item_content_background": "#f1f1f1",
+          "modal_item_product_background": "#ffffff",
+          "custom_css": ""
+        }
       },
       "2309446604239391888": {
         "type": "shopify://apps/vtn-cart-drawer-pro/blocks/cart-drawer/0aa347a6-1508-4def-80cb-cd710541ef1a",
@@ -1190,7 +1191,7 @@
         "settings": {
           "external_elements": false,
           "external_cart_count": "",
-          "external_cart_open": "header",
+          "external_cart_open": ".header-items__cart-link",
           "external_add_to_cart": "",
           "external_script": false
         }
