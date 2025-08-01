@@ -1152,11 +1152,6 @@
         "disabled": false,
         "settings": {}
       },
-      "18155451270687726080": {
-        "type": "shopify://apps/snap-cart-drawer-sticky-cart/blocks/sticky_button/749c3d78-31de-41bb-a321-492d569e1a37",
-        "disabled": false,
-        "settings": {}
-      },
       "1386531382474587334": {
         "type": "shopify://apps/bundle-builder-kitenzo/blocks/bb-cart-integration/78802baf-205d-4d1d-908c-fae911f24e36",
         "disabled": false,
@@ -1195,6 +1190,11 @@
           "external_add_to_cart": "",
           "external_script": false
         }
+      },
+      "18155451270687726080": {
+        "type": "shopify://apps/snap-cart-drawer-sticky-cart/blocks/sticky_button/749c3d78-31de-41bb-a321-492d569e1a37",
+        "disabled": true,
+        "settings": {}
       }
     }
   },
