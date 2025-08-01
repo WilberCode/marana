@@ -1189,13 +1189,10 @@
         "disabled": false,
         "settings": {}
       },
-      "14391867418331573003": {
-        "type": "shopify://apps/goalify/blocks/progress-bar-embed/0834dd64-6591-4dfa-9cc4-bbb7ef032eed",
+      "2391397090251692709": {
+        "type": "shopify://apps/cartylabs-upsellcart/blocks/app-embed/87f48470-496b-4581-9be3-6b264b1ba440",
         "disabled": false,
-        "settings": {
-          "n99gb_embed_css": "/* CSS Rules */",
-          "n99gb_embed_js": "/* JS Code */"
-        }
+        "settings": {}
       }
     }
   },
