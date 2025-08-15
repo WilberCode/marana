@@ -1020,11 +1020,24 @@
           "cta_text": "Ver más",
           "grid_show_vendor": true
         }
+      },
+      "featured_collection_cLHymm": {
+        "type": "featured-collection",
+        "name": "Featured collection",
+        "settings": {
+          "title": "Packs",
+          "collection": "pack-de-3-tabletas-a-s-56-soles",
+          "products_per_row_int": 5,
+          "product_rows_int": 1,
+          "cta_text": "Ver más",
+          "grid_show_vendor": true
+        }
       }
     },
     "content_for_index": [
       "featured_collection_TwLpf3",
       "featured_collection_QXnJwR",
+      "featured_collection_cLHymm",
       "1604511842750",
       "slideshow_J7aejj",
       "1587133822579",
