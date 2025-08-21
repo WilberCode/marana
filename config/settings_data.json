@@ -301,7 +301,7 @@
           "announcement_home_only": false,
           "announcement_bar_text": "⚡ Delivery GRATIS en compras mayores a S/ 150",
           "announcement_bar_link": "shopify://collections/all",
-          "announcement_bar_bg_color": "#000000",
+          "announcement_bar_bg_color": "#212121",
           "announcement_bar_bg_text": "#ffffff"
         }
       },
