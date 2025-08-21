@@ -298,7 +298,7 @@
         "settings": {
           "show_announcement": true,
           "announcement_home_only": false,
-          "announcement_bar_text": "⚡ Delivery GRATIS en compras mayores a S/ 150 ⚡",
+          "announcement_bar_text": "⚡ ENVIO GRATIS en compras mayores a S/ 150 ⚡",
           "announcement_bar_link": "shopify://collections/all",
           "announcement_bar_bg_color": "#fa3434",
           "announcement_bar_bg_text": "#ffffff"
