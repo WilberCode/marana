@@ -293,10 +293,13 @@
       },
       "announcement": {
         "type": "announcement",
+        "custom_css": [
+          "* {font-size: 14px;}"
+        ],
         "settings": {
-          "show_announcement": false,
-          "announcement_home_only": true,
-          "announcement_bar_text": "Delivery: Lo Entregamos en 2 Horas de Lunes a Viernes de 9am a 5:00pm",
+          "show_announcement": true,
+          "announcement_home_only": false,
+          "announcement_bar_text": "⚡ Delivery GRATIS en compras mayores a S/ 150",
           "announcement_bar_link": "shopify://collections/all",
           "announcement_bar_bg_color": "#000000",
           "announcement_bar_bg_text": "#ffffff"
