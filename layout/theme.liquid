@@ -253,11 +253,11 @@
 
         <script>  
  
-  
- document.addEventListener("click", function(e) {
+document.addEventListener("click", function(e) {
   if (e.target.classList.contains("bogos-gift-item-add-btn")) {
-      console.log('✅ Click detectado en botón gift');
-    }, 800); // ajusta delay si hace falta
+    e.preventDefault();
+    console.log("Click detectado ✔");
+ 
   }
 });
 
