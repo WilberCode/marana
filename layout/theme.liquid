@@ -252,10 +252,13 @@
 
 
         <script>  
-document.querySelectorAll('.add-to-car-for-gift').forEach(btn => {
-  btn.addEventListener('click', () => {
-    console.log('✅ Click detectado en botón gift');
-  });
+ 
+  
+ document.addEventListener("click", function(e) {
+  if (e.target.classList.contains("bogos-gift-item-add-btn")) {
+      console.log('✅ Click detectado en botón gift');
+    }, 800); // ajusta delay si hace falta
+  }
 });
 
 
