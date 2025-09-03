@@ -256,12 +256,13 @@ document.addEventListener("click", function(e) {
   if (e.target.classList.contains("bogos-gift-item-add-btn")) {
   
     e.preventDefault();
-  console.log('Holaaaaaaa')
+  
     // Llamamos al endpoint de cart para obtener el HTML actualizado
     fetch(window.location.pathname + "?section_id=cart-drawer")
       .then(response => response.text())
       .then(html => {
         // Creamos un DOM temporal para extraer el nuevo drawer
+        console.log('Holaaaaaaa')
         const tempDiv = document.createElement("div");
         tempDiv.innerHTML = html;
 
