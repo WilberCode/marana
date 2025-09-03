@@ -251,62 +251,23 @@
 </script>
 
 
-        <script> /*
-document.addEventListener("click", function(e) {
-  if (e.target.classList.contains("bogos-gift-item-add-btn")) {
-  
-    e.preventDefault();
-  
-    // Llamamos al endpoint de cart para obtener el HTML actualizado
-    fetch(window.location.pathname + "?section_id=cart-drawer")
-      .then(response => response.text())
-      .then(html => {
-        // Creamos un DOM temporal para extraer el nuevo drawer
-        console.log('Hola 1')
-        const tempDiv = document.createElement("div");
-        tempDiv.innerHTML = html;
-
-        const newDrawer = tempDiv.querySelector("vtn-cart-drawer");
-        const currentDrawer = document.querySelector("vtn-cart-drawer");
-currentDrawer.style.background="red";
-        if (newDrawer && currentDrawer) {
-          currentDrawer.innerHTML = newDrawer.innerHTML;
-        }
-      })
-      .catch(err => console.error("Error refrescando carrito:", err));
-  }
-});*/
-document.addEventListener("click", function(e) {
-  if (e.target.classList.contains("bogos-gift-item-add-btn")) {
-    e.preventDefault();
-
-    // Esperamos un poco a que la app agregue el producto al carrito
-    setTimeout(() => {
-      fetch(window.location.pathname + "?section_id=cart-drawer")
-        .then(response => response.text())
-        .then(html => {
-          console.log('Refrescando drawer...');
-          const tempDiv = document.createElement("div");
-          tempDiv.innerHTML = html;
-
-          const newDrawer = tempDiv.querySelector("vtn-cart-drawer");
-          const currentDrawer = document.querySelector("vtn-cart-drawer");
-currentDrawer.style.background="red";
-          if (newDrawer && currentDrawer) {
-            currentDrawer.innerHTML = newDrawer.innerHTML;
-          }
-        })
-        .catch(err => console.error("Error refrescando carrito:", err));
-    }, 600); // ajusta el delay según cuánto demore la app en agregar
-  }
-});
+        <script>  
  
+document.addEventListener("click", function(e) {
+  if (e.target.classList.contains("bogos-gift-item-add-btn")) {
+    console.log("Gift detectado, esperando actualización...");
 
-document.addEventListener("cart:updated", function() {
-  // Forzar a que el drawer se refresque
-  const drawer = document.querySelector("vtn-cart-drawer");
-  if (drawer && drawer.refresh) {
-    drawer.refresh(); // algunos apps exponen este método
+    // esperamos a que BOGOS termine de añadir
+    setTimeout(() => {
+      // Forzamos evento de carrito actualizado
+      document.dispatchEvent(new CustomEvent("cart:updated"));
+
+      // EXTRA: si VTN tiene método público de refresco, lo llamamos
+      if (window.VTNCart && typeof window.VTNCart.refresh === "function") {
+        console.log("Refrescando VTN cart manualmente...");
+        window.VTNCart.refresh();
+      }
+    }, 800); // ajusta delay si hace falta
   }
 });
 
