@@ -252,8 +252,29 @@
 
 
         <script>  
-window.Selleasy.refreshCartDrawer();
+document.addEventListener("click", function(e) {
+  if (e.target.classList.contains("bogos-gift-item-add-btn")) {
+    e.preventDefault();
+    refreshCartDrawer()
 
+ 
+  }
+});
+
+function refreshCartDrawer() {
+  fetch('/?sections=cart-drawer')
+    .then(r => r.text())
+    .then(html => {
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = html;
+      const newDrawer = tempDiv.querySelector('vtn-cart-drawer');
+      const currentDrawer = document.querySelector('vtn-cart-drawer');
+      if (newDrawer && currentDrawer) {
+        currentDrawer.innerHTML = newDrawer.innerHTML;
+        console.log("♻ Drawer refrescado");
+      }
+    });
+}
 
 </script>
 
