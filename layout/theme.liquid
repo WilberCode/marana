@@ -252,14 +252,8 @@
 
 
         <script>  
-document.addEventListener("click", function(e) {
-  if (e.target.classList.contains("bogos-gift-item-add-btn")) {
-    e.preventDefault();
-    fetch('/cart.js').then(r => r.json()).then(c => console.log(c));
+document.dispatchEvent(new Event('cart:refresh'));
 
- 
-  }
-});
 
 
 </script>
