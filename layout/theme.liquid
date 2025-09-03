@@ -277,7 +277,7 @@ currentDrawer.style.background="red";
   }
 });*/
 
-document.addEventListener("click", function(e) {
+(document.addEventListener("click", function(e) {
   if (e.target.classList.contains("bogos-gift-item-add-btn")) {
     e.preventDefault();
 
@@ -287,6 +287,7 @@ document.addEventListener("click", function(e) {
       fetch("/?sections=cart-drawer")
         .then(response => response.json())
         .then(data => {
+          console.log('Holaaaaa')
           const html = data["cart-drawer"]; // la clave es el ID de la sección
           const currentDrawer = document.querySelector("vtn-cart-drawer");
 
