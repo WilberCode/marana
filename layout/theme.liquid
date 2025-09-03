@@ -252,35 +252,35 @@
 
 
         <script>
-  document.addEventListener("DOMContentLoaded", function () {
-  // Asegúrate de que el iframe y su contenido estén completamente cargados antes de intentar acceder a ellos.
-// Una buena práctica es esperar al evento 'load' del iframe, o ejecutar este código después de que se sepa que el iframe está listo.
+document.addEventListener("click", function(e) {
+  if (e.target.classList.contains("bogos-gift-item-add-btn")) {
+    e.preventDefault();
 
-   setTimeout(()=>{
-     const iframe = document.getElementById("cro-cart-app-iframe");
- 
-// Verificar si el iframe existe y si contentDocument está accesible 
-if (iframe && iframe.contentDocument) { 
-    const iframeHead = iframe.contentDocument.head;
+    // Llamamos al endpoint de cart para obtener el HTML actualizado
+    fetch(window.location.pathname + "?section_id=cart-drawer")
+      .then(response => response.text())
+      .then(html => {
+        // Creamos un DOM temporal para extraer el nuevo drawer
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = html;
 
-    if (iframeHead) {
-        const style = iframe.contentDocument.createElement('style');
-        style.type = 'text/css';
-        style.innerHTML = ` .CROCart__sc-1a3j46a-4 p::before, .sc-jiaSqj.ka-DQIo>div:nth-child(2)::before,.CROCart__sc-srrv9y-2::before, .sc-iKOmoZ  >span::before, .sc-kUNLVD.hvZZBj::before, .sc-dxfTlo.EcnaQ::before, .sc-kiTBBF.eZwUoR::before{
-        content: "S/";
-    }
-        `;
-        iframeHead.appendChild(style);
-        console.log('CSS insertado exitosamente en el head del iframe.');
-    } else {
-        console.error('No se pudo acceder al head del iframe.');
-    }
-} else {
-    console.error('El iframe o su contentDocument no están disponibles.');
-}
-   },2000)
-  });
+        const newDrawer = tempDiv.querySelector("vtn-cart-drawer");
+        const currentDrawer = document.querySelector("vtn-cart-drawer");
+
+        if (newDrawer && currentDrawer) {
+          currentDrawer.innerHTML = newDrawer.innerHTML;
+        }
+      })
+      .catch(err => console.error("Error refrescando carrito:", err));
+  }
+});
+
 </script>
+
+
+
+
+
 
 <div class="shopify-dynamic-checkout---buttons" style="display:none!important;">{{ content_for_additional_checkout_buttons }}</div>
   {{ 'facets.js'  | asset_url | script_tag }}
