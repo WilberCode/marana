@@ -253,23 +253,11 @@
 
         <script>  
  
-document.addEventListener("click", function(e) {
-  if (e.target.classList.contains("bogos-gift-item-add-btn")) {
-    console.log("Gift detectado, esperando actualización...");
-console.log(window.VTNCart);
-console.log(window.vtnCartDrawer);
-    // esperamos a que BOGOS termine de añadir
-    setTimeout(() => {
-      // Forzamos evento de carrito actualizado
-      document.dispatchEvent(new CustomEvent("cart:updated"));
-
-      // EXTRA: si VTN tiene método público de refresco, lo llamamos
-      if (window.VTNCart && typeof window.VTNCart.refresh === "function") {
-        console.log("Refrescando VTN cart manualmente...");
-        window.VTNCart.refresh();
-      }
-    }, 800); // ajusta delay si hace falta
-  }
+ document.querySelectorAll('.add-to-car-for-gift').forEach(btn => {
+    btn.addEventListener('click', function () {
+        console.log('Botón gift clickeado, disparando evento...');
+        document.dispatchEvent(new CustomEvent('cart:updated'));
+    });
 });
 
 
