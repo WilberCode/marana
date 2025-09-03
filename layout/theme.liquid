@@ -302,6 +302,15 @@ currentDrawer.style.background="red";
 });
  
 
+document.addEventListener("cart:updated", function() {
+  // Forzar a que el drawer se refresque
+  const drawer = document.querySelector("vtn-cart-drawer");
+  if (drawer && drawer.refresh) {
+    drawer.refresh(); // algunos apps exponen este método
+  }
+});
+
+
 </script>
 
 
