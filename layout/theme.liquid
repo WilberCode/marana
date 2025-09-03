@@ -256,7 +256,8 @@
 document.addEventListener("click", function(e) {
   if (e.target.classList.contains("bogos-gift-item-add-btn")) {
     console.log("Gift detectado, esperando actualización...");
-
+console.log(window.VTNCart);
+console.log(window.vtnCartDrawer);
     // esperamos a que BOGOS termine de añadir
     setTimeout(() => {
       // Forzamos evento de carrito actualizado
@@ -270,8 +271,7 @@ document.addEventListener("click", function(e) {
     }, 800); // ajusta delay si hace falta
   }
 });
-console.log(window.VTNCart);
-console.log(window.vtnCartDrawer);
+
 
 
 </script>
