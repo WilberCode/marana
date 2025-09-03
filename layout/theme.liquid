@@ -251,7 +251,7 @@
 </script>
 
 
-        <script>
+        <script> /*
 document.addEventListener("click", function(e) {
   if (e.target.classList.contains("bogos-gift-item-add-btn")) {
   
@@ -275,7 +275,32 @@ currentDrawer.style.background="red";
       })
       .catch(err => console.error("Error refrescando carrito:", err));
   }
+});*/
+
+document.addEventListener("click", function(e) {
+  if (e.target.classList.contains("bogos-gift-item-add-btn")) {
+    e.preventDefault();
+
+    // 1. Primero esperamos un poco para que el producto realmente se agregue al carrito
+    setTimeout(() => {
+      // 2. Pedimos al servidor el HTML actualizado del drawer
+      fetch("/?sections=cart-drawer")
+        .then(response => response.json())
+        .then(data => {
+          const html = data["cart-drawer"]; // la clave es el ID de la sección
+          const currentDrawer = document.querySelector("vtn-cart-drawer");
+
+          if (currentDrawer && html) {
+            currentDrawer.innerHTML = new DOMParser()
+              .parseFromString(html, "text/html")
+              .querySelector("vtn-cart-drawer").innerHTML;
+          }
+        })
+        .catch(err => console.error("Error refrescando carrito:", err));
+    }, 800); // ajusta el tiempo si hace falta
+  }
 });
+
 
 </script>
 
