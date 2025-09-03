@@ -252,11 +252,11 @@
 
 
         <script>  
- 
 document.addEventListener("click", function(e) {
   if (e.target.classList.contains("bogos-gift-item-add-btn")) {
     e.preventDefault();
-    console.log("Click detectado ✔");
+    fetch('/cart.js').then(r => r.json()).then(c => console.log(c));
+
  
   }
 });
