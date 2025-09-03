@@ -262,7 +262,7 @@ document.addEventListener("click", function(e) {
       .then(response => response.text())
       .then(html => {
         // Creamos un DOM temporal para extraer el nuevo drawer
-        console.log('Holaaaaaaa')
+        console.log('Hola 1')
         const tempDiv = document.createElement("div");
         tempDiv.innerHTML = html;
 
@@ -276,30 +276,31 @@ currentDrawer.style.background="red";
       .catch(err => console.error("Error refrescando carrito:", err));
   }
 });*/
-
-(document.addEventListener("click", function(e) {
+document.addEventListener("click", function(e) {
   if (e.target.classList.contains("bogos-gift-item-add-btn")) {
     e.preventDefault();
 
-    // 1. Primero esperamos un poco para que el producto realmente se agregue al carrito
+    // Esperamos un poco a que la app agregue el producto al carrito
     setTimeout(() => {
-      // 2. Pedimos al servidor el HTML actualizado del drawer
-      fetch("/?sections=cart-drawer")
-        .then(response => response.json())
-        .then(data => {
-          console.log('Holaaaaa')
-          const html = data["cart-drawer"]; // la clave es el ID de la sección
+      fetch(window.location.pathname + "?section_id=cart-drawer")
+        .then(response => response.text())
+        .then(html => {
+          console.log('Refrescando drawer...');
+          const tempDiv = document.createElement("div");
+          tempDiv.innerHTML = html;
+
+          const newDrawer = tempDiv.querySelector("vtn-cart-drawer");
           const currentDrawer = document.querySelector("vtn-cart-drawer");
 
-          if (currentDrawer && html) {
-            currentDrawer.innerHTML = new DOMParser()
-              .parseFromString(html, "text/html")
-              .querySelector("vtn-cart-drawer").innerHTML;
+          if (newDrawer && currentDrawer) {
+            currentDrawer.innerHTML = newDrawer.innerHTML;
           }
         })
         .catch(err => console.error("Error refrescando carrito:", err));
-    }, 800); // ajusta el tiempo si hace falta
+    }, 600); // ajusta el delay según cuánto demore la app en agregar
   }
+});
+
 });
 
 
