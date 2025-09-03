@@ -252,23 +252,11 @@
 
 
         <script>  
-function refreshCartDrawer() {
-    fetch('/cart.js')
-        .then(res => res.json())
-        .then(cart => {
-            console.log('Carrito actualizado:', cart);
-            // Aquí forzamos el evento que use el drawer
-            document.dispatchEvent(new CustomEvent('cart:refresh', { detail: cart }));
-        });
-}
-
 document.querySelectorAll('.add-to-car-for-gift').forEach(btn => {
-    btn.addEventListener('click', function () {
-        console.log('Gift añadido, refrescando...');
-        refreshCartDrawer();
-    });
+  btn.addEventListener('click', () => {
+    console.log('✅ Click detectado en botón gift');
+  });
 });
-
 
 
 </script>
