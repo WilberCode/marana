@@ -306,6 +306,9 @@
 
       if (item) {
         await noopQuantityChange(item); // ← dispara el flujo que refresca el drawer de VTN
+      const input = document.querySelector('vtn-cart-drawer input.vtn-quantity-input');
+if (input) input.dispatchEvent(new Event('change', { bubbles: true }));
+
         // Por si el app también escucha eventos:
         document.dispatchEvent(new CustomEvent('cart:updated', { detail: cart }));
         console.log('♻ Drawer VTN refrescado vía no-op /cart/change.js');
