@@ -251,52 +251,14 @@
 </script>
 
 
- <script>
-(function () {
-  async function getCart() {
-    const r = await fetch('/cart.js', {
-      headers: { 'Accept': 'application/json' },
-      cache: 'no-store'
-    });
-    return r.json();
+<script>
+document.addEventListener("click", function(e) {
+  if (e.target.closest(".bogos-gift-item-add-btn")) {
+    window.location.reload();
   }
-
-  async function waitUntilAdded(initialCount, timeoutMs = 5000, interval = 300) {
-    const start = Date.now();
-    let last = null;
-    while (Date.now() - start < timeoutMs) {
-      await new Promise(r => setTimeout(r, interval));
-      last = await getCart();
-      if (last.item_count > initialCount) return last;
-    }
-    return last;
-  }
-
-  function triggerVTNRefresh() {
-    const input = document.querySelector('vtn-cart-drawer input.vtn-quantity-input');
-    if (input) {
-      console.log('⚡ Forzando refresh del drawer VTN');
-      // Disparamos exactamente lo que los botones disparan
-      input.dispatchEvent(new Event('input', { bubbles: true }));
-      input.dispatchEvent(new Event('change', { bubbles: true }));
-    } else {
-      console.warn('No encontré input dentro del drawer');
-    }
-  }
-
-  document.addEventListener('click', async function (e) {
-    const btn = e.target.closest('.bogos-gift-item-add-btn');
-    if (!btn) return;
-
-    const before = await getCart();
-    const updated = await waitUntilAdded(before.item_count);
-
-    if (updated && updated.item_count > before.item_count) {
-      triggerVTNRefresh();
-    }
-  });
-})();
+});
 </script>
+
 
 
 
