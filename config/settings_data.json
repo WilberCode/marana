@@ -123,8 +123,8 @@
           "image_TLzNVd": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/BANNER_AGOSTO_MARANA_2008.jpg",
-              "image_movil": "shopify://shop_images/BANNER_AGOSTO_MARANA_2008_MOBILE.jpg",
+              "image": "shopify://shop_images/BANNER_SETIEMBRE_MARANA_0309_2.jpg",
+              "image_movil": "shopify://shop_images/BANNER_SETIEMBRE_MARANA_0308_MOBILE.jpg",
               "image_url": "shopify://collections/todos-los-chocolates",
               "tint_color": "#000000",
               "tint_opacity": 0,
@@ -1213,11 +1213,6 @@
       },
       "8605505498557855500": {
         "type": "shopify://apps/bogos-io-free-gift/blocks/app-embed/0432bba6-720a-4e95-be5a-b868386f7aa6",
-        "disabled": false,
-        "settings": {}
-      },
-      "6446056954808858455": {
-        "type": "shopify://apps/upsellio-bogo-free-gifts/blocks/app-embed/e4a32349-e833-4914-a005-0578072ba642",
         "disabled": false,
         "settings": {}
       }
