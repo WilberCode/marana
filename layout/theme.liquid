@@ -254,7 +254,9 @@
 <script>
 document.addEventListener("click", function(e) {
   if (e.target.closest(".bogos-gift-item-add-btn")) {
-    window.location.reload();
+    setTimeout(() => {
+      window.location.reload();
+    }, 2000); // 2000 ms = 2 segundos
   }
 });
 </script>
