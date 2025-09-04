@@ -250,17 +250,54 @@
 
 </script>
 
-
 <script>
-document.addEventListener("click", function(e) {
-  if (e.target.closest(".bogos-gift-item-add-btn")) {
-    setTimeout(() => {
-      window.location.reload();
-    }, 2000); // 2000 ms = 2 segundos
-  }
-});
-</script>
+(function () {
+  const STORAGE_KEY = "activo_modal";
 
+  // 1. Cuando se hace clic en el botón para agregar regalo
+  document.addEventListener("click", function (e) {
+    if (e.target.closest(".bogos-gift-item-add-btn")) {
+      // Guardamos el estado en localStorage
+      localStorage.setItem(STORAGE_KEY, "1");
+
+      // Esperamos 2 segundos y recargamos la página
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000);
+    }
+  });
+
+  // 2. Al cargar la página revisamos el estado
+  document.addEventListener("DOMContentLoaded", function () {
+    if (localStorage.getItem(STORAGE_KEY) === "1") {
+      const drawer = document.querySelector("vtn-cart-drawer");
+      if (drawer) {
+        drawer.classList.add("active"); // abrir el carrito
+      }
+
+      // 🔹 Aquí lanzas el modal de tu app
+      const modal = document.querySelector("#id-de-tu-modal"); 
+      if (modal) {
+        modal.classList.add("active"); // ajusta según tu lógica/modal
+      }
+    }
+  });
+
+  // 3. Si el usuario cierra el carrito o finaliza acción, limpiamos el estado
+  const clearSelectors = [
+    ".vtn-drawer-close",
+    ".vtn-cart-drawer-overlay",
+    ".vtn-cart__checkout-button",
+    ".vtn-cart__continue-shopping-button"
+  ];
+
+  document.addEventListener("click", function (e) {
+    if (clearSelectors.some(sel => e.target.closest(sel))) {
+      localStorage.removeItem(STORAGE_KEY);
+    }
+  });
+})();
+</script>
 
 
 
