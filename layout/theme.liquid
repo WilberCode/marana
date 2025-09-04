@@ -251,12 +251,8 @@
 </script>
 
 
-<script>
+ <script>
 (function () {
-  // Evita múltiples ejecuciones en clics rápidos
-  let lock = false;
-
-  // Siempre leer el carrito sin cache
   async function getCart() {
     const r = await fetch('/cart.js', {
       headers: { 'Accept': 'application/json' },
@@ -265,20 +261,6 @@
     return r.json();
   }
 
-  // Forzar el flujo de actualización del drawer VTN sin cambiar cantidades
-  async function noopQuantityChange(item) {
-    // Mismo key y misma quantity -> NO cambia nada, pero dispara el "cart change"
-    await fetch('/cart/change.js', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({ id: item.key, quantity: item.quantity })
-    });
-  }
-
-  // Espera hasta que el item_count suba (BOGOS terminó de agregar)
   async function waitUntilAdded(initialCount, timeoutMs = 5000, interval = 300) {
     const start = Date.now();
     let last = null;
@@ -287,45 +269,34 @@
       last = await getCart();
       if (last.item_count > initialCount) return last;
     }
-    return last; // devuelve lo último aunque no aumente (fallback)
+    return last;
+  }
+
+  function triggerVTNRefresh() {
+    const input = document.querySelector('vtn-cart-drawer input.vtn-quantity-input');
+    if (input) {
+      console.log('⚡ Forzando refresh del drawer VTN');
+      // Disparamos exactamente lo que los botones disparan
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+      input.dispatchEvent(new Event('change', { bubbles: true }));
+    } else {
+      console.warn('No encontré input dentro del drawer');
+    }
   }
 
   document.addEventListener('click', async function (e) {
     const btn = e.target.closest('.bogos-gift-item-add-btn');
-    if (!btn || lock) return;
+    if (!btn) return;
 
-    // Importante: NO prevenir el default; BOGOS necesita manejar su click
-    lock = true;
-    try {
-      const before = await getCart();
-      const updated = await waitUntilAdded(before.item_count); // espera a que BOGOS añada
+    const before = await getCart();
+    const updated = await waitUntilAdded(before.item_count);
 
-      const cart = updated || before;
-      // Toma cualquier ítem del carrito para el no-op (idealmente el primero)
-      const item = cart.items && cart.items[0];
-
-      if (item) {
-        await noopQuantityChange(item); // ← dispara el flujo que refresca el drawer de VTN
-        const input = document.querySelector('vtn-cart-drawer input.vtn-quantity-input');
-        if (input) input.dispatchEvent(new Event('change', { bubbles: true }));
-
-        // Por si el app también escucha eventos:
-        document.dispatchEvent(new CustomEvent('cart:updated', { detail: cart }));
-        console.log('♻ Drawer VTN refrescado vía no-op /cart/change.js');
-      } else {
-        // Carrito vacío: solo disparamos evento
-        document.dispatchEvent(new CustomEvent('cart:updated', { detail: cart }));
-        console.warn('Carrito vacío, solo se disparó cart:updated');
-      }
-    } catch (err) {
-      console.error('Error forzando refresh del drawer:', err);
-    } finally {
-      lock = false;
+    if (updated && updated.item_count > before.item_count) {
+      triggerVTNRefresh();
     }
   });
 })();
 </script>
-
 
 
 
