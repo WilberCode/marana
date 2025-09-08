@@ -300,31 +300,19 @@
 </script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  const cartDrawer = document.querySelector('.vtn-cart-drawer-filled-content');
+  setTimeout(function() { 
+    // Seleccionamos el header del carrito
+    const cartHeader = document.querySelector('.vtn-cart-drawer-header');
 
-  if (cartDrawer) {
-    // Función para insertar el mensaje si no existe
-    function insertPromo() {
-      if (!cartDrawer.querySelector('.promo-msg')) {
-        cartDrawer.insertAdjacentHTML(
-          'afterbegin',
-          '<p class="promo-msg" style="background-color:#e60000; color:#fff; border-radius:10px; padding:6px 4px; font-weight:bold; font-size:17px; margin:10px; text-align:center; margin-bottom:8px;">Llévate 2 chocotejas de Regalo por la compra de S/100 en tabletas</p>'
-        );
-      }
+    // Comprobamos si el header existe
+    if (cartHeader) {
+      // Insertamos el mensaje justo después del header con estilos
+      cartHeader.insertAdjacentHTML(
+        'afterend', 
+        '<p style="background-color:#e60000; color:#fff; border-radius:10px; padding:6px 4px; font-weight:bold; font-size:17px; margin:10px; text-align:center; margin-bottom:8px;">Llévate 2 chocotejas de Regalo por la compra de S/100 en tabletas</p>'
+      );
     }
-
-    // Insertar al inicio (2 segundos después de abrir)
-    setTimeout(insertPromo, 2000);
-
-    // Observer para reinyectarlo cuando cambie el carrito
-    const observer = new MutationObserver(() => {
-      insertPromo();
-    });
-
-    observer.observe(cartDrawer, { childList: true, subtree: true });
-  }
-});
+  }, 2000); // 2000 ms = 2 segundos
 </script>
 
 
