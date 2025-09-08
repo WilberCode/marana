@@ -300,15 +300,16 @@
 </script>
 
 <script>
-  // Seleccionamos el elemento con la clase .vtn-cart-drawer-filled-content
-const cartDrawer = document.querySelector('.vtn-cart-drawer-filled-content');
+  setTimeout(function() {
+    // Seleccionamos el elemento con la clase .vtn-cart-drawer-filled-content
+    const cartDrawer = document.querySelector('.vtn-cart-drawer-filled-content');
 
-// Comprobamos si el elemento existe
-if (cartDrawer) {
-  // Agregamos el mensaje dentro del elemento
-  cartDrawer.innerHTML += "<p>Llévate 2 chocotejas de Regalo por la compra de S/100 en tabletas</p>";
-}
-
+    // Comprobamos si el elemento existe
+    if (cartDrawer) {
+      // Agregamos el mensaje dentro del elemento
+      cartDrawer.innerHTML += "<p>Llévate 2 chocotejas de Regalo por la compra de S/100 en tabletas</p>";
+    }
+  }, 2000); // 2000 milisegundos = 2 segundos
 </script>
 
 
