@@ -296,7 +296,7 @@
           "* {font-size: 14px;}"
         ],
         "settings": {
-          "show_announcement": true,
+          "show_announcement": false,
           "announcement_home_only": false,
           "announcement_bar_text": "⚡ ENVIO GRATIS en compras mayores a S/ 150 ⚡",
           "announcement_bar_link": "shopify://collections/all",
