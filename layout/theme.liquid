@@ -306,11 +306,15 @@
 
     // Comprobamos si el elemento existe
     if (cartDrawer) {
-      // Agregamos el mensaje dentro del elemento
-      cartDrawer.innerHTML += "<p>Llévate 2 chocotejas de Regalo por la compra de S/100 en tabletas</p>";
+      // Insertamos el mensaje al inicio de sus contenidos con estilos
+      cartDrawer.insertAdjacentHTML(
+        'afterbegin', 
+        '<p style="background-color:#e60000; color:#fff; border-radius:10px; padding:4px; font-weight:bold; text-align:center; margin-bottom:8px;">Llévate 2 chocotejas de Regalo por la compra de S/100 en tabletas</p>'
+      );
     }
-  }, 2000); // 2000 milisegundos = 2 segundos
+  }, 2000); // 2000 ms = 2 segundos
 </script>
+
 
 
 <div class="shopify-dynamic-checkout---buttons" style="display:none!important;">{{ content_for_additional_checkout_buttons }}</div>
