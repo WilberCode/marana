@@ -137,6 +137,23 @@
               "button_2_url": ""
             }
           },
+          "image_Jx6LT7": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/BANNER_SETIEMBRE_MARANA_0809.jpg",
+              "image_movil": "shopify://shop_images/BANNER_SETIEMBRE_MARANA_0809_MOBILE.jpg",
+              "image_url": "shopify://collections/todos-los-chocolates",
+              "tint_color": "#000000",
+              "tint_opacity": 0,
+              "color": "#ffffff",
+              "heading": "",
+              "subheading": "",
+              "button_1_text": "",
+              "button_1_url": "",
+              "button_2_text": "",
+              "button_2_url": ""
+            }
+          },
           "34de4838-f73d-4fda-b7b5-9b7088ef108b": {
             "type": "image",
             "disabled": true,
@@ -272,6 +289,7 @@
         },
         "block_order": [
           "image_TLzNVd",
+          "image_Jx6LT7",
           "34de4838-f73d-4fda-b7b5-9b7088ef108b",
           "1587130903983",
           "78c4c3eb-4276-428d-afc8-1242767178d3",
