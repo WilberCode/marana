@@ -1861,7 +1861,7 @@
   "platform_customizations": {
     "custom_css": [
       "@media (max-width: 767px) {.section-id-banner-index .slide {height: 550px !important; }}",
-      ".section-id-banner-index .block-1 .slide__image-bg {background-size: contain;}",
+      ".section-id-banner-index .block-1 .slide__image-bg , .section-id-banner-index .block-2 .slide__image-bg{background-size: contain;}",
       "#pageheader .header-left ul .main-menu-desktop-item:nth-child(1) a {background: red; border-radius: 10px;}",
       "#main-menu .main-menu-links li:nth-child(1) a {background: red; border-radius: 10px; padding: 4px 6px;}",
       "vtn-cart-drawer {z-index: 99999;}"
