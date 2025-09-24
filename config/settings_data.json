@@ -139,6 +139,7 @@
           },
           "image_m8LFUU": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/BANNER_SETIEMBRE_MARANA_0309_2.jpg",
               "image_movil": "shopify://shop_images/BANNER_SETIEMBRE_MARANA_0308_MOBILE.jpg",
