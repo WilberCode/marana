@@ -1064,9 +1064,9 @@
         "type": "featured-collection",
         "name": "Featured collection",
         "settings": {
-          "title": "Packs",
-          "collection": "bundle-builder-products",
-          "products_per_row_int": 5,
+          "title": "Packs de Maridaje",
+          "collection": "packs-de-maridaje",
+          "products_per_row_int": 4,
           "product_rows_int": 1,
           "cta_text": "Ver más",
           "grid_show_vendor": true
@@ -1074,9 +1074,9 @@
       }
     },
     "content_for_index": [
+      "featured_collection_cLHymm",
       "featured_collection_TwLpf3",
       "featured_collection_QXnJwR",
-      "featured_collection_cLHymm",
       "1604511842750",
       "slideshow_J7aejj",
       "1587133822579",
