@@ -18,6 +18,12 @@
             "collection": "chocotejas"
           }
         },
+        "collection_gG9ph6": {
+          "type": "collection",
+          "settings": {
+            "collection": "packs-de-maridaje"
+          }
+        },
         "collection_amFaqR": {
           "type": "collection",
           "settings": {
@@ -47,22 +53,16 @@
           "settings": {
             "collection": "tabletas-mini"
           }
-        },
-        "collection_gG9ph6": {
-          "type": "collection",
-          "settings": {
-            "collection": "packs-de-maridaje"
-          }
         }
       },
       "block_order": [
         "collection_x88pQa",
+        "collection_gG9ph6",
         "collection_amFaqR",
         "collection_n6y4jP",
         "collection_kqkQmG",
         "collection_TbD3j8",
-        "collection_76i7X6",
-        "collection_gG9ph6"
+        "collection_76i7X6"
       ],
       "settings": {
         "enable_filtering": true,
