@@ -48,10 +48,10 @@
             "collection": "tabletas-mini"
           }
         },
-        "collection_kTUnGp": {
+        "collection_gG9ph6": {
           "type": "collection",
           "settings": {
-            "collection": "bundle-builder-products"
+            "collection": "packs-de-maridaje"
           }
         }
       },
@@ -62,7 +62,7 @@
         "collection_kqkQmG",
         "collection_TbD3j8",
         "collection_76i7X6",
-        "collection_kTUnGp"
+        "collection_gG9ph6"
       ],
       "settings": {
         "enable_filtering": true,
