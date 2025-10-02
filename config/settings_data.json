@@ -125,14 +125,14 @@
             "settings": {
               "image": "shopify://shop_images/BANNER_SETIEMBRE_MARANA_2909.jpg",
               "image_movil": "shopify://shop_images/BANNER_SETIEMBRE_MARANA_2909_MOBILE_1.jpg",
-              "image_url": "shopify://collections/todos-los-chocolates",
+              "image_url": "shopify://collections/packs-de-maridaje",
               "tint_color": "#000000",
               "tint_opacity": 0,
               "color": "#ffffff",
               "heading": "",
               "subheading": "",
-              "button_1_text": "Comprar",
-              "button_1_url": "shopify://collections/packs-de-maridaje",
+              "button_1_text": "",
+              "button_1_url": "",
               "button_2_text": "",
               "button_2_url": ""
             }
