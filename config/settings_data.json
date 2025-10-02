@@ -131,8 +131,8 @@
               "color": "#ffffff",
               "heading": "",
               "subheading": "",
-              "button_1_text": "",
-              "button_1_url": "",
+              "button_1_text": "Comprar",
+              "button_1_url": "shopify://collections/packs-de-maridaje",
               "button_2_text": "",
               "button_2_url": ""
             }
