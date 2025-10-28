@@ -14,13 +14,13 @@
 
 <div class="prod-block column reveal-candidate product-card {{ col_class }}{% unless product.available %} sold-out{% endunless %}{% if on_sale %} on-sale{% endif %}"> 
 
- {% if product.compare_at_price > product.price %}
+{% if product.compare_at_price > product.price %}
   {% assign discount_percentage = product.compare_at_price 
     | minus: product.price 
     | times: 100 
     | divided_by: product.compare_at_price %}
 
-  {% if discount_percentage > 24 and discount_percentage < 25.5 %}
+  {% if discount_percentage > 24 and discount_percentage < 25.6 %}
     <span class="product-card-discount-badge">-25%</span>
   {% else %}
     <span class="product-card-discount-badge">
@@ -28,6 +28,7 @@
     </span>
   {% endif %}
 {% endif %}
+
 
 
   <div class="prod-image-wrap {% if settings.product_hover_image and product.media.size > 1 %}prod-image-wrap--with-hover{% endif %}">
