@@ -123,8 +123,8 @@
           "image_TLzNVd": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/BANNER_SETIEMBRE_MARANA_2909.jpg",
-              "image_movil": "shopify://shop_images/BANNER_SETIEMBRE_MARANA_2909_MOBILE_1.jpg",
+              "image": "shopify://shop_images/Banner_Web_03.jpg",
+              "image_movil": "shopify://shop_images/Banner_Mobile_20.jpg",
               "image_url": "shopify://collections/packs-de-maridaje",
               "tint_color": "#000000",
               "tint_opacity": 0,
