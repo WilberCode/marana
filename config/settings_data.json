@@ -120,23 +120,6 @@
       "banner-index": {
         "type": "banner-index",
         "blocks": {
-          "image_TLzNVd": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/Banner_Marana_1600x650_88779faf-54c8-45b3-8521-e86b8adab7ad.jpg",
-              "image_movil": "shopify://shop_images/Banner_Mobile_22.jpg",
-              "image_url": "",
-              "tint_color": "#000000",
-              "tint_opacity": 0,
-              "color": "#ffffff",
-              "heading": "",
-              "subheading": "",
-              "button_1_text": "",
-              "button_1_url": "",
-              "button_2_text": "",
-              "button_2_url": ""
-            }
-          },
           "image_m8LFUU": {
             "type": "image",
             "disabled": true,
@@ -306,7 +289,6 @@
           }
         },
         "block_order": [
-          "image_TLzNVd",
           "image_m8LFUU",
           "image_Jx6LT7",
           "34de4838-f73d-4fda-b7b5-9b7088ef108b",
@@ -1186,11 +1168,6 @@
       },
       "4015264832934714879": {
         "type": "shopify://apps/ecomsend-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
-        "disabled": false,
-        "settings": {}
-      },
-      "6770548097779500122": {
-        "type": "shopify://apps/koala-upsells-gifts/blocks/gifts-embed/baf92dc5-8ffa-40c0-967e-57b74cddc9e3",
         "disabled": false,
         "settings": {}
       },
