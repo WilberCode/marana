@@ -158,6 +158,7 @@
           },
           "image_GQzygW": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/Banner_Marana_1600x650_2.jpg",
               "image_movil": "shopify://shop_images/Banner_Mobile_27.jpg",
