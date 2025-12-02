@@ -1272,11 +1272,18 @@
         "disabled": false,
         "settings": {}
       },
-      "1530068250781986104": {
-        "type": "shopify://apps/fbp-fast-bundle/blocks/fast_bundle/9e87fbe2-9041-4c23-acf5-322413994cef",
+      "12075128526103414267": {
+        "type": "shopify://apps/bundlex/blocks/volume-discount-embed/c017a4b2-071a-4809-a2c2-1c5768f46bb9",
         "disabled": false,
         "settings": {
-          "home": false
+          "hide_quantity": false,
+          "custom_placement_selector": "",
+          "add_to_cart_button_selector": "",
+          "quantity_container_selector": "",
+          "quantity_input_selector": "",
+          "variants_container_selector": "",
+          "product_form_selector": "",
+          "custom_css": ""
         }
       }
     }
@@ -1906,7 +1913,7 @@
   "platform_customizations": {
     "custom_css": [
       "@media (max-width: 767px) {.section-id-banner-index .slide {height: 550px !important; }}",
-      ".section-id-banner-index .block-1 .slide__image-bg{background-size: contain;}",
+      ".section-id-banner-index .block-1 .slide__image-bg {background-size: contain;}",
       "#pageheader .header-left ul .main-menu-desktop-item:nth-child(1) a {background: red; border-radius: 10px;}",
       "#main-menu .main-menu-links li:nth-child(1) a {background: red; border-radius: 10px; padding: 4px 6px;}",
       "vtn-cart-drawer {z-index: 99999;}"
