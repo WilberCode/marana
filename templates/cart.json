@@ -16,7 +16,7 @@
           "type": "shopify://apps/kite-discount-free-gift/blocks/app-block-customDiscount/2c7302c4-455d-4078-a829-48563ba26089",
           "settings": {
             "blockId": "block-id",
-            "sideCartEnabled": false,
+            "sideCartEnabled": true,
             "widgetIconColor": "#ffffff",
             "widgetTextColor": "#ffffff",
             "widgetBackgroundColor": "#ffffff",
