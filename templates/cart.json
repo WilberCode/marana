@@ -12,16 +12,22 @@
     "cart-items": {
       "type": "cart-template",
       "blocks": {
-        "goalify_progress_bar_block_cart_8M6pYt": {
-          "type": "shopify://apps/goalify/blocks/progress-bar-blockCart/0834dd64-6591-4dfa-9cc4-bbb7ef032eed",
+        "kite_discount_free_gift_app_block_custom_discount_k3kFT9": {
+          "type": "shopify://apps/kite-discount-free-gift/blocks/app-block-customDiscount/2c7302c4-455d-4078-a829-48563ba26089",
           "settings": {
-            "n99gb_cart_css": "/* CSS Rules */",
-            "n99gb_cart_js": "/* JS Code */"
+            "blockId": "block-id",
+            "sideCartEnabled": false,
+            "widgetIconColor": "#ffffff",
+            "widgetTextColor": "#ffffff",
+            "widgetBackgroundColor": "#ffffff",
+            "widgetBorderColor": "#ffffff",
+            "widgetButtonColor": "#ffffff",
+            "widgetDropdownColor": "#ffffff"
           }
         }
       },
       "block_order": [
-        "goalify_progress_bar_block_cart_8M6pYt"
+        "kite_discount_free_gift_app_block_custom_discount_k3kFT9"
       ],
       "settings": {
         "cart_terms_show": false,
@@ -33,18 +39,6 @@
     },
     "175019787008cd1e36": {
       "type": "apps",
-      "blocks": {
-        "goalify_progress_bar_block_cart_WpiXYg": {
-          "type": "shopify://apps/goalify/blocks/progress-bar-blockCart/0834dd64-6591-4dfa-9cc4-bbb7ef032eed",
-          "settings": {
-            "n99gb_cart_css": "/* CSS Rules */",
-            "n99gb_cart_js": "/* JS Code */"
-          }
-        }
-      },
-      "block_order": [
-        "goalify_progress_bar_block_cart_WpiXYg"
-      ],
       "settings": {}
     }
   },
