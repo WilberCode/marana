@@ -1266,6 +1266,11 @@
         "type": "shopify://apps/ea-sticky-cart/blocks/app-embed-block/a725b883-a528-4381-b4d8-4a870dad14a6",
         "disabled": false,
         "settings": {}
+      },
+      "3318355620493698349": {
+        "type": "shopify://apps/wi-bogo/blocks/wbogo/9416ce92-aaaf-4a81-8fdf-b9a4e639d6dc",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
