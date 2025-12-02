@@ -12,22 +12,15 @@
     "cart-items": {
       "type": "cart-template",
       "blocks": {
-        "kite_discount_free_gift_app_block_custom_discount_k3kFT9": {
-          "type": "shopify://apps/kite-discount-free-gift/blocks/app-block-customDiscount/2c7302c4-455d-4078-a829-48563ba26089",
+        "kite_discount_free_gift_app_block_bogo_qwMA9K": {
+          "type": "shopify://apps/kite-discount-free-gift/blocks/app-block-bogo/2c7302c4-455d-4078-a829-48563ba26089",
           "settings": {
-            "blockId": "block-id",
-            "sideCartEnabled": true,
-            "widgetIconColor": "#ffffff",
-            "widgetTextColor": "#ffffff",
-            "widgetBackgroundColor": "#ffffff",
-            "widgetBorderColor": "#ffffff",
-            "widgetButtonColor": "#ffffff",
-            "widgetDropdownColor": "#ffffff"
+            "blockId": "block-id"
           }
         }
       },
       "block_order": [
-        "kite_discount_free_gift_app_block_custom_discount_k3kFT9"
+        "kite_discount_free_gift_app_block_bogo_qwMA9K"
       ],
       "settings": {
         "cart_terms_show": false,
