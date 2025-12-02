@@ -1271,6 +1271,14 @@
         "type": "shopify://apps/wi-bogo/blocks/wbogo/9416ce92-aaaf-4a81-8fdf-b9a4e639d6dc",
         "disabled": false,
         "settings": {}
+      },
+      "631149020729379069": {
+        "type": "shopify://apps/xb-free-gifts-bxgy/blocks/free_gift/019a6cc6-69f6-7803-8602-3b7020878985",
+        "disabled": false,
+        "settings": {
+          "customScript": "",
+          "showExampleBxgy": false
+        }
       }
     }
   },
