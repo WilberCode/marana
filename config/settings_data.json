@@ -178,6 +178,7 @@
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/Texto_del_parrafo-5_1.png",
+              "image_movil": "shopify://shop_images/Diseno_sin_titulo-4.png",
               "image_url": "shopify://collections/todos-los-chocolates",
               "tint_color": "#000000",
               "tint_opacity": 0,
